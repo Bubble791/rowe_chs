@@ -1,0 +1,2037 @@
+raw `
+InsideOfTruck_MapScripts:: @ 823BEDA
+	.byte 0
+	
+Start_EventScript_Starter_No_Exploit::
+	release
+	end
+	
+	
+Game_Start_Text_Introduction:
+	.string "Welcome to Pokémon R.O.W.E.\n"
+	.string "Do you have any questions?$"
+	
+Start_EventScript_Game_Level::
+	lockall
+	msgbox Game_Start_Text_Difficulty, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_LEVEL, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Level_Easy
+	case 1, Start_EventScript_Game_Level_Normal
+    case 2, Start_EventScript_Game_Level_Hard
+	case MULTI_B_PRESSED, Start_EventScript_Game_Level
+	end
+	
+Game_Start_Text_Difficulty:
+	.string "Please select the difficulty level you\n"
+	.string "want to play on.$"
+	
+Start_EventScript_Game_Level_Easy::
+	lockall
+	msgbox Game_Start_Text_Difficulty_Easy, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Start_EventScript_Game_Level
+	setflag FLAG_DIFFICULTY_SET
+	setvar VAR_DIFFICULTY, DIFFICULTY_EASY
+	goto Start_EventScript_Difficulty_Save
+	end
+	
+Game_Start_Text_Difficulty_Easy:
+	.string "Do you want to play on {COLOR GREEN}Easy mode{COLOR DARK_GREY}?\n"
+	.string "This can't be changed later!$"
+	
+Start_EventScript_Game_Level_Normal::
+	lockall
+	msgbox Game_Start_Text_Difficulty_Normal, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Start_EventScript_Game_Level
+	setflag FLAG_DIFFICULTY_SET
+	setvar VAR_DIFFICULTY, DIFFICULTY_NORMAL
+	goto Start_EventScript_Difficulty_Save
+	end
+	
+Game_Start_Text_Difficulty_Normal:
+	.string "Do you want to play on {COLOR BLUE}Normal mode{COLOR DARK_GREY}?\n"
+	.string "This can be changed later!$"
+	
+Start_EventScript_Game_Level_Hard::
+	lockall
+	msgbox Game_Start_Text_Difficulty_Hard, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Start_EventScript_Game_Level
+	setflag FLAG_DIFFICULTY_SET
+	setvar VAR_DIFFICULTY, DIFFICULTY_HARD
+	goto Start_EventScript_Difficulty_Save
+	end
+	
+Game_Start_Text_Difficulty_Hard:
+	.string "Do you want to play on {COLOR RED}Hard mode{COLOR DARK_GREY}?\n"
+	.string "This can be changed later!$"
+
+//No Evs Mode Start	
+Start_EventScript_Game_Mode_No_Evs::
+	lockall
+	goto_if_set FLAG_NO_EVS_MODE, Start_EventScript_Game_Mode_No_Evs_Disable
+	msgbox Game_Start_Text_Game_Modes_No_Evs, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_No_Evs_Enable_Function
+	case 1, Start_EventScript_Game_Mode_No_Evs_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_No_Evs:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}No EVs mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_No_Evs_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_No_Evs_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_No_Evs_Disable_Function
+	case 1, Start_EventScript_Game_Mode_No_Evs_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_No_Evs_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}No EVs mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_No_Evs_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_No_Evs_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_NO_EVS_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_No_Evs
+	end
+	
+Start_EventScript_Game_Mode_No_Evs_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_No_Evs_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_NO_EVS_MODE
+	goto Start_EventScript_Game_Mode_No_Evs_Disable
+	end
+	
+Start_EventScript_Game_Mode_No_Evs_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_No_Evs_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_NO_EVS_MODE, Start_EventScript_Game_Mode_No_Evs_Disable
+	goto Start_EventScript_Game_Mode_No_Evs
+	end
+	
+Game_Start_Text_Game_Modes_No_Evs_Info:
+	.string "This will disable EV gain for both the\n"
+	.string "player and enemy trainers.$"
+	
+Game_Start_Text_Game_Modes_No_Evs_was_Enabled:
+	.string "{COLOR BLUE}No EVs mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_No_Evs_was_Disabled:
+	.string "{COLOR BLUE}No EVs mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+//Gym Shuffle Mode Start ----------------------------------------------------------------------------------------------------
+Start_EventScript_Game_Mode_Gym_Shuffle::
+	lockall
+	goto_if_set FLAG_GYM_SHUFFLE_MODE, Start_EventScript_Game_Mode_Gym_Shuffle_Disable
+	msgbox Game_Start_Text_Game_Modes_Gym_Shuffle, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Gym_Shuffle_Enable_Function
+	case 1, Start_EventScript_Game_Mode_Gym_Shuffle_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Gym_Shuffle:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Gym Shuffle mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Gym_Shuffle_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Gym_Shuffle_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Gym_Shuffle_Disable_Function
+	case 1, Start_EventScript_Game_Mode_Gym_Shuffle_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Gym_Shuffle_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Gym Shuffle mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Gym_Shuffle_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_Gym_Shuffle_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_GYM_SHUFFLE_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_Gym_Shuffle
+	end
+	
+Start_EventScript_Game_Mode_Gym_Shuffle_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_Gym_Shuffle_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_GYM_SHUFFLE_MODE
+	goto Start_EventScript_Game_Mode_Gym_Shuffle_Disable
+	end
+	
+Start_EventScript_Game_Mode_Gym_Shuffle_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Gym_Shuffle_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_GYM_SHUFFLE_MODE, Start_EventScript_Game_Mode_Gym_Shuffle_Disable
+	goto Start_EventScript_Game_Mode_Gym_Shuffle
+	end
+	
+Game_Start_Text_Game_Modes_Gym_Shuffle_Info:
+	.string "This shuffles around the locations of\n"
+	.string "Gyms for a different experience.$"
+	
+Game_Start_Text_Game_Modes_Gym_Shuffle_was_Enabled:
+	.string "{COLOR BLUE}Gym Shuffle mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_Gym_Shuffle_was_Disabled:
+	.string "{COLOR BLUE}Gym Shuffle mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+//Double Battle Mode Start ----------------------------------------------------------------------------------------------------
+Start_EventScript_Game_Mode_Double_Battle::
+	lockall
+	goto_if_set FLAG_DOUBLE_BATTLE_MODE, Start_EventScript_Game_Mode_Double_Battle_Disable
+	msgbox Game_Start_Text_Game_Modes_Double_Battle, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Double_Battle_Enable_Function
+	case 1, Start_EventScript_Game_Mode_Double_Battle_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Double_Battle:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Double Battle mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Double_Battle_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Double_Battle_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Double_Battle_Disable_Function
+	case 1, Start_EventScript_Game_Mode_Double_Battle_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Double_Battle_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Double Battle mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Double_Battle_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_Double_Battle_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_DOUBLE_BATTLE_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_Double_Battle
+	end
+	
+Start_EventScript_Game_Mode_Double_Battle_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_Double_Battle_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_DOUBLE_BATTLE_MODE
+	goto Start_EventScript_Game_Mode_Double_Battle_Disable
+	end
+	
+Start_EventScript_Game_Mode_Double_Battle_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Double_Battle_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_DOUBLE_BATTLE_MODE, Start_EventScript_Game_Mode_Double_Battle_Disable
+	goto Start_EventScript_Game_Mode_Double_Battle
+	end
+	
+Game_Start_Text_Game_Modes_Double_Battle_Info:
+	.string "This will make every battle a\n"
+	.string "Double Battle as long as you have\l"
+	.string "2 Pokémon that can battle.\p" 
+	.string "This mode {COLOR GREEN}can{COLOR DARK_GREY} be enabled\n"
+	.string "or disabled later in Slateport City.$"
+	
+Game_Start_Text_Game_Modes_Double_Battle_was_Enabled:
+	.string "{COLOR BLUE}Double Battle mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_Double_Battle_was_Disabled:
+	.string "{COLOR BLUE}Double Battle mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+//Inverse Mode Start	
+Start_EventScript_Game_Mode_Inverse::
+	lockall
+	goto_if_set FLAG_INVERSE_MODE, Start_EventScript_Game_Mode_Inverse_Disable
+	msgbox Game_Start_Text_Game_Modes_Inverse, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Inverse_Enable_Function
+	case 1, Start_EventScript_Game_Mode_Inverse_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Inverse:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Inverse mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Inverse_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Inverse_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Inverse_Disable_Function
+	case 1, Start_EventScript_Game_Mode_Inverse_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Inverse_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Inverse mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Inverse_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_Inverse_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_INVERSE_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_Inverse
+	end
+	
+Start_EventScript_Game_Mode_Inverse_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_Inverse_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_INVERSE_MODE
+	goto Start_EventScript_Game_Mode_Inverse_Disable
+	end
+	
+Start_EventScript_Game_Mode_Inverse_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Inverse_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_INVERSE_MODE, Start_EventScript_Game_Mode_Inverse_Disable
+	goto Start_EventScript_Game_Mode_Inverse
+	end
+	
+Game_Start_Text_Game_Modes_Inverse_Info:
+	.string "This will invert the type chart in battle.\n"
+	.string "Example: Water attacks will be super\l"
+	.string "effective against a Grass-type Pokémon.$"
+	
+Game_Start_Text_Game_Modes_Inverse_was_Enabled:
+	.string "{COLOR BLUE}Inverse mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_Inverse_was_Disabled:
+	.string "{COLOR BLUE}Inverse mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+//Randomized Mode Start	
+Start_EventScript_Game_Mode_Randomized::
+	lockall
+	goto_if_set FLAG_RANDOMIZED_MODE, Start_EventScript_Game_Mode_Randomized_Disable
+	msgbox Game_Start_Text_Game_Modes_Randomized, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Randomized_Enable_Function
+	case 1, Start_EventScript_Game_Mode_Randomized_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Randomized:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Randomized mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Randomized_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Randomized_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Randomized_Disable_Function
+	case 1, Start_EventScript_Game_Mode_Randomized_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Randomized_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Randomized mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Randomized_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_Randomized_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_RANDOMIZED_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_Randomized
+	end
+	
+Start_EventScript_Game_Mode_Randomized_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_Randomized_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_RANDOMIZED_MODE
+	goto Start_EventScript_Game_Mode_Randomized_Disable
+	end
+	
+Start_EventScript_Game_Mode_Randomized_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Randomized_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_RANDOMIZED_MODE, Start_EventScript_Game_Mode_Randomized_Disable
+	goto Start_EventScript_Game_Mode_Randomized
+	end
+	
+Game_Start_Text_Game_Modes_Randomized_Info:
+	.string "This will change every trainer and wild\n"
+	.string "Pokémon into another random species.\l"
+	.string "The changes varies between each save.$"
+	
+Game_Start_Text_Game_Modes_Randomized_was_Enabled:
+	.string "{COLOR BLUE}Randomized mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_Randomized_was_Disabled:
+	.string "{COLOR BLUE}Randomized mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+	
+//Randomized Party Mode
+
+Start_EventScript_Game_Mode_Randomized_Party::
+	lockall
+	goto_if_set FLAG_NEW_GAME_PLUS, Start_EventScript_Game_Mode_NewGamePlus_Check
+	goto_if_set FLAG_PARTY_RANDOMIZED_MODE, Start_EventScript_Game_Mode_Randomized_Party_Disable
+	msgbox Game_Start_Text_Game_Modes_Randomized_Party, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Randomized_Party_Enable_Function
+	case 1, Start_EventScript_Game_Mode_Randomized_Party_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Randomized_Party:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Randomized Party mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Randomized_Party_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Randomized_Party_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Randomized_Party_Disable_Function
+	case 1, Start_EventScript_Game_Mode_Randomized_Party_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Randomized_Party_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Randomized Party mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Randomized_Party_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_Randomized_Party_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_PARTY_RANDOMIZED_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_Randomized_Party
+	end
+	
+Start_EventScript_Game_Mode_Randomized_Party_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_Randomized_Party_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_PARTY_RANDOMIZED_MODE
+	goto Start_EventScript_Game_Mode_Randomized_Party_Disable
+	end
+	
+Start_EventScript_Game_Mode_Randomized_Party_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Randomized_Party_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_PARTY_RANDOMIZED_MODE, Start_EventScript_Game_Mode_Randomized_Party_Disable
+	goto Start_EventScript_Game_Mode_Randomized_Party
+	end
+	
+Game_Start_Text_Game_Modes_Randomized_Party_Info:
+	.string "This will change every trainer and wild\n"
+	.string "Pokémon for another random species plus\l"
+	.string "changing your party before each battle.\p"
+	.string "This {COLOR RED}may cause higher load times before\n"
+	.string "each battle{COLOR DARK_GREY}.$"
+	
+Game_Start_Text_Game_Modes_Randomized_Party_was_Enabled:
+	.string "{COLOR BLUE}Randomized Party mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_Randomized_Party_was_Disabled:
+	.string "{COLOR BLUE}Randomized Party mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+	
+//
+
+//Little Cup Mode Start	
+Start_EventScript_Game_Mode_No_Evolution::
+	lockall
+	goto_if_set FLAG_NEW_GAME_PLUS, Start_EventScript_Game_Mode_NewGamePlus_Check
+	goto_if_set FLAG_NO_EVOLUTION_MODE, Start_EventScript_Game_Mode_No_Evolution_Disable
+	msgbox Game_Start_Text_Game_Modes_No_Evolution, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_No_Evolution_Enable_Function
+	case 1, Start_EventScript_Game_Mode_No_Evolution_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_No_Evolution:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}No Evolution mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_No_Evolution_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_No_Evolution_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_No_Evolution_Disable_Function
+	case 1, Start_EventScript_Game_Mode_No_Evolution_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_No_Evolution_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}No Evolution mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_No_Evolution_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_No_Evolution_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_NO_EVOLUTION_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_No_Evolution
+	end
+	
+Start_EventScript_Game_Mode_No_Evolution_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_No_Evolution_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_NO_EVOLUTION_MODE
+	goto Start_EventScript_Game_Mode_No_Evolution_Disable
+	end
+	
+Start_EventScript_Game_Mode_No_Evolution_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_No_Evolution_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_NO_EVOLUTION_MODE, Start_EventScript_Game_Mode_No_Evolution_Disable
+	goto Start_EventScript_Game_Mode_No_Evolution
+	end
+	
+Game_Start_Text_Game_Modes_No_Evolution_Info:
+	.string "This will disable the evolutions for\n"
+	.string "both the player and trainers' Pokémon.$"
+	
+Game_Start_Text_Game_Modes_No_Evolution_was_Enabled:
+	.string "{COLOR BLUE}The No Evolution mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_No_Evolution_was_Disabled:
+	.string "{COLOR BLUE}The No Evolution mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+//No Split Mode	
+Start_EventScript_Game_Mode_No_Split::
+	lockall
+	goto_if_set FLAG_NO_SPLIT_MODE, Start_EventScript_Game_Mode_No_Split_Disable
+	msgbox Game_Start_Text_Game_Modes_No_Split MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_No_Split_Enable_Function
+	case 1, Start_EventScript_Game_Mode_No_Split_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_No_Split:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}No Split mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_No_Split_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_No_Split_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_No_Split_Disable_Function
+	case 1, Start_EventScript_Game_Mode_No_Split_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_No_Split_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}No Split mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_No_Split_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_No_Split_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_NO_SPLIT_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_No_Split
+	end
+	
+Start_EventScript_Game_Mode_No_Split_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_No_Split_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_NO_SPLIT_MODE
+	goto Start_EventScript_Game_Mode_No_Split_Disable
+	end
+	
+Start_EventScript_Game_Mode_No_Split_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_No_Split_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_NO_SPLIT_MODE, Start_EventScript_Game_Mode_No_Split_Disable
+	goto Start_EventScript_Game_Mode_No_Split
+	end
+	
+Game_Start_Text_Game_Modes_No_Split_Info:
+	.string "This will disable the Physical and\n"
+	.string "Special Split added in Gen 4.$"
+	
+Game_Start_Text_Game_Modes_No_Split_was_Enabled:
+	.string "{COLOR BLUE}The No Split mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_No_Split_was_Disabled:
+	.string "{COLOR BLUE}The No Split mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+//
+
+//Vanilla Mode	
+Start_EventScript_Game_Mode_Vanilla::
+	lockall
+	goto_if_set FLAG_VANILLA_MODE, Start_EventScript_Game_Mode_Vanilla_Disable
+	msgbox Game_Start_Text_Game_Modes_Vanilla MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_ENABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Vanilla_Enable_Function
+	case 1, Start_EventScript_Game_Mode_Vanilla_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Vanilla:
+	.string "Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Vanilla mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Vanilla_Disable::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Vanilla_Disable, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 0, 0, MULTI_GAME_MODE_DISABLE, 0
+	switch VAR_RESULT
+    case 0, Start_EventScript_Game_Mode_Vanilla_Disable_Function
+	case 1, Start_EventScript_Game_Mode_Vanilla_Info
+    case 2, Start_EventScript_Game_Modes
+	case MULTI_B_PRESSED, Start_EventScript_Game_Modes
+	end
+	
+Game_Start_Text_Game_Modes_Vanilla_Disable:
+	.string "Do you want to {COLOR RED}disable{COLOR DARK_GREY} the\n"
+	.string "{COLOR BLUE}Vanilla mode{COLOR DARK_GREY}?$"
+	
+Start_EventScript_Game_Mode_Vanilla_Disable_Function::
+	playfanfare SE_BOO
+	msgbox Game_Start_Text_Game_Modes_Vanilla_was_Disabled, MSGBOX_DEFAULT
+	clearflag FLAG_VANILLA_MODE
+	waitfanfare
+	goto Start_EventScript_Game_Mode_Vanilla
+	end
+	
+Start_EventScript_Game_Mode_Vanilla_Enable_Function::
+	playfanfare SE_SAVE
+	msgbox Game_Start_Text_Game_Modes_Vanilla_was_Enabled, MSGBOX_DEFAULT
+	waitfanfare
+	setflag FLAG_VANILLA_MODE
+	goto Start_EventScript_Game_Mode_Vanilla_Disable
+	end
+	
+Start_EventScript_Game_Mode_Vanilla_Info::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_Vanilla_Info, MSGBOX_DEFAULT
+	goto_if_set FLAG_VANILLA_MODE, Start_EventScript_Game_Mode_Vanilla_Disable
+	goto Start_EventScript_Game_Mode_Vanilla
+	end
+	
+Game_Start_Text_Game_Modes_Vanilla_Info:
+	.string "This removes the Pokémon stat\n"
+	.string "changes made in this game but it\l"
+	.string "does not work for move changes.$"
+	
+Game_Start_Text_Game_Modes_Vanilla_was_Enabled:
+	.string "{COLOR BLUE}The Vanilla mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!$"
+	
+Game_Start_Text_Game_Modes_Vanilla_was_Disabled:
+	.string "{COLOR BLUE}The Vanilla mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!$"
+//
+
+	
+Game_Start_Text_Game_Modes_Default:
+	.string "All of the modes were disabled!$"
+	
+Start_EventScript_Game_Start::
+	msgbox Game_Start_Text_Game_Start_Question, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq Start_EventScript_Starter_Chose
+	call Start_EventScript_SetSeason
+	call Start_EventScript_WallClock
+	call Start_EventScript_SetIntroFlags
+	goto Start_EventScript_Chose_Starter
+	end
+	
+Game_Start_Text_Game_Start_Question:
+	.string "Are you sure you want to start the\n"
+	.string "game with this configuration?\l"
+	.string "This can't be undone later.$"
+	
+Start_EvenScript_Flagset_Difficulty::
+	goto_if_set FLAG_DIFFICULTY_SET, Start_EventScript_Give_Items
+	setvar VAR_DIFFICULTY, DIFFICULTY_NORMAL
+	goto Start_EventScript_Give_Items
+	end
+	
+//Setting up the Clock
+Start_EventScript_WallClock::
+	msgbox Text_Set_Up_Clock, MSGBOX_DEFAULT
+	call PlayersHouse_2F_EventScript_SetWallClock
+	delay 30
+	setvar VAR_LITTLEROOT_INTRO_STATE, 6
+	setflag FLAG_SET_WALL_CLOCK
+	//setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_1
+	//setflag FLAG_HIDE_LITTLEROOT_TOWN_PLAYERS_HOUSE_VIGOROTH_2
+	return
+	end
+	
+Start_EventScript_SetUpclock::
+	lock
+	faceplayer
+	msgbox Text_SetClock, MSGBOX_SIGN
+	end
+
+//Intro Flags per Gender
+Start_EventScript_SetIntroFlags::
+	lockall
+	checkplayergender
+	compare VAR_RESULT, MALE
+	goto_if_eq Start_EventScript_SetIntroFlagsMale
+	compare VAR_RESULT, FEMALE
+	goto_if_eq Start_EventScript_SetIntroFlagsFemale
+	return
+	end
+
+Start_EventScript_SetIntroFlagsMale::
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F_POKE_BALL
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setvar VAR_LITTLEROOT_INTRO_STATE, 1
+	setvar VAR_LITTLEROOT_HOUSES_STATE_BRENDAN, 3
+	call Start_EvenScript_StoryFlagset
+	return
+	end
+
+Start_EventScript_SetIntroFlagsFemale::
+	setvar VAR_LITTLEROOT_INTRO_STATE, 2
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_TRUCK
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_MOM
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_2F_POKE_BALL
+	setvar VAR_LITTLEROOT_HOUSES_STATE_MAY, 3
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_TRUCK
+	call Start_EvenScript_StoryFlagset
+	return
+	end
+	
+Start_EvenScript_StoryFlagset::
+	call Start_Flagset
+	setflag	  FLAG_SYS_POKEDEX_GET
+	setflag	  FLAG_SYS_POKEMON_GET
+	setflag	  FLAG_SYS_POKENAV_GET
+	setflag   FLAG_SYS_B_DASH
+	setflag   FLAG_SYS_NATIONAL_DEX
+	setflag   FLAG_UPDATED_SAVE
+	setflag   FLAG_UPDATED_SAVE_2
+	setflag   FLAG_ADVENTURE_STARTED
+	setflag   FLAG_SYS_NATIONAL_DEX
+	setflag	  FLAG_SYS_DETECTOR_MODE
+	setflag	  FLAG_SYS_DEXNAV_GET
+	setvar    VAR_ROUTE101_STATE, 3
+	setvar    VAR_BIRCH_LAB_STATE, 5
+	setvar    VAR_LITTLEROOT_RIVAL_STATE, 4
+	setvar    VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	setvar    VAR_LITTLEROOT_TOWN_STATE, 4
+	setvar    VAR_LITTLEROOT_INTRO_STATE 7
+	setvar    VAR_RUSTBORO_CITY_STATE, 8
+	setvar    VAR_ROUTE104_STATE, 2
+	setvar    VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1
+	setvar    VAR_REGISTER_BIRCH_STATE, 2
+	setvar    VAR_ROUTE110_STATE, 1
+	setvar    VAR_ROUTE119_STATE, 1
+	setvar    VAR_PETALBURG_CITY_STATE, 3
+	setvar    VAR_PETALBURG_GYM_STATE, 6
+	setvar    VAR_SCOTT_PETALBURG_ENCOUNTER, 1
+	setvar    VAR_BRINEY_HOUSE_STATE, 2
+	setvar    VAR_BRINEY_LOCATION, 1
+	setvar    VAR_PETALBURG_WOODS_STATE, 1
+	return
+	end
+
+EventScript_FirstSave::
+	call_if_unset FLAG_RECEIVED_POKEDEX_FROM_BIRCH, EventScript_ForceSave
+	setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
+	return
+
+EventScript_ForceSave::
+	call Common_EventScript_SaveGame
+	setvar VAR_TEMP_0, 255
+	compare VAR_RESULT, 0
+	call_if_eq EventScript_ForceSave
+	return
+	
+Start_Text_Emulator_Text:
+	.string "Are you using a supported\n"
+	.string "emulator to play this game?$"
+
+Start_Text_Starter_Text:
+	.string "What Pokémon would you like\n"
+	.string "as your starter Pokémon?$"
+	
+Text_Start_Pokedex::
+	.string "{PLAYER} obtained the Pokedex.$"
+	
+Text_Start_Lapras::
+	.string "{PLAYER} can now use Surf and Dive\n"
+	.string "thanks to the Pokeride.$"
+	
+Text_SetClock:
+	.string "Please set up the clock\n"
+	.string "before starting.$"
+	
+Text_Set_Up_Clock:
+	.string "Please set up the clock.$"
+	
+Start_NPC_Change_Mode::
+	end
+	
+Start_Flagset::
+	//Flags Start
+	setflag FLAG_HIDE_ROUTE_101_ZIGZAGOON
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
+	setflag FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG
+	setflag FLAG_HIDE_ROUTE_103_RIVAL
+	setflag FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE
+	setflag FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT
+	setflag FLAG_HIDE_RUSTURF_TUNNEL_AQUA_GRUNT
+	setflag FLAG_HIDE_RUSTURF_TUNNEL_PEEKO
+	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
+	setflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	setflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	setflag FLAG_HIDE_RUSTBORO_CITY_SCIENTIST
+	setflag FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT
+	setflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
+	setflag FLAG_HIDE_ROUTE_110_TEAM_AQUA
+	setflag FLAG_HIDE_ROUTE_110_BIRCH
+	setflag FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA
+	setflag FLAG_HIDE_ROUTE_110_RIVAL_ON_BIKE
+	setflag FLAG_HIDE_ROUTE_110_RIVAL
+	setflag FLAG_HIDE_ROUTE_112_TEAM_MAGMA
+	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_MAGMA
+	setflag FLAG_HIDE_MT_CHIMNEY_TEAM_AQUA
+	setflag FLAG_HIDE_METEOR_FALLS_1F_1R_COZMO
+	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
+	setflag FLAG_HIDE_ROUTE_119_RIVAL
+	setflag FLAG_HIDE_ROUTE_119_SCOTT
+	setflag FLAG_HIDE_ROUTE_120_STEVEN
+	setflag FLAG_HIDE_ROUTE_120_KECLEON_BRIDGE_VISIBLE
+	setflag FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_MAXIE
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_ARCHIE
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA
+	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
+	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
+	setflag FLAG_ENABLE_SCOTT_MATCH_CALL
+	setflag FLAG_DELIVERED_STEVEN_LETTER
+	setflag FLAG_DELIVERED_DEVON_GOODS
+	setflag FLAG_ADVENTURE_STARTED
+	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
+	setflag FLAG_RECOVERED_DEVON_GOODS
+	setflag FLAG_MET_RIVAL_RUSTBORO
+	setflag FLAG_DEFEATED_EVIL_TEAM_MT_CHIMNEY
+	setflag FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE
+	setflag FLAG_RECEIVED_HM08
+	setflag FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE
+	setflag FLAG_KYOGRE_ESCAPED_SEAFLOOR_CAVERN
+	setvar  VAR_ROUTE101_STATE, 3
+	setvar  VAR_BIRCH_LAB_STATE, 5
+	setvar  VAR_LITTLEROOT_RIVAL_STATE, 4
+	setvar  VAR_CABLE_CLUB_TUTORIAL_STATE, 1
+	setvar  VAR_LITTLEROOT_TOWN_STATE, 4
+	setvar  VAR_LITTLEROOT_INTRO_STATE 7
+	setvar  VAR_RUSTBORO_CITY_STATE, 8
+	setvar  VAR_ROUTE104_STATE, 2
+	setvar  VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1
+	setvar  VAR_REGISTER_BIRCH_STATE, 2
+	setvar  VAR_ROUTE110_STATE, 1
+	setvar  VAR_ROUTE119_STATE, 1
+	setvar  VAR_PETALBURG_CITY_STATE, 3
+	setvar  VAR_PETALBURG_GYM_STATE, 6
+	setvar  VAR_SCOTT_PETALBURG_ENCOUNTER, 1
+	setvar  VAR_BRINEY_HOUSE_STATE, 2
+	setvar  VAR_BRINEY_LOCATION, 1
+	setvar  VAR_PETALBURG_WOODS_STATE, 1
+	clearflag FLAG_HIDE_FALLARBOR_HOUSE_PROF_COZMO
+	clearflag FLAG_HIDE_MT_CHIMNEY_LAVA_COOKIE_LADY
+	clearflag FLAG_HIDE_WEATHER_INSTITUTE_2F_WORKERS
+	return
+	end	
+	
+Script_PokeballGet::
+	giveitem ITEM_POKE_BALL, 5
+	giveitem ITEM_TEACHY_TV
+	setflag FLAG_SYS_DEXNAV_GET
+	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_SYS_NATIONAL_DEX
+	setflag FLAG_SYS_B_DASH
+	setflag FLAG_SYS_POKENAV_GET
+	special SetUnlockedPokedexFlags
+	message Text_Start_Lapras
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	message Text_Start_Pokedex
+	special EnableNationalPokedex
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	goto Start_Flagset
+	end
+
+Start_EventScript_Game_Mode_NewGamePlus_Check::
+	lockall
+	msgbox Game_Start_Text_Game_Modes_You_Cant_Chose_this_mode, MSGBOX_DEFAULT
+	goto Start_EventScript_Game_Modes
+	end
+
+Start_EventScript_Game_Mode_NewGamePlus_Info::
+	lockall
+	msgbox Game_Start_Text_Introduction_NewGamePlus_Information, MSGBOX_DEFAULT
+	goto Start_EventScript_Starter_Chose_NewGamePlus
+	end
+`
+script Start_EventScript_Give_Random_Sevii_Ticket{
+	random(8)
+	switch (var(VAR_RESULT)) {
+		case 0:
+			additem(ITEM_SEVII_TICKET_1, 1)
+		break
+		case 1:
+			additem(ITEM_SEVII_TICKET_2, 1)
+		break
+		case 2:
+			additem(ITEM_SEVII_TICKET_3, 1)
+		break
+		case 3:
+			additem(ITEM_SEVII_TICKET_4, 1)
+		break
+		case 4:
+			additem(ITEM_SEVII_TICKET_5, 1)
+		break
+		case 5:
+			additem(ITEM_SEVII_TICKET_6, 1)
+		break
+		case 6:
+			additem(ITEM_SEVII_TICKET_7, 1)
+		break
+		case 7:
+			additem(ITEM_SEVII_TICKET_8, 1)
+		break
+	}
+}
+
+//Items
+script Start_EventScript_Give_Items_New_Game_Plus{
+	msgbox(format("Take these items, too."), MSGBOX_DEFAULT)
+	playfanfare (MUS_OBTAIN_ITEM)
+	msgbox (format("{PLAYER} received a LOT of special items!"), MSGBOX_SIGN)
+	additem (ITEM_POTION, 200)
+	additem (ITEM_POKE_BALL, 200)
+	additem (ITEM_MAX_REPEL, 10)
+	additem (ITEM_EXIOLITE, 6)
+	additem (ITEM_POWER_CANDY, 6)
+	additem (ITEM_POWER_WEIGHT, 6)
+	additem (ITEM_POWER_BRACER, 6)
+	additem (ITEM_POWER_BELT, 6)
+	additem (ITEM_POWER_LENS, 6)
+	additem (ITEM_POWER_BAND, 6)
+	additem (ITEM_POWER_ANKLET, 6)
+	additem (ITEM_LUCKY_EGG, 6)
+	additem (ITEM_NUGGET, 20)
+	additem (ITEM_ACRO_BIKE)
+	additem (ITEM_WAILMER_PAIL)
+	additem (ITEM_OLD_ROD)
+	additem (ITEM_EXP_SHARE)
+	additem(ITEM_SURF_TOOL)
+	additem(ITEM_DIVE_TOOL)
+	additem(ITEM_HEADBUTT_TOOL)
+	waitfanfare
+	goto(Start_EventScript_Chose_City)
+	end
+}
+
+script Start_EventScript_Give_Items{
+	//goto_if_set FLAG_NEW_GAME_PLUS, Start_EventScript_Give_Items_New_Game_Plus
+	msgbox(format("Take these items, too."), MSGBOX_DEFAULT)
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox(format("{PLAYER} received a Bike, Wailmer Pail, Old Rod, Exp.Share, Surfboard, Diving Kit, a Sevii Island Ticket and the essentials to start it's Pokémon Adventure!"), MSGBOX_SIGN)
+	additem(ITEM_ACRO_BIKE)
+	additem(ITEM_WAILMER_PAIL)
+	additem(ITEM_OLD_ROD)
+	additem(ITEM_EXP_SHARE)
+	additem(ITEM_SURF_TOOL)
+	additem(ITEM_DIVE_TOOL)
+	additem(ITEM_POTION, 5)
+	additem(ITEM_POKE_BALL, 10)
+	additem(ITEM_REPEL, 5)
+	additem(ITEM_HEADBUTT_TOOL, 1)
+	//waitfanfare
+	goto(Start_EventScript_Chose_City)
+	end
+}
+
+script Start_EventScript_Starter_Chose{
+	lock
+	faceplayer
+	goto_if_set(FLAG_ENABLE_NORMAN_MATCH_CALL, Start_EventScript_Starter_No_Exploit)
+	goto_if_set(FLAG_NEW_GAME_PLUS, Start_EventScript_Starter_Chose_NewGamePlus)
+	msgbox(Game_Start_Text_Introduction, MSGBOX_DEFAULT)
+    waitmessage
+	multichoice(0, 0, MULTI_NEW_GAME_QUESTIONS, 0)
+	switch(var(VAR_RESULT)){
+		case 0:  goto(Start_EventScript_Game_Level) 			 break
+		case 1:  goto(Start_EventScript_Game_Modes)				 break
+		case 2:  goto(Start_EventScript_Game_Start)      		 break
+		case MULTI_B_PRESSED: goto(Start_EventScript_Game_Start) break
+	}
+	end
+}
+
+script Start_EventScript_Starter_Chose_NewGamePlus{
+	lock
+	faceplayer
+	goto_if_set(FLAG_ENABLE_NORMAN_MATCH_CALL, Start_EventScript_Starter_No_Exploit)
+	msgbox(Game_Start_Text_Introduction_NewGamePlus, MSGBOX_DEFAULT)
+	waitmessage
+	multichoice(0, 0, MULTI_NEW_GAME_PLUS_QUESTIONS, 0)
+	switch(var(VAR_RESULT)){
+		case 0:  goto(Start_EventScript_Game_Level) 				break
+		case 1:  goto(Start_EventScript_Game_Modes)					break
+		case 2:  goto(Start_EventScript_Game_Mode_NewGamePlus_Info)	break
+		case 3:  goto(Start_EventScript_Game_Start)      			break
+		case MULTI_B_PRESSED: goto(Start_EventScript_Game_Start)    break
+	}
+	end
+}
+
+script Start_EventScript_Game_Modes{
+	msgbox(format("Please select the modes you want to use. Most of them {COLOR RED}CAN NOT{COLOR DARK_GREY} be disabled later."), MSGBOX_DEFAULT)
+	waitmessage
+	scrollingmultichoice(SCROLLING_GAME_MODES, 0, 0, 6, TRUE)
+	switch(var(VAR_RESULT)){
+		case 0:  goto(Start_EventScript_Game_Mode_Grindless_Mode) 		break
+		case 1:  goto(Start_EventScript_Game_Mode_No_Evs)      			break
+		case 2:  goto(Start_EventScript_Game_Mode_Scalemon_Mode)		break
+		case 3:  goto(Start_EventScript_Game_Mode_Gym_Shuffle) 			break
+		case 4:  goto(Start_EventScript_Game_Mode_Inverse)              break
+		case 5:  goto(Start_EventScript_Game_Mode_Randomized)           break
+		case 6:  goto(Start_EventScript_Game_Mode_True_Random_Mode)     break
+		case 7:  goto(Start_EventScript_Game_Mode_Randomized_Party)     break
+		case 8:  goto(Start_EventScript_Game_Mode_Double_Battle)        break
+		case 9: goto(Start_EventScript_Game_Mode_No_Evolution)         break
+		case 10: goto(Start_EventScript_Game_Mode_Random_Type_Mode)     break
+		case 11: goto(Start_EventScript_Game_Mode_Random_Ability_Mode)  break
+		case 12: goto(Start_EventScript_Game_Mode_Third_Type_Mode) 		break
+		case 13: goto(Start_EventScript_Game_Mode_Old_STAB_Mode) 		break
+		case 14: goto(Start_EventScript_Game_Mode_No_Split) 			break
+		case 15: goto(Start_EventScript_Game_Mode_No_Mega_Mode) 		break
+		case 16: goto(Start_EventScript_Game_Mode_Vanilla) 				break
+		case 17: 
+		case 18: 
+		case MULTI_B_PRESSED:
+			goto(Start_EventScript_Game_Mode_Save) 
+		break
+	}
+	end
+}
+
+//Starter Chosing
+script Start_EventScript_Chose_Starter{
+	generateStarters
+	setflag(FLAG_CHOSING_STARTER)
+	setvar(VAR_STARTER_POKEMON, 0)
+	if(!flag(FLAG_PARTY_RANDOMIZED_MODE) && !flag(FLAG_TRUE_RANDOM_MODE)){
+		msgbox(format("Please choose your starter Pokémon"), MSGBOX_DEFAULT)
+		waitmessage
+		scrollingmultichoice(SCROLLING_SET_STARTERS, 0, 0, 6, FALSE)
+		switch(var(VAR_RESULT)){
+			default:  
+				showmonpic(SPECIES_NONE, 10, 3)
+				msgbox(format("Do you want the {STR_VAR_2} Pokemon {STR_VAR_1} as your Starter Pokemon?$"), MSGBOX_YESNO)
+				hidemonpic
+				if (var(VAR_RESULT) == NO){
+					goto(Start_EventScript_Chose_Starter)
+				}
+				givemon(SPECIES_NONE, 10, ITEM_NONE)
+				playfanfare(MUS_OBTAIN_ITEM)
+				waitfanfare
+				msgbox(format("{PLAYER} received a {STR_VAR_1}!"), MSGBOX_DEFAULT)
+			break
+			case MULTI_B_PRESSED: 
+			case 9:
+				givemon(SPECIES_NONE, 10, ITEM_NONE)
+				playfanfare(MUS_OBTAIN_ITEM)
+				waitfanfare
+				msgbox(format("{PLAYER} received a {STR_VAR_1}!"), MSGBOX_DEFAULT)
+				setflag(FLAG_SYS_POKEMON_GET)
+			break
+		}
+	}
+	else{
+		givemon(SPECIES_NONE, 10, ITEM_NONE)
+		playfanfare(MUS_OBTAIN_ITEM)
+		msgbox(format("{PLAYER} received a {STR_VAR_1}!"), MSGBOX_DEFAULT)
+		setflag(FLAG_SYS_POKEMON_GET)
+		waitfanfare
+	}
+	setflag(FLAG_SYS_POKEMON_GET)
+	special(DisableLegendaryMons)
+	waitfanfare
+	clearflag(FLAG_CHOSING_STARTER)
+	goto(Start_EvenScript_Flagset_Difficulty)
+	end
+}
+
+//City
+script Start_EventScript_Chose_City{
+	msgbox(format("What location would you like to start in?"), MSGBOX_DEFAULT)
+	scrollingmultichoice(SCROLLING_SET_STARTING_TOWNS, 0, 0, 6, FALSE)
+	switch(var(VAR_RESULT)){
+		case 0:  
+			//Littleroot Town
+			msgbox(format("Do you want to start in Littleroot Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			checkplayergender
+			if(var(VAR_RESULT) == MALE){
+				warp(MAP_LITTLEROOT_TOWN, 255, 15, 9)
+				setrespawn(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F)
+			}
+			else{
+				warp(MAP_LITTLEROOT_TOWN, 255, 24, 9)
+				setrespawn(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F)
+			}
+		break
+		case 1:  
+			//Oldale Town
+			msgbox(format("Do you want to start in Oldale Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_OLDALE_TOWN)
+			warp(MAP_OLDALE_TOWN, 255, 14, 8)
+		break
+		break
+		case 2:  
+			//Petalburg City
+			msgbox(format("Do you want to start in Petalburg City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_PETALBURG_CITY)
+			warp(MAP_PETALBURG_CITY, 255, 20, 17)
+		break
+		break
+		case 3:  
+			//Rustboro City
+			msgbox(format("Do you want to start in Rustboro City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_RUSTBORO_CITY)
+			warp(MAP_RUSTBORO_CITY, 255, 16, 39)
+		break
+		break
+		case 4:  
+			//Dewford Town
+			msgbox(format("Do you want to start in Dewford Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_DEWFORD_TOWN)
+			warp(MAP_DEWFORD_TOWN, 255, 2, 11)  
+		break
+		break
+		case 5:  
+			//Slateport Town
+			msgbox(format("Do you want to start in Slateport Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_SLATEPORT_CITY)
+			warp(MAP_SLATEPORT_CITY, 255, 19, 20)
+		break
+		case 6:  
+			//Mauville City
+			msgbox(format("Do you want to start in Mauville City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
+			warp(MAP_MAUVILLE_CITY, 255, 34, 6)	  
+		break
+		break
+		case 7:  
+			//Verdanturf Town
+			msgbox(format("Do you want to start in Verdanturf Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_VERDANTURF_TOWN)
+			warp(MAP_VERDANTURF_TOWN, 255, 22, 4)
+		break
+		case 8:  
+			//Fallarbor Town
+			msgbox(format("Do you want to start in Fallarbor Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_FALLARBOR_TOWN)
+			warp(MAP_FALLARBOR_TOWN, 255, 14, 8)
+		break
+		break
+		case 9:  
+			//Lavaridge Town
+			msgbox(format("Do you want to start in Lavaridge Town?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_LAVARIDGE_TOWN)
+			warp(MAP_LAVARIDGE_TOWN, 255, 9, 7)
+		break
+		case 10: 
+			//Fortree City
+			msgbox(format("Do you want to start in Fortree City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_FORTREE_CITY)
+			warp(MAP_FORTREE_CITY, 255, 5, 7)
+		break
+		case 11: 
+			//Lilycove City
+			msgbox(format("Do you want to start in Lilycove City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_LILYCOVE_CITY)
+			warp(MAP_LILYCOVE_CITY, 255, 24, 15)
+		break
+		case 12: 
+			//Mossdeep City
+			msgbox(format("Do you want to start in Mossdeep City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_MOSSDEEP_CITY)
+			warp(MAP_MOSSDEEP_CITY, 255, 28, 17)
+		break
+		case 13:
+			//Sootopolis City
+			msgbox(format("Do you want to start in Sootopolis City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_SOOTOPOLIS_CITY)
+			warp(MAP_SOOTOPOLIS_CITY, 255, 43, 32)
+		break
+		case 14: 
+			//Sootopolis City
+			msgbox(format("Do you want to start in Sootopolis City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_PACIFIDLOG_TOWN)
+			warp(MAP_PACIFIDLOG_TOWN, 255, 8, 16)
+		break
+		case 15: 
+			//Evergrade City
+			msgbox(format("Do you want to start in Evergrade City?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_EVER_GRANDE_CITY)
+			warp(MAP_EVER_GRANDE_CITY, 255, 27, 49)
+		break
+		case 16: 
+			//One Island
+			msgbox(format("Do you want to start in One Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_1, 1)
+			setrespawn(HEAL_LOCATION_ONE_ISLAND)
+			warp(MAP_ONE_ISLAND, 255, 14, 6)
+		break
+		case 17: 
+			//Two Island
+			msgbox(format("Do you want to start in Two Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_2, 1)
+			setrespawn(HEAL_LOCATION_TWO_ISLAND)
+			warp(MAP_TWO_ISLAND, 255, 21, 8)
+		break
+		case 18: 
+			//Three Island
+			msgbox(format("Do you want to start in Three Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_3, 1)
+			setrespawn(HEAL_LOCATION_THREE_ISLAND)
+			warp(MAP_THREE_ISLAND, 255, 14, 28)
+		break
+		case 19: 
+			//Four Island
+			msgbox(format("Do you want to start in Four Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_4, 1)
+			setrespawn(HEAL_LOCATION_FOUR_ISLAND)
+			warp(MAP_FOUR_ISLAND, 255, 18, 21)
+		break
+		case 20: 
+			//Five Island
+			msgbox(format("Do you want to start in Five Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_5, 1)
+			setrespawn(HEAL_LOCATION_FIVE_ISLAND)
+			warp(MAP_FIVE_ISLAND, 255, 29, 16)
+		break
+		case 21: 
+			//Six Island
+			msgbox(format("Do you want to start in Six Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_6, 1)
+			setrespawn(HEAL_LOCATION_SIX_ISLAND)
+			warp(MAP_SIX_ISLAND, 255, 11, 12)
+		break
+		case 22: 
+			//Seven Island
+			msgbox(format("Do you want to start in Seven Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_7, 1)
+			setrespawn(HEAL_LOCATION_SEVEN_ISLAND)
+			warp(MAP_SEVEN_ISLAND, 255, 12, 4)
+		break
+		case 23: 
+			//Eight Island
+			msgbox(format("Do you want to start in Eight Island?"), MSGBOX_YESNO)
+			if (var(VAR_RESULT) == NO){
+				goto(Start_EventScript_Chose_City)
+			}
+			additem(ITEM_SEVII_TICKET_8, 1)
+			setrespawn(HEAL_LOCATION_EIGHT_ISLAND)
+			warp(MAP_EIGHT_ISLAND, 255, 24, 25)
+		break
+		case 24: 
+			//Surprise Me
+			goto( Start_EventScript_Chose_City_Surprise) 
+		break
+	}
+	end	
+}
+	
+script Start_EventScript_Chose_City_Surprise{
+	random(24)
+	switch(var(VAR_RESULT)){
+		default:
+		case 0:  
+			//Littleroot Town
+			checkplayergender
+			if(var(VAR_RESULT) == MALE){
+				warp(MAP_LITTLEROOT_TOWN, 255, 15, 9)
+				setrespawn(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F)
+			}
+			else{
+				warp(MAP_LITTLEROOT_TOWN, 255, 24, 9)
+				setrespawn(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F)
+			}
+		break
+		break
+		case 1:  
+			//Oldale Town
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_OLDALE_TOWN)
+			warp(MAP_OLDALE_TOWN, 255, 14, 8)
+		break
+		break
+		case 2:  
+			//Petalburg City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_PETALBURG_CITY)
+			warp(MAP_PETALBURG_CITY, 255, 20, 17)
+		break
+		break
+		case 3:  
+			//Rustboro City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_RUSTBORO_CITY)
+			warp(MAP_RUSTBORO_CITY, 255, 16, 39)
+		break
+		break
+		case 4:  
+			//Dewford Town
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_DEWFORD_TOWN)
+			warp(MAP_DEWFORD_TOWN, 255, 2, 11)  
+		break
+		break
+		case 5:  
+			//Slateport Town
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_SLATEPORT_CITY)
+			warp(MAP_SLATEPORT_CITY, 255, 19, 20)
+		break
+		case 6:  
+			//Mauville City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_MAUVILLE_CITY)
+			warp(MAP_MAUVILLE_CITY, 255, 22, 6)	  
+		break
+		break
+		case 7:  
+			//Verdanturf Town
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_VERDANTURF_TOWN)
+			warp(MAP_VERDANTURF_TOWN, 255, 16, 4)
+		break
+		case 8:  
+			//Fallarbor Town
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_FALLARBOR_TOWN)
+			warp(MAP_FALLARBOR_TOWN, 255, 14, 8)
+		break
+		break
+		case 9:  
+			//Lavaridge Town
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_LAVARIDGE_TOWN)
+			warp(MAP_LAVARIDGE_TOWN, 255, 9, 7)
+		break
+		case 10: 
+			//Fortree City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_FORTREE_CITY)
+			warp(MAP_FORTREE_CITY, 255, 5, 7)
+		break
+		case 11: 
+			//Lilycove City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_LILYCOVE_CITY)
+			warp(MAP_LILYCOVE_CITY, 255, 24, 15)
+		break
+		case 12: 
+			//Mossdeep City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_MOSSDEEP_CITY)
+			warp(MAP_MOSSDEEP_CITY, 255, 28, 17)
+		break
+		case 13:
+			//Sootopolis City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_SOOTOPOLIS_CITY)
+			warp(MAP_SOOTOPOLIS_CITY, 255, 43, 32)
+		break
+		case 14: 
+			//Sootopolis City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_PACIFIDLOG_TOWN)
+			warp(MAP_PACIFIDLOG_TOWN, 255, 8, 16)
+		break
+		case 15: 
+			//Evergrade City
+			call(Start_EventScript_Give_Random_Sevii_Ticket)
+			setrespawn(HEAL_LOCATION_EVER_GRANDE_CITY)
+			warp(MAP_EVER_GRANDE_CITY, 255, 27, 49)
+		break
+		case 16: 
+			//One Island
+			additem(ITEM_SEVII_TICKET_1, 1)
+			setrespawn(HEAL_LOCATION_ONE_ISLAND)
+			warp(MAP_ONE_ISLAND, 255, 14, 6)
+		break
+		case 17: 
+			//Two Island
+			additem(ITEM_SEVII_TICKET_2, 1)
+			setrespawn(HEAL_LOCATION_TWO_ISLAND)
+			warp(MAP_TWO_ISLAND, 255, 21, 8)
+		break
+		case 18: 
+			//Three Island
+			additem(ITEM_SEVII_TICKET_3, 1)
+			setrespawn(HEAL_LOCATION_THREE_ISLAND)
+			warp(MAP_THREE_ISLAND, 255, 14, 28)
+		break
+		case 19: 
+			//Four Island
+			additem(ITEM_SEVII_TICKET_4, 1)
+			setrespawn(HEAL_LOCATION_FOUR_ISLAND)
+			warp(MAP_FOUR_ISLAND, 255, 18, 21)
+		break
+		case 20: 
+			//Five Island
+			additem(ITEM_SEVII_TICKET_5, 1)
+			setrespawn(HEAL_LOCATION_FIVE_ISLAND)
+			warp(MAP_FIVE_ISLAND, 255, 29, 16)
+		break
+		case 21: 
+			//Six Island
+			additem(ITEM_SEVII_TICKET_6, 1)
+			setrespawn(HEAL_LOCATION_SIX_ISLAND)
+			warp(MAP_SIX_ISLAND, 255, 11, 12)
+		break
+		case 22: 
+			//Seven Island
+			additem(ITEM_SEVII_TICKET_7, 1)
+			setrespawn(HEAL_LOCATION_SEVEN_ISLAND)
+			warp(MAP_SEVEN_ISLAND, 255, 12, 4)
+		break
+		case 23: 
+			//Eight Island
+			additem(ITEM_SEVII_TICKET_8, 1)
+			setrespawn(HEAL_LOCATION_EIGHT_ISLAND)
+			warp(MAP_SEVEN_ISLAND, 255, 24, 25)
+		break
+	}
+	end
+}
+
+text Game_Start_Text_Introduction_NewGamePlus{
+	format("I'm Glad to see you again, Welcome to New Game+. Do you have any Question?")
+}
+
+text Game_Start_Text_Game_Modes_You_Cant_Chose_this_mode{
+	format("You can't chose this mode in a New Game Plus run.")
+}
+
+text Game_Start_Text_Introduction_NewGamePlus_Information{
+	format("New Game Plus is a mode that lets you create a new save file while keeping all your Pokemon, Items, Achievements and Money.\p"
+		   "It also has some special features like trainers scaling to your level and Pokémon numbers, you also get a boosted experience depending on the number of times you have beaten the game and started a New Game plus save, the game becomes a little more difficult and finally it removes some of the caps used in the game.")
+}
+
+//Random Type Mode
+script Start_EventScript_Game_Mode_Random_Type_Mode{
+	lockall
+
+	if(!flag(FLAG_TYPE_RANDOMIZER_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}Random Type Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}Random Type Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_TYPE_RANDOMIZER_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}Random Type Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_TYPE_RANDOMIZER_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}Random Type Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_TYPE_RANDOMIZER_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This Randomizes every Pokemon Type."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+
+	goto(Start_EventScript_Game_Mode_Random_Type_Mode)
+	end
+}
+
+//Random Ability Mode
+script Start_EventScript_Game_Mode_Random_Ability_Mode{
+	lockall
+
+	if(!flag(FLAG_ABILITY_RANDOMIZER_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}Random Ability Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}Random Ability Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_ABILITY_RANDOMIZER_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}Random Ability Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_ABILITY_RANDOMIZER_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}Random Ability Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_ABILITY_RANDOMIZER_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This Randomizes every Pokemon Ability."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+
+	goto(Start_EventScript_Game_Mode_Random_Ability_Mode)
+	end
+}
+
+//Third Type Mode
+script Start_EventScript_Game_Mode_Third_Type_Mode{
+	lockall
+
+	if(!flag(FLAG_THIRD_TYPE_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}Third Type Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}Third Type Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_THIRD_TYPE_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}Third Type Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_THIRD_TYPE_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}Third Type Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_THIRD_TYPE_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This gives every Pokémon a random third type."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+
+	goto(Start_EventScript_Game_Mode_Third_Type_Mode)
+	end
+}
+
+//No Mega Mode
+script Start_EventScript_Game_Mode_No_Mega_Mode{
+	lockall
+
+	if(!flag(FLAG_NO_MEGA_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}No Mega Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}No Mega Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_NO_MEGA_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}No Mega Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_NO_MEGA_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}No Mega Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_NO_MEGA_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This disables mega evolution."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+	
+	goto(Start_EventScript_Game_Mode_No_Mega_Mode)
+	end
+}
+
+//Old STAB Mode
+script Start_EventScript_Game_Mode_Old_STAB_Mode{
+	lockall
+
+	if(!flag(FLAG_OLD_STAB_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}Old STAB Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}Old STAB Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_OLD_STAB_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}Old STAB Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_OLD_STAB_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}Old STAB Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_OLD_STAB_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This uses the vanilla games STAB calculation and disables the monotype boost."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+	
+	goto(Start_EventScript_Game_Mode_Old_STAB_Mode)
+	end
+}
+
+//True Random Mode
+script Start_EventScript_Game_Mode_True_Random_Mode{
+	lockall
+
+	if(!flag(FLAG_TRUE_RANDOM_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}True Random Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}True Random Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_TRUE_RANDOM_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}True Random Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_TRUE_RANDOM_MODE)
+				clearflag(FLAG_RANDOMIZED_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}True Random Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_TRUE_RANDOM_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This will fully randomize every Pokemon in the wild or used by trainers, you can probably get all the first stages in just one route with this, this also disables the dexnav."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+	
+	goto(Start_EventScript_Game_Mode_True_Random_Mode)
+	end
+}
+
+//Grindles Mode
+script Start_EventScript_Game_Mode_Grindless_Mode{
+	lockall
+
+	if(!flag(FLAG_GRINDLESS_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}Grindless Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}Grindless Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_GRINDLESS_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}Grindless Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_GRINDLESS_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}Grindless Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_GRINDLESS_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("This will let you set the EVs from the summary screen, remove Levels and balance stats using the number of badges you have, this also affects enemy mons and enemy trainers so it is balanced for both"), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+	
+	goto(Start_EventScript_Game_Mode_Grindless_Mode)
+	end
+}
+
+//Scalemon Mode
+script Start_EventScript_Game_Mode_Scalemon_Mode{
+	lockall
+
+	if(!flag(FLAG_SCALEMON_MODE)){
+		msgbox(format("Do you want to {COLOR GREEN}enable{COLOR DARK_GREY} the {COLOR BLUE}Scalemon Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_ENABLE, 0)
+	}
+	else{
+		msgbox(format("Do you want to {COLOR RED}disable{COLOR DARK_GREY} the {COLOR BLUE}Scalemon Mode{COLOR DARK_GREY}?"), MSGBOX_DEFAULT)
+		waitmessage
+		multichoice(0, 0, MULTI_GAME_MODE_DISABLE, 0)
+	}
+
+	switch(var(VAR_RESULT)){
+		case 0:
+			if(!flag(FLAG_SCALEMON_MODE)){
+				playfanfare(SE_SAVE)
+				msgbox(format("The {COLOR BLUE}Scalemon Mode{COLOR DARK_GREY} was {COLOR GREEN}enabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				setflag(FLAG_SCALEMON_MODE)
+			}
+			else{
+				playfanfare(SE_BOO)
+				msgbox(format("The {COLOR BLUE}Scalemon Mode{COLOR DARK_GREY} was {COLOR RED}disabled{COLOR DARK_GREY}!"), MSGBOX_DEFAULT)
+				waitfanfare
+				clearflag(FLAG_SCALEMON_MODE)
+			}
+		break
+		case 1:
+			msgbox(format("In Scalemon Mode, every Pokemon's stats, barring HP, are scaled to give them a BST as close to a certain BST depending on your badge count, with all recalculated stats being rounded down."), MSGBOX_DEFAULT)
+		break
+		case 2:
+		case MULTI_B_PRESSED: 
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+	
+	goto(Start_EventScript_Game_Mode_Scalemon_Mode)
+	end
+}
+
+script Start_EventScript_Difficulty_Save{
+	playfanfare(SE_SAVE)
+	waitfanfare
+	msgbox(format("The difficulty was saved!"), MSGBOX_DEFAULT)
+	goto(Start_EventScript_Starter_Chose)
+	end
+}
+
+script Start_EventScript_Game_Modes_were_Saved{
+	playfanfare(SE_SAVE)
+	waitfanfare
+	msgbox(format("The modes were saved!"), MSGBOX_DEFAULT)
+	goto(Start_EventScript_Starter_Chose)
+	end
+}
+
+script Start_EventScript_Game_Mode_Save{
+	msgbox(format("Do you want to save this configuration?"), MSGBOX_DEFAULT)
+	waitmessage
+	multichoice(0, 0, MULTI_GAME_MODE_SAVE, 0)
+	switch(var(VAR_RESULT)){
+		case 0:
+			goto(Start_EventScript_Game_Modes)
+		break
+		case 1:
+			goto(Start_EventScript_Game_Modes_were_Saved)
+		break
+		case 2:
+			goto(Start_EventScript_Game_Modes_Default)
+		break
+		default:
+			goto(Start_EventScript_Game_Modes)
+		break
+	}
+	end
+}
+
+script EventScript_PkmnCenterNurseDifficulty_Save{
+	playfanfare(SE_SAVE)
+	waitfanfare
+	msgbox(format("The changes were saved!"), MSGBOX_DEFAULT)
+	goto(EventScript_PkmnCenterNurse_Goodbye)
+	end
+}
+
+script Start_EventScript_Game_Modes_Default{
+	playfanfare(SE_SAVE)
+	msgbox(Game_Start_Text_Game_Modes_Default, MSGBOX_DEFAULT)
+	waitfanfare
+	clearflag(FLAG_SCALEMON_MODE)
+	clearflag(FLAG_GRINDLESS_MODE)
+	clearflag(FLAG_VANILLA_MODE)
+	clearflag(FLAG_NO_SPLIT_MODE)
+	clearflag(FLAG_NO_EVOLUTION_MODE)
+	clearflag(FLAG_DOUBLE_BATTLE_MODE)
+	clearflag(FLAG_NO_EVS_MODE)
+	clearflag(FLAG_PARTY_RANDOMIZED_MODE)
+	clearflag(FLAG_RANDOMIZED_MODE)
+	clearflag(FLAG_INVERSE_MODE)
+	goto(Start_EventScript_Game_Modes)
+	end
+}
+
+script Start_EventScript_SetSeason{
+	setflag(FLAG_HIDE_GYM_MONS)
+	msgbox(format("Before starting, please chose the season you like the best."), MSGBOX_DEFAULT)
+	waitmessage
+	scrollingmultichoice(SCROLLING_SEASONS, 0, 0, 5, FALSE)
+	switch(var(VAR_RESULT)){
+		case SEASON_SPRING:
+			setvar(VAR_CURRENT_SEASON, SEASON_SPRING)
+			setflag(FLAG_SYS_DISABLE_AUTOMATIC_SEASON)
+			msgbox(format("You will play in Spring!"))
+		break
+		case SEASON_SUMMER:
+			setvar(VAR_CURRENT_SEASON, SEASON_SUMMER)
+			setflag(FLAG_SYS_DISABLE_AUTOMATIC_SEASON)
+			msgbox(format("You will play in Summer!"))
+		break
+		case SEASON_AUTUMN:
+			setvar(VAR_CURRENT_SEASON, SEASON_AUTUMN)
+			setflag(FLAG_SYS_DISABLE_AUTOMATIC_SEASON)
+			msgbox(format("You will play in Autumn!"))
+		break
+		case SEASON_WINTER:
+			setvar(VAR_CURRENT_SEASON, SEASON_WINTER)
+			setflag(FLAG_SYS_DISABLE_AUTOMATIC_SEASON)
+			msgbox(format("You will play in Winter!"))
+		break
+		case MULTI_B_PRESSED:
+		default:
+			msgbox(format("The season will update according to the real time!"))
+			return
+		break
+	}
+	return
+}

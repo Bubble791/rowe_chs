@@ -1,0 +1,158 @@
+raw `
+LilycoveCity_DepartmentStore_3F_MapScripts:: @ 821FC64
+	.byte 0
+
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft:: @ 821FC65
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_GOT_BADGE_08, LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft_2
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+	
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft_2::
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_ClerkLeft_2
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins: @ 821FC7C
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_MACHO_BRACE
+	.2byte ITEM_NONE
+	release
+	end
+	
+	.align 2
+LilycoveCity_DepartmentStore_3F_Pokemart_ClerkLeft_2::
+	.2byte ITEM_NORMAL_GEM
+	.2byte ITEM_CHOICE_BAND
+	.2byte ITEM_CHOICE_SCARF
+	.2byte ITEM_CHOICE_SPECS
+	.2byte ITEM_SCOPE_LENS
+	.2byte ITEM_LIFE_ORB
+	.2byte ITEM_TOXIC_ORB
+	.2byte ITEM_FLAME_ORB
+	.2byte ITEM_FOCUS_SASH
+	.2byte ITEM_WHITE_HERB
+	.2byte ITEM_POWER_HERB
+	.2byte ITEM_BLACK_SLUDGE
+	.2byte ITEM_ASSAULT_VEST
+	.2byte ITEM_WEAKNESS_POLICY
+	.2byte ITEM_HEAVY_DUTY_BOOTS
+	.2byte ITEM_ROCKY_HELMET
+	.2byte ITEM_FOCUS_BAND
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_MACHO_BRACE
+	.2byte ITEM_NONE
+	release
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight:: @ 821FC8C
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	goto_if_set FLAG_GOT_BADGE_06, LilycoveCity_DepartmentStore_3F_EventScript_EvolutionClerk
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+	
+LilycoveCity_DepartmentStore_3F_EventScript_EvolutionClerk::
+	pokemart LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM:: @ 821FCB6
+	msgbox LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_PokefanM:: @ 821FCBF
+	msgbox LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_3F_EventScript_Woman:: @ 821FCC8
+	msgbox LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon, MSGBOX_NPC
+	end
+
+LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon: @ 821FCD1
+	.string "For quickly toughening up Pokémon,\n"
+	.string "items are the best.\p"
+	.string "Protein boosts Attack,\n"
+	.string "and Calcium raises Sp. Atk.$"
+
+LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance: @ 821FD3B
+	.string "I want my Pokémon to have more\n"
+	.string "endurance.\p"
+	.string "I'm trying to decide whether to raise\n"
+	.string "Defense with Iron, or Sp. Def with Zinc.$"
+
+LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon: @ 821FDB4
+	.string "I gave a Carbos to my Pokémon,\n"
+	.string "and its Speed went up.$"
+
+`
+mart LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters {
+	ITEM_FIRE_STONE
+	ITEM_WATER_STONE
+	ITEM_THUNDER_STONE
+	ITEM_LEAF_STONE
+	ITEM_SUN_STONE
+	ITEM_MOON_STONE
+	ITEM_DAWN_STONE
+	ITEM_DUSK_STONE
+	ITEM_SHINY_STONE
+	ITEM_ICE_STONE
+	ITEM_LINK_CABLE
+	ITEM_SWEET_APPLE
+	ITEM_TART_APPLE
+	ITEM_SYRUP_APPLE
+	ITEM_RAINBOW_SWEET
+	ITEM_DRAGON_SCALE
+	ITEM_KINGS_ROCK
+	ITEM_METAL_COAT
+	ITEM_UP_GRADE
+	ITEM_DEEP_SEA_SCALE
+	ITEM_DEEP_SEA_TOOTH
+	ITEM_DUBIOUS_DISC
+	ITEM_ELECTIRIZER
+	ITEM_MAGMARIZER
+	ITEM_OVAL_STONE
+	ITEM_PROTECTOR
+	ITEM_RAZOR_CLAW
+	ITEM_RAZOR_FANG
+	ITEM_REAPER_CLOTH
+	ITEM_PRISM_SCALE
+	ITEM_SACHET
+	ITEM_WHIPPED_DREAM
+	ITEM_UNREMARKABLE_TEACUP
+	ITEM_MASTERPIECE_TEACUP
+	ITEM_PEAT_BLOCK
+	ITEM_AUSPICIOUS_ARMOR
+	ITEM_MALICIOUS_ARMOR
+	//ITEM_SCROLL_OF_DARKNESS
+	//ITEM_SCROLL_OF_WATERS
+	ITEM_METAL_ALLOY
+	ITEM_BLACK_AUGURITE
+	ITEM_CHIPPED_POT
+	ITEM_CRACKED_POT
+	ITEM_GALARICA_CUFF
+	ITEM_GALARICA_TWIG
+	ITEM_NONE
+}
