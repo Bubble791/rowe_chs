@@ -61,48 +61,9 @@
 
 	.section script_data, "aw", %progbits
 
-@ 81DB67C
-	.include "data/script_cmd_table.inc"
-
-gSpecialVars:: @ 81DBA0C
-	.4byte gSpecialVar_0x8000
-	.4byte gSpecialVar_0x8001
-	.4byte gSpecialVar_0x8002
-	.4byte gSpecialVar_0x8003
-	.4byte gSpecialVar_0x8004
-	.4byte gSpecialVar_0x8005
-	.4byte gSpecialVar_0x8006
-	.4byte gSpecialVar_0x8007
-	.4byte gSpecialVar_0x8008
-	.4byte gSpecialVar_0x8009
-	.4byte gSpecialVar_0x800A
-	.4byte gSpecialVar_0x800B
-	.4byte gSpecialVar_Facing
-	.4byte gSpecialVar_Result
-	.4byte gSpecialVar_ItemId
-	.4byte gSpecialVar_LastTalked
-	.4byte gSpecialVar_ContestRank
-	.4byte gSpecialVar_ContestCategory
-	.4byte gSpecialVar_MonBoxId
-	.4byte gSpecialVar_MonBoxPos
-	.4byte gSpecialVar_Unused_0x8014
-	.4byte gTrainerBattleOpponent_A
-
 	.include "data/specials.inc"
 
-gStdScripts:: @ 81DC2A0
-	.4byte Std_ObtainItem              @ STD_OBTAIN_ITEM
-	.4byte Std_FindItem                @ STD_FIND_ITEM
-	.4byte Std_MsgboxNPC               @ MSGBOX_NPC
-	.4byte Std_MsgboxSign              @ MSGBOX_SIGN
-	.4byte Std_MsgboxDefault           @ MSGBOX_DEFAULT
-	.4byte Std_MsgboxYesNo             @ MSGBOX_YESNO
-	.4byte Std_MsgboxAutoclose         @ MSGBOX_AUTOCLOSE
-	.4byte Std_ObtainDecoration        @ STD_OBTAIN_DECORATION
-	.4byte Std_RegisteredInMatchCall   @ STD_REGISTER_MATCH_CALL
-	.4byte Std_MsgboxGetPoints         @ MSGBOX_GETPOINTS
-	.4byte Std_10
-gStdScripts_End:: @ 81DC2CC
+gStdScripts_End::
 
 	.include "data/maps/PetalburgCity/scripts.inc"
 	.include "data/maps/SlateportCity/scripts.inc"
@@ -602,7 +563,7 @@ gStdScripts_End:: @ 81DC2CC
 	.include "data/scripts/new_game.inc"
 	.include "data/scripts/hall_of_fame.inc"
 	
-	.include "data/scripts/debug.inc"
+@ 	.include "data/scripts/debug.inc"
 
 EventScript_WhiteOut:: @ 8271857
 	call EverGrandeCity_HallOfFame_EventScript_ResetEliteFour
@@ -1183,374 +1144,374 @@ loop:
 
 	.include "data/maps/RockTunnel_B1F/scripts.inc"
 
-	.include "data/maps/Haunted_House/scripts.inc"
+@ 	.include "data/maps/Haunted_House/scripts.inc"
 
-	.include "data/maps/NewMauville_FirstFloor/scripts.inc"
+@ 	.include "data/maps/NewMauville_FirstFloor/scripts.inc"
 
-	.include "data/maps/PrimevalForest/scripts.inc"
+@ 	.include "data/maps/PrimevalForest/scripts.inc"
 
-	.include "data/maps/PalletTown/scripts.inc"
+@ 	.include "data/maps/PalletTown/scripts.inc"
 
-	.include "data/maps/Route1/scripts.inc"
+@ 	.include "data/maps/Route1/scripts.inc"
 
-	.include "data/maps/ViridianCity/scripts.inc"
+@ 	.include "data/maps/ViridianCity/scripts.inc"
 
-	.include "data/maps/Route2/scripts.inc"
+@ 	.include "data/maps/Route2/scripts.inc"
 
-	.include "data/maps/PewterCity/scripts.inc"
+@ 	.include "data/maps/PewterCity/scripts.inc"
 
-	.include "data/maps/Route3/scripts.inc"
+@ 	.include "data/maps/Route3/scripts.inc"
 
-	.include "data/maps/Route4/scripts.inc"
+@ 	.include "data/maps/Route4/scripts.inc"
 
-	.include "data/maps/CeruleanCity/scripts.inc"
+@ 	.include "data/maps/CeruleanCity/scripts.inc"
 
-	.include "data/maps/ViridianForest/scripts.inc"
+@ 	.include "data/maps/ViridianForest/scripts.inc"
 
-	.include "data/maps/Route22/scripts.inc"
+@ 	.include "data/maps/Route22/scripts.inc"
 
-	.include "data/maps/Route24/scripts.inc"
+@ 	.include "data/maps/Route24/scripts.inc"
 
-	.include "data/maps/Route25/scripts.inc"
+@ 	.include "data/maps/Route25/scripts.inc"
 
-	.include "data/maps/Route5/scripts.inc"
+@ 	.include "data/maps/Route5/scripts.inc"
 
-	.include "data/maps/Route9/scripts.inc"
+@ 	.include "data/maps/Route9/scripts.inc"
 
-	.include "data/maps/Route10/scripts.inc"
+@ 	.include "data/maps/Route10/scripts.inc"
 
-	.include "data/maps/Route6/scripts.inc"
+@ 	.include "data/maps/Route6/scripts.inc"
 
-	.include "data/maps/Route7/scripts.inc"
+@ 	.include "data/maps/Route7/scripts.inc"
 
-	.include "data/maps/Route8/scripts.inc"
+@ 	.include "data/maps/Route8/scripts.inc"
 
-	.include "data/maps/LavanderTown/scripts.inc"
+@ 	.include "data/maps/LavanderTown/scripts.inc"
 
-	.include "data/maps/Route11/scripts.inc"
+@ 	.include "data/maps/Route11/scripts.inc"
 
-	.include "data/maps/Route12/scripts.inc"
+@ 	.include "data/maps/Route12/scripts.inc"
 
-	.include "data/maps/VermillionCity/scripts.inc"
+@ 	.include "data/maps/VermillionCity/scripts.inc"
 
-	.include "data/maps/Route13/scripts.inc"
+@ 	.include "data/maps/Route13/scripts.inc"
 
-	.include "data/maps/Route14/scripts.inc"
+@ 	.include "data/maps/Route14/scripts.inc"
 
-	.include "data/maps/Route15/scripts.inc"
+@ 	.include "data/maps/Route15/scripts.inc"
 
-	.include "data/maps/FuchsiaCity/scripts.inc"
+@ 	.include "data/maps/FuchsiaCity/scripts.inc"
 
-	.include "data/maps/Route18/scripts.inc"
+@ 	.include "data/maps/Route18/scripts.inc"
 
-	.include "data/maps/Route17/scripts.inc"
+@ 	.include "data/maps/Route17/scripts.inc"
 
-	.include "data/maps/Route16/scripts.inc"
+@ 	.include "data/maps/Route16/scripts.inc"
 
-	.include "data/maps/CeladonCity/scripts.inc"
+@ 	.include "data/maps/CeladonCity/scripts.inc"
 
-	.include "data/maps/SaffronCity/scripts.inc"
+@ 	.include "data/maps/SaffronCity/scripts.inc"
 
-	.include "data/maps/Route19/scripts.inc"
+@ 	.include "data/maps/Route19/scripts.inc"
 
-	.include "data/maps/Route20/scripts.inc"
+@ 	.include "data/maps/Route20/scripts.inc"
 
-	.include "data/maps/CinnabarIsland/scripts.inc"
+@ 	.include "data/maps/CinnabarIsland/scripts.inc"
 
-	.include "data/maps/Route21_South/scripts.inc"
+@ 	.include "data/maps/Route21_South/scripts.inc"
 
-	.include "data/maps/Route21/scripts.inc"
+@ 	.include "data/maps/Route21/scripts.inc"
 
-	.include "data/maps/RusturfTunnel_F2/scripts.inc"
+@ 	.include "data/maps/RusturfTunnel_F2/scripts.inc"
 
-	.include "data/maps/FieryPath2/scripts.inc"
+@ 	.include "data/maps/FieryPath2/scripts.inc"
 
-	.include "data/maps/RelicCave/scripts.inc"
+@ 	.include "data/maps/RelicCave/scripts.inc"
 
-	.include "data/maps/RelicCave2/scripts.inc"
+@ 	.include "data/maps/RelicCave2/scripts.inc"
 
-	.include "data/maps/OneIsland_TreasureBeach/scripts.inc"
+@ 	.include "data/maps/OneIsland_TreasureBeach/scripts.inc"
 
-	.include "data/maps/OneIsland_KindleRoad/scripts.inc"
+@ 	.include "data/maps/OneIsland_KindleRoad/scripts.inc"
 
-	.include "data/maps/OneIsland_House1/scripts.inc"
+@ 	.include "data/maps/OneIsland_House1/scripts.inc"
 
-	.include "data/maps/OneIsland_House2/scripts.inc"
+@ 	.include "data/maps/OneIsland_House2/scripts.inc"
 
-	.include "data/maps/OneIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/OneIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/OneIsland_PokemonCenter2F/scripts.inc"
+@ 	.include "data/maps/OneIsland_PokemonCenter2F/scripts.inc"
 
-	.include "data/maps/OneIsland_Harbor/scripts.inc"
+@ 	.include "data/maps/OneIsland_Harbor/scripts.inc"
 
-	.include "data/maps/MtEmber_Exterior/scripts.inc"
+@ 	.include "data/maps/MtEmber_Exterior/scripts.inc"
 
-	.include "data/maps/MtEmber_Summit/scripts.inc"
+@ 	.include "data/maps/MtEmber_Summit/scripts.inc"
 
-	.include "data/maps/MtEmber_SummitPatch_1F/scripts.inc"
+@ 	.include "data/maps/MtEmber_SummitPatch_1F/scripts.inc"
 
-	.include "data/maps/MtEmber_SummitPatch_2F/scripts.inc"
+@ 	.include "data/maps/MtEmber_SummitPatch_2F/scripts.inc"
 
-	.include "data/maps/MtEmber_SummitPath_3F/scripts.inc"
+@ 	.include "data/maps/MtEmber_SummitPath_3F/scripts.inc"
 
-	.include "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.inc"
+@ 	.include "data/maps/OneIsland_KindleRoad_EmberSpa/scripts.inc"
 
-	.include "data/maps/Route101Hole/scripts.inc"
+@ 	.include "data/maps/Route101Hole/scripts.inc"
 
-	.include "data/maps/TwoIsland_CapeBrink/scripts.inc"
+@ 	.include "data/maps/TwoIsland_CapeBrink/scripts.inc"
 
-	.include "data/maps/TwoIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/TwoIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/TwoIsland_PokemonCenter_2F/scripts.inc"
+@ 	.include "data/maps/TwoIsland_PokemonCenter_2F/scripts.inc"
 
-	.include "data/maps/TwoIsland_CapeBrink2/scripts.inc"
+@ 	.include "data/maps/TwoIsland_CapeBrink2/scripts.inc"
 
-	.include "data/maps/ValorCavern/scripts.inc"
+@ 	.include "data/maps/ValorCavern/scripts.inc"
 
-	.include "data/maps/TwoIsland_Capebrink_Hole/scripts.inc"
+@ 	.include "data/maps/TwoIsland_Capebrink_Hole/scripts.inc"
 
-	.include "data/maps/ThreeIsland_BerryForest/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_BerryForest/scripts.inc"
 
-	.include "data/maps/ThreeIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/ThreeIsland_Mart/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_Mart/scripts.inc"
 
-	.include "data/maps/OldaleTown_BattleMart/scripts.inc"
+@ 	.include "data/maps/OldaleTown_BattleMart/scripts.inc"
 
-	.include "data/maps/OldaleTown_Ruins/scripts.inc"
+@ 	.include "data/maps/OldaleTown_Ruins/scripts.inc"
 
-	.include "data/maps/OldaleTown_Ruins_2F/scripts.inc"
+@ 	.include "data/maps/OldaleTown_Ruins_2F/scripts.inc"
 
-	.include "data/maps/Router1062/scripts.inc"
+@ 	.include "data/maps/Router1062/scripts.inc"
 
-	.include "data/maps/GraniteCave_DiancieRoom/scripts.inc"
+@ 	.include "data/maps/GraniteCave_DiancieRoom/scripts.inc"
 
-	.include "data/maps/FourIsland/scripts.inc"
+@ 	.include "data/maps/FourIsland/scripts.inc"
 
-	.include "data/maps/FourIsland_PokemonDayCare/scripts.inc"
+@ 	.include "data/maps/FourIsland_PokemonDayCare/scripts.inc"
 
-	.include "data/maps/FourIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/FourIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/FourIsland_LorelisHouse/scripts.inc"
+@ 	.include "data/maps/FourIsland_LorelisHouse/scripts.inc"
 
-	.include "data/maps/FourIsland_Mart/scripts.inc"
+@ 	.include "data/maps/FourIsland_Mart/scripts.inc"
 
-	.include "data/maps/FourIsland_IcefallCave_Entrance/scripts.inc"
+@ 	.include "data/maps/FourIsland_IcefallCave_Entrance/scripts.inc"
 
-	.include "data/maps/FourIsland_IcefallCave_1F/scripts.inc"
+@ 	.include "data/maps/FourIsland_IcefallCave_1F/scripts.inc"
 
-	.include "data/maps/FourIsland_IcefallCave_B1F/scripts.inc"
+@ 	.include "data/maps/FourIsland_IcefallCave_B1F/scripts.inc"
 
-	.include "data/maps/FourIsland_IcefallCave_Back/scripts.inc"
+@ 	.include "data/maps/FourIsland_IcefallCave_Back/scripts.inc"
 
-	.include "data/maps/Route119_Underwater/scripts.inc"
+@ 	.include "data/maps/Route119_Underwater/scripts.inc"
 
-	.include "data/maps/Route119_Underwater_Cave/scripts.inc"
+@ 	.include "data/maps/Route119_Underwater_Cave/scripts.inc"
 
-	.include "data/maps/Route119_UxieCave_Outside/scripts.inc"
+@ 	.include "data/maps/Route119_UxieCave_Outside/scripts.inc"
 
-	.include "data/maps/Route119_UxieCave_Inside/scripts.inc"
+@ 	.include "data/maps/Route119_UxieCave_Inside/scripts.inc"
 
-	.include "data/maps/MauvilleCity_Outside/scripts.inc"
+@ 	.include "data/maps/MauvilleCity_Outside/scripts.inc"
 
-	.include "data/maps/FiveIsland/scripts.inc"
+@ 	.include "data/maps/FiveIsland/scripts.inc"
 
-	.include "data/maps/FiveIsland_Meadow/scripts.inc"
+@ 	.include "data/maps/FiveIsland_Meadow/scripts.inc"
 
-	.include "data/maps/FiveIsland_WaterLabyrinth/scripts.inc"
+@ 	.include "data/maps/FiveIsland_WaterLabyrinth/scripts.inc"
 
-	.include "data/maps/FiveIsland_ResortGorgeous/scripts.inc"
+@ 	.include "data/maps/FiveIsland_ResortGorgeous/scripts.inc"
 
-	.include "data/maps/NewMap1/scripts.inc"
+@ 	.include "data/maps/NewMap1/scripts.inc"
 
-	.include "data/maps/FiveIsland_MemorialPillar/scripts.inc"
+@ 	.include "data/maps/FiveIsland_MemorialPillar/scripts.inc"
 
-	.include "data/maps/FiveIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/FiveIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/FiveIsland_PokemonCenter_2F/scripts.inc"
+@ 	.include "data/maps/FiveIsland_PokemonCenter_2F/scripts.inc"
 
-	.include "data/maps/FiveIsland_House1/scripts.inc"
+@ 	.include "data/maps/FiveIsland_House1/scripts.inc"
 
-	.include "data/maps/FiveIsland_House2/scripts.inc"
+@ 	.include "data/maps/FiveIsland_House2/scripts.inc"
 
-	.include "data/maps/FiveIsland_ResortGorgeous_House/scripts.inc"
+@ 	.include "data/maps/FiveIsland_ResortGorgeous_House/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Entrance/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Entrance/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room1/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room1/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room2/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room2/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room3/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room3/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room4/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room4/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room5/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room5/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room6/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room6/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room7/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room7/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room8/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room8/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room9/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room9/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room10/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room10/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room11/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room11/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room12/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room12/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room13/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room13/scripts.inc"
 
-	.include "data/maps/FiveIsland_LostCave_Room14/scripts.inc"
+@ 	.include "data/maps/FiveIsland_LostCave_Room14/scripts.inc"
 
-	.include "data/maps/SixIsland/scripts.inc"
+@ 	.include "data/maps/SixIsland/scripts.inc"
 
-	.include "data/maps/SixIsland_House/scripts.inc"
+@ 	.include "data/maps/SixIsland_House/scripts.inc"
 
-	.include "data/maps/SixIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/SixIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/SixIsland_PokemonCenter_2F/scripts.inc"
+@ 	.include "data/maps/SixIsland_PokemonCenter_2F/scripts.inc"
 
-	.include "data/maps/SixIsland_WaterPath/scripts.inc"
+@ 	.include "data/maps/SixIsland_WaterPath/scripts.inc"
 
-	.include "data/maps/SixIsland_WaterPath_House1/scripts.inc"
+@ 	.include "data/maps/SixIsland_WaterPath_House1/scripts.inc"
 
-	.include "data/maps/SixIsland_WaterPath_House2/scripts.inc"
+@ 	.include "data/maps/SixIsland_WaterPath_House2/scripts.inc"
 
-	.include "data/maps/SixIsland_RuinValley/scripts.inc"
+@ 	.include "data/maps/SixIsland_RuinValley/scripts.inc"
 
-	.include "data/maps/SevenIsland/scripts.inc"
+@ 	.include "data/maps/SevenIsland/scripts.inc"
 
-	.include "data/maps/SevenIsland_House_Room1/scripts.inc"
+@ 	.include "data/maps/SevenIsland_House_Room1/scripts.inc"
 
-	.include "data/maps/SevenIsland_House_Room2/scripts.inc"
+@ 	.include "data/maps/SevenIsland_House_Room2/scripts.inc"
 
-	.include "data/maps/SevenIsland_Mart/scripts.inc"
+@ 	.include "data/maps/SevenIsland_Mart/scripts.inc"
 
-	.include "data/maps/SevenIsland_PokemonCenter_1F/scripts.inc"
+@ 	.include "data/maps/SevenIsland_PokemonCenter_1F/scripts.inc"
 
-	.include "data/maps/SevenIsland_PokemonCenter_2F/scripts.inc"
+@ 	.include "data/maps/SevenIsland_PokemonCenter_2F/scripts.inc"
 
-	.include "data/maps/SevenIsland_TrainerTower/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TrainerTower/scripts.inc"
 
-	.include "data/maps/SevenIsland_SevaultCanyon_Entranec/scripts.inc"
+@ 	.include "data/maps/SevenIsland_SevaultCanyon_Entranec/scripts.inc"
 
-	.include "data/maps/SevenIsland_SevaultCanyon/scripts.inc"
+@ 	.include "data/maps/SevenIsland_SevaultCanyon/scripts.inc"
 
-	.include "data/maps/SevenIsland_SevaultCanyon_House/scripts.inc"
+@ 	.include "data/maps/SevenIsland_SevaultCanyon_House/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins/scripts.inc"
 
-	.include "data/maps/SevenIsland_SevaultCanyon_TanobyKey/scripts.inc"
+@ 	.include "data/maps/SevenIsland_SevaultCanyon_TanobyKey/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_MoneanChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_MoneanChamber/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_LiptoppChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_LiptoppChamber/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_WeepthChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_WeepthChamber/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_DilfordChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_DilfordChamber/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_ScufibChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_ScufibChamber/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_RixyChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_RixyChamber/scripts.inc"
 
-	.include "data/maps/SevenIsland_TanobyRuins_ViapoisChamber/scripts.inc"
+@ 	.include "data/maps/SevenIsland_TanobyRuins_ViapoisChamber/scripts.inc"
 
-	.include "data/maps/SixIsland_GreenPath/scripts.inc"
+@ 	.include "data/maps/SixIsland_GreenPath/scripts.inc"
 
-	.include "data/maps/SixIsland_PatternBush/scripts.inc"
+@ 	.include "data/maps/SixIsland_PatternBush/scripts.inc"
 
-	.include "data/maps/SixIsland_OutcastIsland/scripts.inc"
+@ 	.include "data/maps/SixIsland_OutcastIsland/scripts.inc"
 
-	.include "data/maps/SixIsland_AlteringCave/scripts.inc"
+@ 	.include "data/maps/SixIsland_AlteringCave/scripts.inc"
 
-	.include "data/maps/SixIsland_DottedHole_1F/scripts.inc"
+@ 	.include "data/maps/SixIsland_DottedHole_1F/scripts.inc"
 
-	.include "data/maps/SixIsland_DottedHole_B1F/scripts.inc"
+@ 	.include "data/maps/SixIsland_DottedHole_B1F/scripts.inc"
 
-	.include "data/maps/SixIsland_DottedHole_B2F/scripts.inc"
+@ 	.include "data/maps/SixIsland_DottedHole_B2F/scripts.inc"
 
-	.include "data/maps/SixIsland_DottedHole_B3F/scripts.inc"
+@ 	.include "data/maps/SixIsland_DottedHole_B3F/scripts.inc"
 
-	.include "data/maps/SixIsland_DottedHole_B4F/scripts.inc"
+@ 	.include "data/maps/SixIsland_DottedHole_B4F/scripts.inc"
 
-	.include "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.inc"
+@ 	.include "data/maps/SixIsland_DottedHole_SapphireRoom/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B4F/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B4F/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B5F/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B5F/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B1F/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B1F/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B2F/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B2F/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B3F/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B3F/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B1F_Stairs/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B1F_Stairs/scripts.inc"
 
-	.include "data/maps/MtEmber_RubyPath_B2F_Stairs/scripts.inc"
+@ 	.include "data/maps/MtEmber_RubyPath_B2F_Stairs/scripts.inc"
 
-	.include "data/maps/FiveIsland_RocketWareHouse/scripts.inc"
+@ 	.include "data/maps/FiveIsland_RocketWareHouse/scripts.inc"
 
-	.include "data/maps/TwoIsland_CapeBrink_House/scripts.inc"
+@ 	.include "data/maps/TwoIsland_CapeBrink_House/scripts.inc"
 
-	.include "data/maps/TwoIsland_JoyfulGameCorner/scripts.inc"
+@ 	.include "data/maps/TwoIsland_JoyfulGameCorner/scripts.inc"
 
-	.include "data/maps/TwoIsland_House/scripts.inc"
+@ 	.include "data/maps/TwoIsland_House/scripts.inc"
 
-	.include "data/maps/ThreeIsland_House1/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_House1/scripts.inc"
 
-	.include "data/maps/ThreeIsland_House2/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_House2/scripts.inc"
 
-	.include "data/maps/ThreeIsland_House3/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_House3/scripts.inc"
 
-	.include "data/maps/ThreeIsland_House4/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_House4/scripts.inc"
 
-	.include "data/maps/ThreeIsland_House5/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_House5/scripts.inc"
 
-	.include "data/maps/SixIsland_Mart/scripts.inc"
+@ 	.include "data/maps/SixIsland_Mart/scripts.inc"
 
-	.include "data/maps/FiveIsland_Mart/scripts.inc"
+@ 	.include "data/maps/FiveIsland_Mart/scripts.inc"
 
-	.include "data/maps/FourIsland_House1/scripts.inc"
+@ 	.include "data/maps/FourIsland_House1/scripts.inc"
 
-	.include "data/maps/FourIsland_House2/scripts.inc"
+@ 	.include "data/maps/FourIsland_House2/scripts.inc"
 
-	.include "data/maps/Route110_NewMauvilleEntrance/scripts.inc"
+@ 	.include "data/maps/Route110_NewMauvilleEntrance/scripts.inc"
 
-	.include "data/maps/SixIsland_OutcastIsland_Mesprit_Cave/scripts.inc"
+@ 	.include "data/maps/SixIsland_OutcastIsland_Mesprit_Cave/scripts.inc"
 
-	.include "data/maps/OneIsland_Gym/scripts.inc"
+@ 	.include "data/maps/OneIsland_Gym/scripts.inc"
 
-	.include "data/maps/TwoIsland_Gym/scripts.inc"
+@ 	.include "data/maps/TwoIsland_Gym/scripts.inc"
 
-	.include "data/maps/ThreeIsland_Gym/scripts.inc"
+@ 	.include "data/maps/ThreeIsland_Gym/scripts.inc"
 
-	.include "data/maps/FourIsland_Gym/scripts.inc"
+@ 	.include "data/maps/FourIsland_Gym/scripts.inc"
 
-	.include "data/maps/FiveIsland_Gym/scripts.inc"
+@ 	.include "data/maps/FiveIsland_Gym/scripts.inc"
 
-	.include "data/maps/SixIsland_Gym/scripts.inc"
+@ 	.include "data/maps/SixIsland_Gym/scripts.inc"
 
-	.include "data/maps/SevenIsland_Gym/scripts.inc"
+@ 	.include "data/maps/SevenIsland_Gym/scripts.inc"
 
-	.include "data/maps/EightIsland/scripts.inc"
+@ 	.include "data/maps/EightIsland/scripts.inc"
 
-	.include "data/maps/EightIsland_Gym/scripts.inc"
+@ 	.include "data/maps/EightIsland_Gym/scripts.inc"
 
-	.include "data/maps/EightIsland_Mart/scripts.inc"
+@ 	.include "data/maps/EightIsland_Mart/scripts.inc"
 
-	.include "data/maps/EightIsland_PokeCenter/scripts.inc"
+@ 	.include "data/maps/EightIsland_PokeCenter/scripts.inc"
 
-	.include "data/maps/EightIsland_House1/scripts.inc"
+@ 	.include "data/maps/EightIsland_House1/scripts.inc"
 
-	.include "data/maps/EightIsland_House2/scripts.inc"
+@ 	.include "data/maps/EightIsland_House2/scripts.inc"
 
-	.include "data/maps/EightIsland_Cave/scripts.inc"
+@ 	.include "data/maps/EightIsland_Cave/scripts.inc"
 
-	.include "data/maps/EightIsland_Gym_F2/scripts.inc"
+@ 	.include "data/maps/EightIsland_Gym_F2/scripts.inc"
 
-	.include "data/maps/EightIsland_Cave_2F/scripts.inc"
+@ 	.include "data/maps/EightIsland_Cave_2F/scripts.inc"

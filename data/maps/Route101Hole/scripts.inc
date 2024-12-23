@@ -1,2 +1,0 @@
-Route101Hole_MapScripts::
-	.byte 0

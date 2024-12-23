@@ -15,5 +15,6 @@
 
 	.section .rodata
 
-	.include "data/maps/events.inc"
+	.byte 0
+	@ .include "data/maps/events.inc"
 

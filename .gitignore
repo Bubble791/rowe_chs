@@ -44,3 +44,4 @@ include/
 data/layouts/
 data/tilesets/
 data/maps/**/*.json
+source/

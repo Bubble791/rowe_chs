@@ -1,0 +1,29 @@
+MEMORY
+{
+    EWRAM (rwx) : ORIGIN = 0x2000000, LENGTH = 256K
+    IWRAM (rwx) : ORIGIN = 0x3000000, LENGTH = 32K
+    ROM    (rx) : ORIGIN = 0x8000000, LENGTH = 32M
+}
+
+SECTIONS {
+    /* BEGIN ROM DATA */
+    . = 0x8000000;
+
+    .text :
+    ALIGN(4)
+    {
+        build/data/map_events.o(.rodata);
+    }  > ROM =0
+
+    script_data 0x8237278 :
+    ALIGN(4)
+    {
+        build/data/event_scripts.o(script_data);
+    } > ROM =0
+
+    /* Discard everything not specifically mentioned above. */
+    /DISCARD/ :
+    {
+        *(*);
+    }
+}
