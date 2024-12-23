@@ -40,7 +40,6 @@ log.txt
 *.mb
 *.bin
 src/
-include/
 data/layouts/
 data/tilesets/
 data/maps/**/*.json
