@@ -995,6 +995,7 @@
 #define TRAINER_CHAZ 13
 #define TRAINER_HAROLD 14
 #define VAR_MAP_SCENE_FIVE_ISLAND_RESORT_GORGEOUS 15
+#define TRAINER_DEBUG_OPPONENT 1
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled

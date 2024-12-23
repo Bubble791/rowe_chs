@@ -61,9 +61,48 @@
 
 	.section script_data, "aw", %progbits
 
+@ 81DB67C
+	.include "data/script_cmd_table.inc"
+
+gSpecialVars:: @ 81DBA0C
+	.4byte gSpecialVar_0x8000
+	.4byte gSpecialVar_0x8001
+	.4byte gSpecialVar_0x8002
+	.4byte gSpecialVar_0x8003
+	.4byte gSpecialVar_0x8004
+	.4byte gSpecialVar_0x8005
+	.4byte gSpecialVar_0x8006
+	.4byte gSpecialVar_0x8007
+	.4byte gSpecialVar_0x8008
+	.4byte gSpecialVar_0x8009
+	.4byte gSpecialVar_0x800A
+	.4byte gSpecialVar_0x800B
+	.4byte gSpecialVar_Facing
+	.4byte gSpecialVar_Result
+	.4byte gSpecialVar_ItemId
+	.4byte gSpecialVar_LastTalked
+	.4byte gSpecialVar_ContestRank
+	.4byte gSpecialVar_ContestCategory
+	.4byte gSpecialVar_MonBoxId
+	.4byte gSpecialVar_MonBoxPos
+	.4byte gSpecialVar_Unused_0x8014
+	.4byte gTrainerBattleOpponent_A
+
 	.include "data/specials.inc"
 
-gStdScripts_End::
+gStdScripts:: @ 81DC2A0
+	.4byte Std_ObtainItem              @ STD_OBTAIN_ITEM
+	.4byte Std_FindItem                @ STD_FIND_ITEM
+	.4byte Std_MsgboxNPC               @ MSGBOX_NPC
+	.4byte Std_MsgboxSign              @ MSGBOX_SIGN
+	.4byte Std_MsgboxDefault           @ MSGBOX_DEFAULT
+	.4byte Std_MsgboxYesNo             @ MSGBOX_YESNO
+	.4byte Std_MsgboxAutoclose         @ MSGBOX_AUTOCLOSE
+	.4byte Std_ObtainDecoration        @ STD_OBTAIN_DECORATION
+	.4byte Std_RegisteredInMatchCall   @ STD_REGISTER_MATCH_CALL
+	.4byte Std_MsgboxGetPoints         @ MSGBOX_GETPOINTS
+	.4byte Std_10
+gStdScripts_End:: @ 81DC2CC
 
 	.include "data/maps/PetalburgCity/scripts.inc"
 	.include "data/maps/SlateportCity/scripts.inc"
