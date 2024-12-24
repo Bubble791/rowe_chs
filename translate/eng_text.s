@@ -1,259 +1,259 @@
 gText_LegendaryFlewAway:
     .org 0x82ec399
     .area 17
-    .strn "The {STR_VAR_1} ran away!$"
+    .strn "{STR_VAR_1} 跑掉了！$"
     .endarea
 
 BattleFrontier_BattleArenaLobby_Text_BattleArenaProject:
     .org 0x82b95e3
     .area 59
-    .strn "Sorry, but the Battle Arena is being\nmaintained right now.$"
+    .strn "抱歉，\n对战竞技场正在维护中。$"
     .endarea
 
 BattleFrontier_BattleFactoryPreBattleRoom_Text_ObtainedBattlePoint:
     .org 0x82bd6f9
     .area 31
-    .strn "{PLAYER} obtained\n1 Battle Point(s).$"
+    .strn "{PLAYER} 获得了1战斗点数。$"
     .endarea
 
 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
     .org 0x82c8578
     .area 157
-    .strn "My Pokémon is a {STR_VAR_2}.\nDo you know it?\lIt's quite strong and rather nice.\pThis little one, I could trade with\npride!\pWould you like to trade me a {STR_VAR_1}\nfor my {STR_VAR_2}?$"
+    .strn "我的宝可梦 {STR_VAR_2}。\n你知道吗？\p它很强大，也很不错。\l我可以用它来跟你交换！\n你想用你的 {STR_VAR_1}\p来换我的 {STR_VAR_2}吗？$"
     .endarea
 
 BattleFrontier_PokemonCenter_1F_Text_Skitty:
     .org 0x82caf78
     .area 22
-    .strn "Delcatty: Mya myaaah!$"
+    .strn "优雅猫：Mya myaaah！$"
     .endarea
 
 DewfordTown_Text_GiveYouOneOfMyRods:
     .org 0x8245145
     .area 100
-    .strn "I hear you, and I like what\nyou're saying!\pI'll give you some of my special\nLure Balls to help you!$"
+    .strn "我听到了，我喜欢你说的话！\n我会给你一些特殊的球来帮助你！$"
     .endarea
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
     .org 0x8258fbc
     .area 48
-    .strn "If you'd like, use this Technical\nMachine, too.$"
+    .strn "如果你愿意，也可以用这个招式学习器。$"
     .endarea
 
 DewfordTown_Gym_Text_GetTM:
     .org 0x825933a
     .area 44
-    .strn "Brawly: Please take this\nTechnical Machine.$"
+    .strn "藤树：拿上这个\n招式学习器。$"
     .endarea
 
 DewfordTown_Gym_Text_GetMegaStone:
     .org 0x8259366
     .area 105
-    .strn "Brawly: Please take this\nMega Stone, with you.\pMake a Heracross hold it to\nunleash its Hidden Potential.$"
+    .strn "藤树：拿上这个超级石，\n给赫拉克罗斯携带\p可以释放它所有的潜能。$"
     .endarea
 
 DewfordTown_Gym_Text_GetReward:
     .org 0x82593cf
     .area 43
-    .strn "Brawly: Please take this\nItem as a Reward.$"
+    .strn "藤树：将这个道具作为奖励。$"
     .endarea
 
 Gym_Text_Takethis2:
     .org 0x8261c68
     .area 15
-    .strn "Take this too.$"
+    .strn "这个也带上。$"
     .endarea
 
 DewfordTown_Hall_Text_Mouth_Mints:
     .org 0x825a5be
     .area 66
-    .strn "Do you want a item from\nmy “{STR_VAR_1}” collection?\lI have a lot of them.$"
+    .strn "你想要一件来自我 “{STR_VAR_1}” 的物品吗？\n我还有很多。$"
     .endarea
 
 Route114_FossilManiacsTunnel_Text_HereYoGo:
     .org 0x828a052
     .area 13
-    .strn "Here you go!$"
+    .strn "给你！$"
     .endarea
 
 DewfordTown_Hall_Text_LoveMintsButTrendInToo:
     .org 0x825a569
     .area 85
-    .strn "I love to collect items.\pBut sharing my interest\nwith other people is always\lbetter.$"
+    .strn "我喜欢收集物品。\n但与他人分享我的爱好总是更好的。$"
     .endarea
 
 DewfordTown_Hall_Text_ComeTomorrow:
     .org 0x825a600
     .area 47
-    .strn "Come tomorrow, i may give you\na different one.$"
+    .strn "明天来吧，\n我可能会给你一个不一样的。$"
     .endarea
 
 Route114_FossilManiacsTunnel_Text_FossilDecline:
     .org 0x828a023
     .area 47
-    .strn "Is that so, come again if you\nchange your mind$"
+    .strn "是这样吗？\n如果你改变主意了，就再来找我。$"
     .endarea
 
 DewfordTown_Hall_EventScript_EvolutionManiac_Text_1:
     .org 0x825aa03
     .area 47
-    .strn "Come tomorrow, I may give you a\ndifferent one.$"
+    .strn "到明天，\n我可能会给你一个不同的。$"
     .endarea
 
 DewfordTown_Hall_EventScript_EvolutionManiac_Text_0:
     .org 0x825a9ad
     .area 86
-    .strn "I love to collect items, but sharing my\ninterest with other people its always\lbetter.$"
+    .strn "我喜欢收集物品。\n但与他人分享我的爱好总是更好的。$"
     .endarea
 
 EightIsland_EventScript_Boy_Text_0:
     .org 0x834a93b
     .area 97
-    .strn "Someone told me that you could find\nDragon-types in that cave, I wonder if\lI can find a Dratini.$"
+    .strn "有人告诉我，\n在那个洞穴\p里可以找到龙属性的宝可梦，\n我想知道我是否能找到一只迷你龙。$"
     .endarea
 
 EightIsland_EventScript_Girl_Text_0:
     .org 0x834a99c
     .area 150
-    .strn "This Island was discovered by the gym\nleader Clair after being told that she\lwould not be one of the Sevii Leaders\lbecause there were only 7 Islands.$"
+    .strn "这个岛是由道馆馆主小椿发现的，\n她被告知她不会成为七个岛的负责人之一，因为那里只有七个岛。$"
     .endarea
 
 EightIsland_EventScript_Cooltrainer_Text_0:
     .org 0x834aa32
     .area 71
-    .strn "I bought some good held items in that\nshop, you should give it a look.$"
+    .strn "我在那家商店买了一些好东西，\n你应该看看。$"
     .endarea
 
 EightIsland_EventScript_Cooltrainer_2_Text_0:
     .org 0x834aa79
     .area 58
-    .strn "I bought evolution stones that helped\nme evolve my Eevee.$"
+    .strn "我买了进化石来\n帮助我进化我的伊布。$"
     .endarea
 
 EightIsland_EventScript_OldMan_Text_0:
     .org 0x834aab3
     .area 110
-    .strn "They say that the cave there is really\nold but there is no way to know since\lthis island was just discovered.$"
+    .strn "他们说那里的洞穴很古老，\n但由于这个岛刚刚被发现，\p所以没有办法知道更多细节。$"
     .endarea
 
 EightIsland_EventScript_IslandSign_Text_0:
     .org 0x834ab21
     .area 38
-    .strn "Eight Island\nA Quiet Mountain Retreat$"
+    .strn "八个岛\n静谧的山间隐居地$"
     .endarea
 
 OneIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ab47
     .area 78
-    .strn "One Island Pokémon Gym\nLeader: Falkner\l“The Elegant Master of Flying Pokémon”$"
+    .strn "一之岛宝可梦道馆\n馆主：阿速\l“华丽的飞行宝可梦训练家”$"
     .endarea
 
 TwoIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ab95
     .area 76
-    .strn "Two Island Pokémon Gym\nLeader: Bugsy\l“The Walking Bug Pokémon Encyclopedia”$"
+    .strn "二之岛宝可梦道馆\n馆主：阿笔\l“活生生的虫宝可梦大百科”$"
     .endarea
 
 ThreeIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834abe1
     .area 70
-    .strn "Three Island Pokémon Gym\nLeader: Whitney\l“The Incredibly Pretty Girl”$"
+    .strn "三之岛宝可梦道馆\n馆主：小茜\l“爆炸级漂亮美少女”$"
     .endarea
 
 FourIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ac27
     .area 70
-    .strn "Four Island Pokémon Gym\nLeader: Morty\l“The Mystic Seer of the Future”$"
+    .strn "四之岛宝可梦道馆\n馆主：松叶\l“千里眼修验者”$"
     .endarea
 
 FiveIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ac6d
     .area 73
-    .strn "Five Island Pokémon Gym\nLeader: Chuck\l“His Roaring Fists Do the Talking”$"
+    .strn "五之岛宝可梦道馆\n馆主：阿四\l“以猛拳诉说一切的男人”$"
     .endarea
 
 SixIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834acb6
     .area 69
-    .strn "Six Island Pokémon Gym\nLeader: Jasmine\l“The Steel-Clad Defense Girl”$"
+    .strn "六之岛宝可梦道馆\n馆主：阿蜜\l“铜墙铁壁的女孩”$"
     .endarea
 
 SevenIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834acfb
     .area 75
-    .strn "Seven Island Pokémon Gym\nLeader: Pryce\l“The Teacher of Winter's Harshness”$"
+    .strn "七之岛宝可梦道馆\n馆主：柳伯\l“领会寒冬严酷之人”$"
     .endarea
 
 EightIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ad46
     .area 76
-    .strn "Eight Island Pokémon Gym\nLeader: Clair\l“The Blessed User of Dragon Pokémon”$"
+    .strn "八之岛宝可梦道馆\n馆主：小椿\l“神圣的宝可梦龙使者！”$"
     .endarea
 
 Common_EventScript_New_Mauville_Sign_Text_0:
     .org 0x834ad92
     .area 47
-    .strn "New Mauville\nThis project died in development.$"
+    .strn "新紫堇这个项目在开发中夭折了$"
     .endarea
 
 FiveIsland_EventScript_Sailor_Text_1:
     .org 0x834ade4
     .area 36
-    .strn "Do you want to return to Slateport?$"
+    .strn "是否要返回凯那市？$"
     .endarea
 
 FiveIsland_EventScript_Sailor_Text_3:
     .org 0x834ae27
     .area 37
-    .strn "Aye, right, then!\nSail home we will!$"
+    .strn "那就这样吧！\n我们将扬帆回家！$"
     .endarea
 
 FiveIsland_EventScript_Sailor_Text_0:
     .org 0x834adc1
     .area 35
-    .strn "Do you want to return to Lilycove?$"
+    .strn "是否要返回水静市？$"
     .endarea
 
 FiveIsland_EventScript_Sailor_Text_2:
     .org 0x834ae08
     .area 31
-    .strn "Aye, right, as you like, then.$"
+    .strn "好吧，随你的便。$"
     .endarea
 
 SixIsland_EventScript_Sailor_Text_1:
     .org 0x834aea6
     .area 91
-    .strn "I heard there is a Forest nearby, have\nyou visited it?\pDo you want to return to Slateport?$"
+    .strn "听说附近有一座森林，你去过吗？\p是否要返回凯那市？$"
     .endarea
 
 SixIsland_EventScript_Sailor_Text_0:
     .org 0x834ae4c
     .area 90
-    .strn "I heard there is a Forest nearby, have\nyou visited it?\pDo you want to return to Lilycove?$"
+    .strn "听说附近有一座森林，你去过吗？\p是否要返回水静市？$"
     .endarea
 
 SevenIsland_EventScript_Sailor_Text_1:
     .org 0x834af46
     .area 70
-    .strn "Why is the Gym not on the Island?\pDo you want to return to Slateport?$"
+    .strn "为什么道馆不在岛上？\p是否要返回凯那市？$"
     .endarea
 
 SevenIsland_EventScript_Sailor_Text_0:
     .org 0x834af01
     .area 69
-    .strn "Why is the Gym not on the Island?\pDo you want to return to Lilycove?$"
+    .strn "为什么道馆不在岛上？\p是否要返回水静市？$"
     .endarea
 
 EightIsland_EventScript_Sailor_Text_1:
     .org 0x834afcb
     .area 64
-    .strn "That's an strange cave, eh?\pDo you want to return to Slateport?$"
+    .strn "那是一个奇怪的洞穴，是吗？\p是否要返回凯那市？$"
     .endarea
 
 EightIsland_EventScript_Sailor_Text_0:
     .org 0x834af8c
     .area 63
-    .strn "That's an strange cave, eh?\pDo you want to return to Lilycove?$"
+    .strn "那是一个奇怪的洞穴，是吗？\p是否要返回水静市？$"
     .endarea
 
 EverGrandeCity_PokemonLeague_1F_Text_PowerCandy:
@@ -277,7 +277,7 @@ EverGrandeCity_PokemonLeague_1F_Text_PowerCandy_Decline:
 EverGrandeCity_PokemonLeague_1F_Text_PowerCandy_no_Money:
     .org 0x8288584
     .area 43
-    .strn "It looks like you don't have enough\nmoney!$"
+    .strn "你似乎没有足够的钱$"
     .endarea
 
 FallarborTown_Text_MyPreciousAzurill:
@@ -373,13 +373,13 @@ FiveIsland_Text_BeenGettingBusierAroundHere:
 FiveIsland_WaterLabyrinth_EventScript_Selphy_Text_0:
     .org 0x8348d99
     .area 34
-    .strn "This area is off-limits right now$"
+    .strn "这个区域现在禁止进入$"
     .endarea
 
 FiveIsland_WaterLabyrinth_EventScript_Alize_Text_2:
     .org 0x8348e1d
     .area 15
-    .strn "PostBattleText$"
+    .strn "战斗后文本$"
     .endarea
 
 FiveIsland_ResortGorgeous_EventScript_Daisy_Text_2:
@@ -6607,72 +6607,72 @@ UDTrade_Text_MoveNotAllowed:
 UDTrade_Text_on_Mantainance:
     .org 0x8342efa
     .area 48
-    .strn "I'm sorry, but {STR_VAR_1} is not\nworking at the moment.$"
+    .strn "抱歉 {STR_VAR_1} \n目前正在工作。$"
     .endarea
 
 UDTrade_Text_Mode_Not_Allowed_To_Trade:
     .org 0x8342f8d
     .area 64
-    .strn "I'm sorry, but you can't trade\nwith the modes you have enabled.$"
+    .strn "对不起，但您无法使用\n您已启用的模式进行交易。$"
     .endarea
 
 Common_EventScript_Mesprit_Encounter_Text_0:
     .org 0x82e9126
     .area 16
-    .strn "Mesprit: Mes...$"
+    .strn "艾姆利多：Mes...$"
     .endarea
 
 Common_EventScript_Mesprit_Encounter_Text_1:
     .org 0x82e9136
     .area 32
-    .strn "Mesprit teleported to somewhere$"
+    .strn "艾姆利多 被传送到某个地方$"
     .endarea
 
 Common_EventScript_Cobalion_Encounter_Text_0:
     .org 0x82e9156
     .area 16
-    .strn "Cobalion: Coba!$"
+    .strn "勾帕路翁：Coba！$"
     .endarea
 
 Common_EventScript_Cobalion_Encounter_Text_1:
     .org 0x82e9166
     .area 30
-    .strn "Cobalion escaped to somewhere$"
+    .strn "勾帕路翁 逃到了什么地方$"
     .endarea
 
 Common_EventScript_Virizion_Encounter_Text_0:
     .org 0x82e9184
     .area 16
-    .strn "Virizion: Viri!$"
+    .strn "毕力吉翁：Viri！$"
     .endarea
 
 Common_EventScript_Virizion_Encounter_Text_1:
     .org 0x82e9194
     .area 30
-    .strn "Virizion escaped to somewhere$"
+    .strn "毕力吉翁 逃到了什么地方$"
     .endarea
 
 Common_EventScript_Keldeo_Encounter_Text_0:
     .org 0x82e91b2
     .area 13
-    .strn "Keldeo: Kel!$"
+    .strn "凯路迪欧：Kel！$"
     .endarea
 
 Common_EventScript_Keldeo_Encounter_Text_1:
     .org 0x82e91bf
     .area 28
-    .strn "Keldeo escaped to somewhere$"
+    .strn "凯路迪欧 逃到了什么地方$"
     .endarea
 
 Common_EventScript_Victini_Encounter_Text_0:
     .org 0x82e91db
     .area 14
-    .strn "Victini: Vic!$"
+    .strn "比克提尼：Vic！$"
     .endarea
 
 Common_EventScript_Victini_Encounter_Text_1:
     .org 0x82e91e9
     .area 32
-    .strn "Victini teleported to somewhere$"
+    .strn "比克提尼 被传送到某个地方$"
     .endarea
 
