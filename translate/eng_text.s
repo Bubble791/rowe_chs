@@ -25,7 +25,7 @@ BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
 BattleFrontier_PokemonCenter_1F_Text_Skitty:
     .org 0x82caf78
     .area 22
-    .strn "优雅猫：Mya myaaah！$"
+    .strn "优雅猫: Mya myaaah！$"
     .endarea
 
 DewfordTown_Text_GiveYouOneOfMyRods:
@@ -43,19 +43,19 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 DewfordTown_Gym_Text_GetTM:
     .org 0x825933a
     .area 44
-    .strn "藤树：拿上这个\n招式学习器。$"
+    .strn "藤树: 拿上这个\n招式学习器。$"
     .endarea
 
 DewfordTown_Gym_Text_GetMegaStone:
     .org 0x8259366
     .area 105
-    .strn "藤树：拿上这个超级石，\n给赫拉克罗斯携带\p可以释放它所有的潜能。$"
+    .strn "藤树: 拿上这个超级石，\n给赫拉克罗斯携带\p可以释放它所有的潜能。$"
     .endarea
 
 DewfordTown_Gym_Text_GetReward:
     .org 0x82593cf
     .area 43
-    .strn "藤树：将这个道具作为奖励。$"
+    .strn "藤树: 将这个道具作为奖励。$"
     .endarea
 
 Gym_Text_Takethis2:
@@ -145,49 +145,49 @@ EightIsland_EventScript_IslandSign_Text_0:
 OneIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ab47
     .area 78
-    .strn "一之岛宝可梦道馆\n馆主：阿速\l“华丽的飞行宝可梦训练家”$"
+    .strn "一之岛宝可梦道馆\n馆主: 阿速\l“华丽的飞行宝可梦训练家”$"
     .endarea
 
 TwoIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ab95
     .area 76
-    .strn "二之岛宝可梦道馆\n馆主：阿笔\l“活生生的虫宝可梦大百科”$"
+    .strn "二之岛宝可梦道馆\n馆主: 阿笔\l“活生生的虫宝可梦大百科”$"
     .endarea
 
 ThreeIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834abe1
     .area 70
-    .strn "三之岛宝可梦道馆\n馆主：小茜\l“爆炸级漂亮美少女”$"
+    .strn "三之岛宝可梦道馆\n馆主: 小茜\l“爆炸级漂亮美少女”$"
     .endarea
 
 FourIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ac27
     .area 70
-    .strn "四之岛宝可梦道馆\n馆主：松叶\l“千里眼修验者”$"
+    .strn "四之岛宝可梦道馆\n馆主: 松叶\l“千里眼修验者”$"
     .endarea
 
 FiveIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ac6d
     .area 73
-    .strn "五之岛宝可梦道馆\n馆主：阿四\l“以猛拳诉说一切的男人”$"
+    .strn "五之岛宝可梦道馆\n馆主: 阿四\l“以猛拳诉说一切的男人”$"
     .endarea
 
 SixIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834acb6
     .area 69
-    .strn "六之岛宝可梦道馆\n馆主：阿蜜\l“铜墙铁壁的女孩”$"
+    .strn "六之岛宝可梦道馆\n馆主: 阿蜜\l“铜墙铁壁的女孩”$"
     .endarea
 
 SevenIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834acfb
     .area 75
-    .strn "七之岛宝可梦道馆\n馆主：柳伯\l“领会寒冬严酷之人”$"
+    .strn "七之岛宝可梦道馆\n馆主: 柳伯\l“领会寒冬严酷之人”$"
     .endarea
 
 EightIsland_EventScript_Island_GymSign_Text_0:
     .org 0x834ad46
     .area 76
-    .strn "八之岛宝可梦道馆\n馆主：小椿\l“神圣的宝可梦龙使者！”$"
+    .strn "八之岛宝可梦道馆\n馆主: 小椿\l“神圣的宝可梦龙使者！”$"
     .endarea
 
 Common_EventScript_New_Mauville_Sign_Text_0:
@@ -6619,7 +6619,7 @@ UDTrade_Text_Mode_Not_Allowed_To_Trade:
 Common_EventScript_Mesprit_Encounter_Text_0:
     .org 0x82e9126
     .area 16
-    .strn "艾姆利多：Mes...$"
+    .strn "艾姆利多: Mes...$"
     .endarea
 
 Common_EventScript_Mesprit_Encounter_Text_1:
@@ -6631,7 +6631,7 @@ Common_EventScript_Mesprit_Encounter_Text_1:
 Common_EventScript_Cobalion_Encounter_Text_0:
     .org 0x82e9156
     .area 16
-    .strn "勾帕路翁：Coba！$"
+    .strn "勾帕路翁: Coba！$"
     .endarea
 
 Common_EventScript_Cobalion_Encounter_Text_1:
@@ -6643,7 +6643,7 @@ Common_EventScript_Cobalion_Encounter_Text_1:
 Common_EventScript_Virizion_Encounter_Text_0:
     .org 0x82e9184
     .area 16
-    .strn "毕力吉翁：Viri！$"
+    .strn "毕力吉翁: Viri！$"
     .endarea
 
 Common_EventScript_Virizion_Encounter_Text_1:
@@ -6655,7 +6655,7 @@ Common_EventScript_Virizion_Encounter_Text_1:
 Common_EventScript_Keldeo_Encounter_Text_0:
     .org 0x82e91b2
     .area 13
-    .strn "凯路迪欧：Kel！$"
+    .strn "凯路迪欧: Kel！$"
     .endarea
 
 Common_EventScript_Keldeo_Encounter_Text_1:
@@ -6667,7 +6667,7 @@ Common_EventScript_Keldeo_Encounter_Text_1:
 Common_EventScript_Victini_Encounter_Text_0:
     .org 0x82e91db
     .area 14
-    .strn "比克提尼：Vic！$"
+    .strn "比克提尼: Vic！$"
     .endarea
 
 Common_EventScript_Victini_Encounter_Text_1:
