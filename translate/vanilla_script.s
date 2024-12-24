@@ -15615,13 +15615,6 @@ Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards:
     .area 113
     .strn "你没有找到什么宝藏啊⋯\p如果你发现了碎片，比如\n红色碎片，就来和我交换吧！$"
     .endarea
-/*
-Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
-    .org 0x82d4f53
-    .area 254
-    .strn "{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 15}红色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}炎之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 6}黄色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 115}雷之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 12}蓝色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 121}水之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 8}绿色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}叶之石$"
-    .endarea
-*/
 
 Route125_Text_NolenPostBattle:
     .org 0x831a6d0
@@ -20265,5 +20258,2473 @@ VictoryRoad_B2F_Text_DiannePostBattle:
     .org 0x829636a
     .area 46
     .strn "有胆量！我喜欢！\n加油吧！$"
+    .endarea
+
+/*
+Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
+    .org 0x82d4f53
+    .area 254
+    .strn "{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 15}红色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}炎之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 6}黄色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 115}雷之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 12}蓝色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 121}水之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 8}绿色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}叶之石$"
+    .endarea
+*/
+
+gText_AbnormalWeatherEnded_Rain:
+    .org 0x82ec7ea
+    .area 46
+    .strn "倾盆大雨似乎\n停了⋯$"
+    .endarea
+
+gText_AbnormalWeatherEnded_Sun:
+    .org 0x82ec818
+    .area 47
+    .strn "强烈的阳光似乎\n平静了⋯$"
+    .endarea
+
+BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack:
+    .org 0x82c0321
+    .area 51
+    .strn "道路被阻断了！\n并且没有退路了⋯$"
+    .endarea
+
+BerryBlender_Text_WantToMakePokeblocks:
+    .org 0x830bf53
+    .area 58
+    .strn "哦？你是不是和这个老前辈\n想做点能量方块？$"
+    .endarea
+
+BerryBlender_Text_MadeOldTimerSad:
+    .org 0x830bf98
+    .area 36
+    .strn "哦⋯\n你让这个老前辈很难过⋯$"
+    .endarea
+
+BerryBlender_Text_DontHaveAnyBerries:
+    .org 0x830c0dc
+    .area 90
+    .strn "哦？\n你没有树果？\p如果你没有树果，\n你就不能做任何能量方块。$"
+    .endarea
+
+BerryBlender_Text_DontHaveAnyBerriesToSpare:
+    .org 0x830c1e2
+    .area 132
+    .strn "如果我还有一些树果留下的话，\n我很乐意给你一个⋯\p可是，今天我一个多余的都没有。\n我们得以后再做了。$"
+    .endarea
+
+BerryBlender_Text_CanHaveOneOfMyBerries:
+    .org 0x830c136
+    .area 172
+    .strn "好吧，那个什么都做不了，是吧。\p你可以用我的树果，\n如果不介意我剩下的话。\p这样的话，我们就可以一起用\n树果混合机做一些能量方块。$"
+    .endarea
+
+BerryBlender_Text_KnowHowToMakePokeblocks:
+    .org 0x830bfbc
+    .area 33
+    .strn "你知道怎么做能量方块？$"
+    .endarea
+
+BerryBlender_Text_LetsBerryBlender:
+    .org 0x830bfdd
+    .area 46
+    .strn "那么让我们开始吧！\p让我们混合树果！$"
+    .endarea
+
+BerryBlender_Text_ExplainBerryBlending:
+    .org 0x830c00b
+    .area 209
+    .strn "好吧，那么小小解释一下。\p噢，别担心，很简单的。\p当那个混合机的箭头到达\n你的标志时，就按下A键。\p这就是你要做的。\n当你自己试的时候就知道有多简单了。$"
+    .endarea
+
+BerryBlender_Text_Excellent:
+    .org 0x830bf8d
+    .area 11
+    .strn "非常好！$"
+    .endarea
+
+BerryBlender_Text_PokeblockCaseIsFull:
+    .org 0x830c266
+    .area 86
+    .strn "可是你的能量方块盒满了。\p你应该用掉些能量方块\n再来见我。$"
+    .endarea
+
+BerryBlender_Text_DontHavePokeblockCase:
+    .org 0x830c2bc
+    .area 83
+    .strn "可是你都没有能量方块盒。\p你应该先有一个能量方块盒，\n然后再来见我。$"
+    .endarea
+
+BerryBlender_Text_WantToBlendPokeblocksWithUs:
+    .org 0x830c366
+    .area 54
+    .strn "你好啊！\n你是想和我们混合一些树果？$"
+    .endarea
+
+BerryBlender_Text_ThatsTooBad:
+    .org 0x830c3a2
+    .area 79
+    .strn "真是太糟糕了⋯\p不过我们总是在这附近，\n无论什么时候你都可以找我们混合！$"
+    .endarea
+
+BerryBlender_Text_DontHaveAnyBerries2:
+    .org 0x830c4f9
+    .area 170
+    .strn "哦，但是等一下⋯\n你都没有树果。\p要是没有树果的话，\n你可做不了能量方块⋯\p我们一直在这附近，只要你有\n树果就可以找我们混合。$"
+    .endarea
+
+BerryBlender_Text_KnowHowToMakePokeblocks2:
+    .org 0x830c3f1
+    .area 55
+    .strn "你一定知道如何\n混合树果的是吧？$"
+    .endarea
+
+BerryBlender_Text_LetsBerryBlender2:
+    .org 0x830c428
+    .area 46
+    .strn "那么让我们开始吧！\p让我们树果混合机！$"
+    .endarea
+
+BerryBlender_Text_ExplainBerryBlending2:
+    .org 0x830c456
+    .area 163
+    .strn "好的！\n让我解释给你听！\p当混合机的箭头转\n到你的标志时，\l就按下A键。\p就是这样。\n很简单吧，你说呢？$"
+    .endarea
+
+BerryBlender_Text_Okay:
+    .org 0x830c39c
+    .area 6
+    .strn "好啊！$"
+    .endarea
+
+BerryBlender_Text_PokeblockCaseIsFull2:
+    .org 0x830c5a3
+    .area 100
+    .strn "哦，但是等一下⋯\n你的能量方块盒满了。\p你应该用掉一些\n能量方块再回来。$"
+    .endarea
+
+BerryBlender_Text_DontHavePokeblockCase2:
+    .org 0x830c607
+    .area 105
+    .strn "哦，但是等一下⋯\n可是你都没有能量方块盒。\p你应该先有一个能量方块盒\n然后再回来。$"
+    .endarea
+
+BerryBlender_Text_LookGoodAtBlendingJoinUs:
+    .org 0x830c9a7
+    .area 77
+    .strn "哦，天哪！\n你好像很在行混合。\l愿意加入我们吗？？$"
+    .endarea
+
+BerryBlender_Text_LeftUsInShock:
+    .org 0x830c6bd
+    .area 38
+    .strn "哦，天哪⋯\p你真让我们震惊！$"
+    .endarea
+
+BerryBlender_Text_DontHaveAnyBerries3:
+    .org 0x830c7e2
+    .area 187
+    .strn "你没有树果，\n是吗？\p要是没有树果的话，\n你可做不了能量方块。\p我们会一直在这里做能量方块，\n所以当你有树果时\l我们一起做一些吧。$"
+    .endarea
+
+BerryBlender_Text_KnowHowToMakePokeblocks3:
+    .org 0x830c6e3
+    .area 51
+    .strn "你应该知道怎么做\n能量方块的吧？$"
+    .endarea
+
+BerryBlender_Text_LetsBerryBlender3:
+    .org 0x830c716
+    .area 52
+    .strn "哦，天哪！\n那么让我们开始吧！\p让我们树果混合机！$"
+    .endarea
+
+BerryBlender_Text_ExplainBerryBlending3:
+    .org 0x830c74a
+    .area 152
+    .strn "哦，天哪！\p那么我会好好地解释给你听。\p当混合机的箭头转\n到你的标志时，就按下A键。\p就是这样。\n很简单吧？$"
+    .endarea
+
+BerryBlender_Text_OhDear:
+    .org 0x830c6b3
+    .area 10
+    .strn "哦，天哪！$"
+    .endarea
+
+BerryBlender_Text_PokeblockCaseIsFull3:
+    .org 0x830c89d
+    .area 90
+    .strn "看起来你的能量方块盒\n满了。\p你应该用掉一些\n能量方块再回来。$"
+    .endarea
+
+BerryBlender_Text_DontHavePokeblockCase3:
+    .org 0x830c8f7
+    .area 103
+    .strn "看起来你都没有\n能量方块盒。\p你应该先有一个能量方块盒然后\n再回来。$"
+    .endarea
+
+BerryBlender_Text_SeeMyMasteryInAction:
+    .org 0x833d7aa
+    .area 62
+    .strn "混合大师：哦！这么说来，\n你是想看看我战斗的英姿吧？$"
+    .endarea
+
+BerryBlender_Text_TooBusyNowIsee:
+    .org 0x833d7e8
+    .area 107
+    .strn "啊！\p我看你好像挺忙的！\p别担心！\n我天天都在这儿！\l我看这样吧，等你旅行结束了再来找我吧！$"
+    .endarea
+
+BerryBlender_Text_BlendMasterNoBerries:
+    .org 0x833d853
+    .area 93
+    .strn "啊！\p你没带来不同寻常的树果！\p我每天都在这儿的！\n再拿一些珍稀的树果回来，赶快！$"
+    .endarea
+
+BerryBlender_Text_BlendMasterKnowHowToMakePokeblocks:
+    .org 0x833d8b0
+    .area 82
+    .strn "当然了！\n当然了！\p对了⋯\n你知道如何用树果\l做出能量方块吗？$"
+    .endarea
+
+BerryBlender_Text_BlendMasterLetsBerryBlender:
+    .org 0x833d9d1
+    .area 88
+    .strn "太好了！\p那就快开始吧！\p让我们与所有的混合大师一起，\n混合我们的树果吧！$"
+    .endarea
+
+BerryBlender_Text_BlendMasterExplainBerryBlending:
+    .org 0x833d902
+    .area 207
+    .strn "嗯！\p不知道没关系，其实非常简单！\p当混合机的指针正对着\n你的时候马上按A键。\p这事儿难不倒你吧。\p你看了我的示范之后，\n就会明白了。$"
+    .endarea
+
+BerryBlender_Text_BlendMasterNoPokeblockCase:
+    .org 0x833da29
+    .area 117
+    .strn "噢！\p貌似你没有得到\n能量方块盒啊！\p快去把能量方块盒带来！\n我在这儿等你！$"
+    .endarea
+
+BerryBlender_Text_BlendMasterPokeblockCaseFull:
+    .org 0x833da9e
+    .area 99
+    .strn "啊！\p看来你的能量方块盒满了！\p我在这儿等着你！\n用掉一些能量块就马上回来！$"
+    .endarea
+
+BerryBlender_Text_SetNewBlenderRecord:
+    .org 0x830c95e
+    .area 73
+    .strn "好吧！今天将是\n我创造新的混合机速度的记录！$"
+    .endarea
+
+BerryBlender_Text_MakeDeliciousPokeblocks:
+    .org 0x830c9f4
+    .area 62
+    .strn "我将做美味的能量方块\n让我的宝可梦变得更加可爱。$"
+    .endarea
+
+BerryBlender_Text_LoveMakingPokeblocks:
+    .org 0x830cbd0
+    .area 58
+    .strn "我爱上做能量方块了。\p我总是在身上带着一些树果。$"
+    .endarea
+
+BerryBlender_Text_MakePokeblocksUsingBerryBlender:
+    .org 0x830cc0a
+    .area 75
+    .strn "如果你喜欢的话，\n我们可以一起用树果混合机\l做一些能量方块。$"
+    .endarea
+
+BerryBlender_Text_DontHaveAnyBerriesNoneToSpare:
+    .org 0x830cd19
+    .area 138
+    .strn "哦？\n你没有树果？\p如果我还有一些留下的话，\n我很乐意给你一个⋯\p可是，今天我一个多余的都没有。\n不好意思。$"
+    .endarea
+
+BerryBlender_Text_DontHaveAnyBerriesHaveOne:
+    .org 0x830cc55
+    .area 134
+    .strn "哦？\n你还没有树果？\p那就什么都做不了。\p如果你不介意我剩下的，你可以\n从我这里选一个树果。$"
+    .endarea
+
+BerryBlender_Text_UseItToMakePokeblocksTogether:
+    .org 0x830ccdb
+    .area 62
+    .strn "我们一起用树果混合机\n加上它做能量方块。$"
+    .endarea
+
+BerryBlender_Text_SaveGameBeforeBerryBlenderLink:
+    .org 0x830ca32
+    .area 136
+    .strn "将会和你的朋友一起把树果\n放入树果混合机中做出能量方块。\p要不要先记录然后\n再和你的朋友连线？$"
+    .endarea
+
+BerryBlender_Text_NoBerriesLink:
+    .org 0x830cb22
+    .area 54
+    .strn "你没有树果。\n不能用树果混合机。$"
+    .endarea
+
+BerryBlender_Text_Player1Arrived:
+    .org 0x830caeb
+    .area 12
+    .strn "{STR_VAR_1}到达。$"
+    .endarea
+
+BerryBlender_Text_Player1And2Arrived:
+    .org 0x830caf7
+    .area 19
+    .strn "{STR_VAR_1}和{STR_VAR_2}到达。$"
+    .endarea
+
+BerryBlender_Text_AllPlayersArrived:
+    .org 0x830cb0a
+    .area 24
+    .strn "{STR_VAR_1}，{STR_VAR_2}，和\n{STR_VAR_3}到达。$"
+    .endarea
+
+BerryBlender_Text_PokeblockCaseIsFullLink:
+    .org 0x830cb58
+    .area 58
+    .strn "你的能量方块盒满了。\n不能用树果混合机。$"
+    .endarea
+
+BerryBlender_Text_DontHavePokeblockCaseLink:
+    .org 0x830cb92
+    .area 62
+    .strn "你没有能量方块盒。\n不能用树果混合机。$"
+    .endarea
+
+Text_SomeoneIsNotReadyToLink:
+    .org 0x82f1388
+    .area 85
+    .strn "对方未准备好连接。\p请待所有人准备好之后\n再回来。$"
+    .endarea
+
+gText_PokeblockLinkCanceled:
+    .org 0x82ebef8
+    .area 23
+    .strn "连接停止了。$"
+    .endarea
+
+BerryTree_Text_WantToPlant:
+    .org 0x82ed6a5
+    .area 46
+    .strn "是软软的土壤。\n要种树果吗？$"
+    .endarea
+
+BerryTree_Text_WantToPick:
+    .org 0x82ed78c
+    .area 45
+    .strn "发现了{STR_VAR_2}个{STR_VAR_1}！\p要摘下\n{STR_VAR_1}吗？$"
+    .endarea
+
+BerryTree_Text_WantToWater:
+    .org 0x82ed882
+    .area 44
+    .strn "想要用吼吼鲸洒水壶\n浇{STR_VAR_1}吗？$"
+    .endarea
+
+gText_ThankYouForAccessingMysteryGift:
+    .org 0x82ec314
+    .area 49
+    .strn "感谢连接\n神秘礼物系统。$"
+    .endarea
+
+CableClub_Text_FirstTimeRightThisWay:
+    .org 0x82f280b
+    .area 206
+    .strn "你好！\n我是奥纳。\p你应该是第一次到\n这里来吧。\p由我来向你介绍写无线通信\n系统吧。\p首先需要向你介绍下\n这一层的宝可梦服务台。\p请走这边。$"
+    .endarea
+
+CableClub_Text_ExplainWirelessClubFirstTime:
+    .org 0x82f28d9
+    .area 543
+    .strn "在这里有\n两个房间。\p首先介绍下左边的\n那是联合房间。\p你能够和那些在你周围的\n并且也进入这个房间的\l人进行联机。\p你可以和他们进行\n聊天，战斗或交换。\p接着右边的就是直接通信\n房间了。\p你可以和他们进行交换或\n战斗。\p如果无线通信器不起作用\n的话，你就得使用\lGBA通信线了。\p那样的话，你必须得去\n直接通信室。\p希望你能满意我\n的服务。$"
+    .endarea
+
+CableClub_Text_WhichService:
+    .org 0x82f106f
+    .area 42
+    .strn "需要为您提供\n什么服务吗？$"
+    .endarea
+
+CableClub_Text_ExplainBattleModes:
+    .org 0x82f2303
+    .area 395
+    .strn "一共有3种不同的对战模式。\p单打模式中每位选手\n至少带上一只宝可梦。\p战斗开始时每位选手同时放出\n一只宝可梦。\p双打模式中每位选手\n至少带上一只宝可梦。\p战斗开始时每位选手同时放出\n一只宝可梦。\p混战模式中每位选手\n至少带上一只宝可梦。\p战斗开始时每位选手\n同时放出一只宝可梦。$"
+    .endarea
+
+CableClub_Text_NeedTwoMonsForDoubleBattle:
+    .org 0x82f11af
+    .area 57
+    .strn "要进行双打对战\n至少要带两只宝可梦。$"
+    .endarea
+
+CableClub_Text_NeedFourPlayers:
+    .org 0x82f14fe
+    .area 53
+    .strn "进行此种对战模式\n需要4位玩家。$"
+    .endarea
+
+CableClub_Text_CantDoubleBattleWithXPlayers:
+    .org 0x82f14c8
+    .area 54
+    .strn "玩家{STR_VAR_1}无法进行\n双打对战模式。$"
+    .endarea
+
+CableClub_Text_CantSingleBattleWithXPlayers:
+    .org 0x82f1492
+    .area 54
+    .strn "玩家{STR_VAR_1}无法进行\n单人对战模式。$"
+    .endarea
+
+CableClub_Text_PleaseConfirmNumberAndRestart:
+    .org 0x82f1533
+    .area 54
+    .strn "请确认玩家数量，\n重新开始。$"
+    .endarea
+
+CableClub_Text_NeedTwoMonsToTrade:
+    .org 0x82f11e8
+    .area 58
+    .strn "要进行交换\n至少要带有两只宝可梦。$"
+    .endarea
+
+CableClub_Text_CantTradeEnigmaBerry:
+    .org 0x82f1222
+    .area 48
+    .strn "带有{STR_VAR_1}树果的\n宝可梦无法进行交换。$"
+    .endarea
+
+CableClub_Text_NotSetUpForFarAwayRegion:
+    .org 0x82f1726
+    .area 100
+    .strn "非常抱歉，\p我们现在无法与\n远在其它地区的训练师\l进行连接⋯$"
+    .endarea
+
+CableClub_Text_OtherTrainerNotReady:
+    .org 0x82f178a
+    .area 32
+    .strn "其他训练师还未准备好。$"
+    .endarea
+
+CableClub_Text_PleaseVisitAgain:
+    .org 0x82f1452
+    .area 23
+    .strn "欢迎再次光临。$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_ComeAgain:
+    .org 0x82f1f12
+    .area 23
+    .strn "好，再来啊！$"
+    .endarea
+
+CableClub_Text_YouHaveAMonThatCantBeTaken:
+    .org 0x82f17aa
+    .area 51
+    .strn "你带有不能携带的\n宝可梦。$"
+    .endarea
+
+CableClub_Text_CantMixWithJapaneseGame:
+    .org 0x82f1812
+    .area 206
+    .strn "对不起，连接错误。\p不能与日版红蓝宝石\n进行混合存档。\p同样，你也不能同时与\n日版绿宝石和海外版\l红蓝宝石混合存档。$"
+    .endarea
+
+gText_SorryWirelessClubAdjustments:
+    .org 0x82ec20b
+    .area 77
+    .strn "非常抱歉，\n宝可梦无线俱乐部\l系统正在调整。$"
+    .endarea
+
+gText_UndergoingAdjustments:
+    .org 0x82ec258
+    .area 41
+    .strn "似乎正在进行\n调整的样子⋯$"
+    .endarea
+
+CableClub_Text_GotToLookAtTrainerCard:
+    .org 0x82f1613
+    .area 41
+    .strn "成功！看一下{STR_VAR_1}的\n训练师卡片！$"
+    .endarea
+
+CableClub_Text_GotToLookAtColoredTrainerCard:
+    .org 0x82f163c
+    .area 57
+    .strn "成功！看一下{STR_VAR_1}的\n训练师卡片！\p是一张{STR_VAR_2}卡！$"
+    .endarea
+
+CableClub_Text_TooBusyToNotice:
+    .org 0x82f15ef
+    .area 36
+    .strn "这个训练师太忙，\n没空注意⋯$"
+    .endarea
+
+BattleColosseum_2P_Text_TakePlaceStartBattle:
+    .org 0x82f1675
+    .area 46
+    .strn "请就位，\n准备开始战斗。$"
+    .endarea
+
+TradeCenter_Text_TakeSeatStartTrade:
+    .org 0x82f16a3
+    .area 44
+    .strn "请就位，\n准备开始交换。$"
+    .endarea
+
+Text_TerminateLinkConfirmation:
+    .org 0x82f1569
+    .area 65
+    .strn "如果您离开房间，连接\n将会终止。可以吗？$"
+    .endarea
+
+CableClub_Text_EnjoyUnionRoom:
+    .org 0x82f27dd
+    .area 46
+    .strn "希望你能在联合房间过的愉快。$"
+    .endarea
+
+CableClub_Text_NeedTwoMonsForUnionRoom:
+    .org 0x82f1aff
+    .area 61
+    .strn "要进入联合房间，\n你至少要带有2只宝可梦。$"
+    .endarea
+
+CableClub_Text_NoEnigmaBerryInUnionRoom:
+    .org 0x82f1b3c
+    .area 58
+    .strn "带有{STR_VAR_1}树果的宝可梦\n不能进入联合房间。$"
+    .endarea
+
+CableClub_Text_UnionRoomAdapterNotConnected:
+    .org 0x82f1b76
+    .area 132
+    .strn "这里是宝可梦无线俱乐部\n联合房间，\p很抱歉，您的无线接收器没有正确连接，\p请下次再来。$"
+    .endarea
+
+CableClub_Text_AskAboutLinking:
+    .org 0x82f2af8
+    .area 115
+    .strn "你好，{PLAYER}！\p我是奥纳，\n宝可梦中心2楼的服务员。\p你想了解些关于\n通信的事情吗？$"
+    .endarea
+
+CableClub_Text_ExplainWirelessClub:
+    .org 0x82f2b6b
+    .area 743
+    .strn "让我给你介绍下\n无线通信俱乐部吧。\p这一层有两个房间\p首先介绍下左边的\n那是联合房间。\p你能够和那些在你周围的\n并且也进入这个房间的\l人进行联机。\p你可以和他们进行\n聊天，战斗或交换。\p接着右边的就是直接通信\n房间了。\p你可以和他们进行交换或\n战斗。\p如果无线通信器不起作用\n的话，你就得使用\lGBA通信线了。\p那样的话，你必须得去\n直接通信室。\p希望你能满意\n我的服务。$"
+    .endarea
+
+CableClub_Text_HopeYouEnjoyWirelessSystem:
+    .org 0x82f2e52
+    .area 52
+    .strn "希望你能满意\n我的服务。$"
+    .endarea
+
+CableClub_Text_TradePokemon:
+    .org 0x82f225e
+    .area 33
+    .strn "你想要交换宝可梦吗？$"
+    .endarea
+
+CableClub_Text_AccessRecordCorner:
+    .org 0x82f22a9
+    .area 44
+    .strn "你想参加联机中心？$"
+    .endarea
+
+CableClub_Text_UseBerryCrush:
+    .org 0x82f22d5
+    .area 46
+    .strn "你想使用\n树果研磨系统吗？$"
+    .endarea
+
+CableClub_Text_NeedBerryForBerryCrush:
+    .org 0x82f1abd
+    .area 66
+    .strn "要使用树果混合机，\n你至少要有1个树果。$"
+    .endarea
+
+CableClub_Text_ParticipantsStepUpToCounter:
+    .org 0x82f1910
+    .area 60
+    .strn "参加者请到\n接待处。$"
+    .endarea
+
+CableClub_Text_AdapterNotConnected:
+    .org 0x82f18e0
+    .area 48
+    .strn "无线接收器没有\n正确连接。$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_PokemonJumpInfo:
+    .org 0x82f1c8c
+    .area 294
+    .strn "“宝可梦跳绳”\p用A键让你的宝可梦\n跳过藤鞭。\p只有60厘米以下的小型\n宝可梦可以参加，\p而且，只会游泳、挖掘、飞行的\n宝可梦并不擅长跳跃，\p因此，这些宝可梦\n也不能参加。\p如果大家都及时跳起，\n会有好事情发生。$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_DodrioBerryPickingInfo:
+    .org 0x82f1db2
+    .area 187
+    .strn "“嘟嘟利摘树果”\p指挥嘟嘟利的3个头\n接住落下的树果。\p按方向键的\n左、右、上键移动这些头。\p要玩此游戏，你必须\n拥有嘟嘟利。$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_TalkToOldManToPlay:
+    .org 0x82f1e6d
+    .area 63
+    .strn "如果你想玩游戏，\n就告诉我后面的老人。$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_EnterWhichPokemon:
+    .org 0x82f1f9a
+    .area 39
+    .strn "要让哪只宝可梦\n参加？$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_AdapterNotConnected:
+    .org 0x82f1f29
+    .area 69
+    .strn "无线接收器没有连接。\n连接上之后再回来吧！$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_ExplainRequiredMon:
+    .org 0x82f2021
+    .area 124
+    .strn "看来你并没有可以\n参加的宝可梦⋯\p需要我为你解释一下\n什么样的宝可梦可以参加吗？$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_ShortJumpingPokemonAllowed:
+    .org 0x82f209d
+    .area 200
+    .strn "参加“宝可梦跳绳”的宝可梦\n必须在60厘米以下，\p并且，不会跳跃的\n宝可梦也不能参加，\p比如说，只会游泳、挖掘、\n飞行的宝可梦。\p知道这些就够了。$"
+    .endarea
+
+MossdeepCity_GameCorner_1F_Text_OnlyDodrioAllowed:
+    .org 0x82f2165
+    .area 60
+    .strn "只有嘟嘟利可以参加\n嘟嘟利摘树果。$"
+    .endarea
+
+Text_PictureBookShelf:
+    .org 0x832169b
+    .area 40
+    .strn "一套宝可梦画册。$"
+    .endarea
+
+Text_BookShelf:
+    .org 0x83216c3
+    .area 37
+    .strn "装满了各种各样的书。$"
+    .endarea
+
+Text_PokemonCenterBookShelf:
+    .org 0x83216e8
+    .area 68
+    .strn "是宝可梦杂志！\n宝可梦伙伴⋯\p宝可梦手册⋯\n可爱的宝可梦⋯$"
+    .endarea
+
+Text_Vase:
+    .org 0x832172c
+    .area 61
+    .strn "花瓶看上去很昂贵⋯\n偷偷看了看里面⋯\p可惜，是空的。$"
+    .endarea
+
+Text_EmptyTrashCan:
+    .org 0x8321769
+    .area 12
+    .strn "空的。$"
+    .endarea
+
+Text_ShopShelf:
+    .org 0x8321775
+    .area 56
+    .strn "架子上满满的\n全是宝可梦商品。$"
+    .endarea
+
+Text_Blueprint:
+    .org 0x83217ad
+    .area 48
+    .strn "是什么的设计图吗？\n好复杂！$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ContestReception:
+    .org 0x82f4069
+    .area 59
+    .strn "你好！\p这里是宝可梦华丽大赛的\n服务前台。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ReceptionDontHavePokeblockCase:
+    .org 0x82f3f68
+    .area 160
+    .strn "你好！\p这里是宝可梦华丽大赛的\n服务前台。\p哎呀？好像你还没拿到\n能量方块盒吧。\p这样的话，我们就提供\n一个给你吧！$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_NowThatWeveClearedThatUp:
+    .org 0x82f4008
+    .area 97
+    .strn "OK，\n现在我们弄清楚了⋯\p你好！\p这里是宝可梦华丽大赛的\n服务前台。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_PokemonWonWeHavePrize:
+    .org 0x82f483c
+    .area 108
+    .strn "恭喜！你的宝可梦\n获得了比赛的胜利！\p你的奖章在这边。\n请这边走！$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ComeBackForPrizeLater:
+    .org 0x82f48a8
+    .area 42
+    .strn "请过会再来领取\n你的奖章。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ExplainContests:
+    .org 0x82f413b
+    .area 515
+    .strn "4位参赛选手拿出一只\n宝可梦进行评比。\p华丽大赛分为\n第一场和第二场展示。\p第一场评判是\n由观众的喜爱程度决定的。\p第二场评判的成绩是取决于\n宝可梦的动作的。\p你就应该计划好\n你的宝可梦的动作\l以获得更高的评价。\l第一场和第二场的成绩最后\n加起来成为总成绩。\p总成绩最高的宝可梦\n就是比赛的优胜者。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ExplainContestTypes:
+    .org 0x82f433e
+    .area 164
+    .strn "一共有5个分组的比赛。\p帅气、美丽、可爱、\n聪明和强壮。\p为自己的宝可梦选择一个\n合适的分组吧。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ExplainContestRanks:
+    .org 0x82f43e2
+    .area 478
+    .strn "华丽大赛一共有4个\n不同的组别\p普通，超级，专家和大师\n4个组别。\p在普通组的比赛中任何一只\n宝可梦都可以参加。\p获得普通组胜利的宝可梦\n就获得了参加同一类型的\l超级组的比赛的资格\p同样的，获得超级组比赛胜利的\n就能参加专家组的比赛，\l专家组比赛胜利的能进入下一个等级\l大师组的比赛。\p所有的宝可梦训练师都希望自己的\n宝可梦获得大师组比赛\l的胜利。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_EnterWhichPokemon1:
+    .org 0x82f460b
+    .area 39
+    .strn "你参加比赛的宝可梦是？$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ConfirmContestMon:
+    .org 0x82f4785
+    .area 30
+    .strn "那是你参加比赛的宝可梦吗？$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_AlreadyWonEnterAnyway:
+    .org 0x82f4708
+    .area 125
+    .strn "这个缎带⋯\p你的宝可梦似乎已经获得了\n这个等级的缎带？\p你还想参加这个等级\n的比赛吗？$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_EggCannotTakePart:
+    .org 0x82f4685
+    .area 61
+    .strn "非常抱歉，宝可梦蛋是\n不能参加比赛的。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_MonInNoConditionForContest:
+    .org 0x82f46c2
+    .area 70
+    .strn "还够资格参加这个等级的\l比赛⋯$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_YourMonIsEntryNum4:
+    .org 0x82f47a3
+    .area 113
+    .strn "好的你的宝可梦\n可以参加比赛了。\p你的宝可梦是第四位。\n比赛马上就开始了。$"
+    .endarea
+
+ContestHall_Text_GettingStartedParticipantsAsFollows:
+    .org 0x82f48d2
+    .area 126
+    .strn "主持：你好！4人参加的华丽大赛\n马上就开始了\l{STR_VAR_2}！\p参加比赛是选手和他们的宠物为\n下列：$"
+    .endarea
+
+ContestHall_Text_SeenContestantsAudienceWillVote:
+    .org 0x82f49f1
+    .area 194
+    .strn "主持：4位参赛选手我们已经\n接受过了。\p现在开始进行初级评定！\p观众会给他们最喜欢的\n宝可梦投票。\p那么投票\n开始吧！$"
+    .endarea
+
+ContestHall_Text_VotingCompleteLetsAppeal:
+    .org 0x82f4ac5
+    .area 273
+    .strn "投票结束了！\p投票结束后，\n我们开始进行中级评定\p接下来就大家最期待的\n表演阶段了！\p参赛选手们会跟我们\n带来怎么绚烂夺目的表演呢！\p就让我们一起\n拭目以待吧！$"
+    .endarea
+
+ContestHall_Text_ThatsItForJudging:
+    .org 0x82f4bd6
+    .area 27
+    .strn "主持：比赛开始！$"
+    .endarea
+
+ContestHall_Text_ThankYouForAppeals:
+    .org 0x82f4bf1
+    .area 124
+    .strn "感谢你为大家带来了\n如此出色的表演！\p这就是最终的结果！\n感谢你的努力！$"
+    .endarea
+
+ContestHall_Text_JudgeLooksReady:
+    .org 0x82f4c6d
+    .area 121
+    .strn "现在所有准备\n工作已经结束了。\p裁判们看来要开始\n宣布结果了！$"
+    .endarea
+
+ContestHall_Text_WeWillNowDeclareWinner:
+    .org 0x82f4ce6
+    .area 39
+    .strn "评委：现在我们就要开始宣布冠军了！$"
+    .endarea
+
+ContestHall_Text_CongratsTrainerXandMon:
+    .org 0x82f4d0d
+    .area 46
+    .strn "主持：第{STR_VAR_2}！\p{STR_VAR_3}和{STR_VAR_1}，\n恭喜你！$"
+    .endarea
+
+ContestHall_Text_AcceptYourPrize:
+    .org 0x82f4d69
+    .area 44
+    .strn "主持：给你！\n你的奖章！$"
+    .endarea
+
+ContestHall_Text_CongratsPleaseCompeteAgain:
+    .org 0x82f4d3b
+    .area 46
+    .strn "主持：恭喜你！\n欢迎下次再来参加！$"
+    .endarea
+
+ContestHall_Text_PickUpPrizeAtCounterLater:
+    .org 0x82f4df0
+    .area 83
+    .strn "请稍后到前台来\n拿取奖品。\l欢迎下次再参加比赛！$"
+    .endarea
+
+ContestHall_Text_ConferRibbonAsPrize:
+    .org 0x82f4d95
+    .area 44
+    .strn "这个缎带就做为你的\n奖章吧！$"
+    .endarea
+
+ContestHall_Text_ReceivedRibbon:
+    .org 0x82f4dc1
+    .area 22
+    .strn "{PLAYER}得到了缎带。$"
+    .endarea
+
+ContestHall_Text_PutRibbonOnMon:
+    .org 0x82f4dd7
+    .area 25
+    .strn "{PLAYER}带上了缎带\n{STR_VAR_1}。$"
+    .endarea
+
+Route117_Text_SeeWifeIfYoudLikeMeToRaiseMon:
+    .org 0x830b149
+    .area 142
+    .strn "我是抚养家的饲养爷爷。\p我会帮忙照顾训练师的那些\n珍贵的宝可梦。\p如果你想我照顾你的宝可梦，\n去和我老婆说吧。$"
+    .endarea
+
+Route117_Text_IWillKeepDoYouWantIt:
+    .org 0x830b444
+    .area 46
+    .strn "我会照顾它的。\n你想要，是不是？$"
+    .endarea
+
+Route117_Text_IllKeepIt:
+    .org 0x830b2c3
+    .area 33
+    .strn "好的，我会照顾它的。\n谢谢！$"
+    .endarea
+
+Route117_Text_YouHaveNoRoomForIt:
+    .org 0x830b2e4
+    .area 58
+    .strn "你没有地方放它了⋯\n等你有空间的时候再来吧。$"
+    .endarea
+
+Route117_Text_TakeGoodCareOfIt:
+    .org 0x830b34d
+    .area 22
+    .strn "好好照顾它。$"
+    .endarea
+
+Route117_Text_FriendlyWithOtherTrainersMon:
+    .org 0x830b363
+    .area 117
+    .strn "顺便一提，关于你的{STR_VAR_1}，\n看起来它和\l{STR_VAR_2}的{STR_VAR_3}关系很好。\p我还看到它收到\n了一封信件。$"
+    .endarea
+
+Route117_Text_YourMonIsDoingFine:
+    .org 0x830b28e
+    .area 53
+    .strn "啊，是你呀！很高兴看到你。\n你的{STR_VAR_1}一直做的很好。$"
+    .endarea
+
+Route117_Text_YourMonsAreDoingFine:
+    .org 0x830b417
+    .area 45
+    .strn "啊，是你呀！你的{STR_VAR_1}和\n{STR_VAR_2}都做的很好。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_WouldYouLikeUsToRaiseAMon:
+    .org 0x830b472
+    .area 85
+    .strn "我是饲养婆婆。\p我们可以为你照顾宝可梦。\p想让我们照顾一只吗？$"
+    .endarea
+
+Route117_PokemonDayCare_Text_FineThenComeAgain:
+    .org 0x830b594
+    .area 28
+    .strn "啊，这太好了。\n欢迎再次光临。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_WhichMonShouldWeRaise:
+    .org 0x830b4c7
+    .area 39
+    .strn "想让我们照顾\n哪一只宝可梦呢？$"
+    .endarea
+
+Route117_PokemonDayCare_Text_WellRaiseYourMon:
+    .org 0x830b4ee
+    .area 63
+    .strn "好的，我们会暂时\n照顾你的{STR_VAR_1}的。\p记得之后回来带走它。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_ComeAgain:
+    .org 0x830b5f4
+    .area 18
+    .strn "好。\n欢迎再次光临。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_WeCanRaiseOneMore:
+    .org 0x830b52d
+    .area 71
+    .strn "我们可以照顾你的两只宝可梦。\n想再托管一只吗？$"
+    .endarea
+
+Route117_PokemonDayCare_Text_YouHaveJustOneMon:
+    .org 0x830b739
+    .area 59
+    .strn "咦？你只有一只\n宝可梦呀。\p下次再来吧。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_WhatWillYouBattleWith:
+    .org 0x830b795
+    .area 81
+    .strn "如果你把这些宝可梦都留给我，\n那之后你用什么战斗？\p下次再来吧。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_YoullBeLeftWithJustOne:
+    .org 0x830b7eb
+    .area 139
+    .strn "哼？\n⋯，是啊。\p如果你留下那个宝可梦给\n我，你就只剩下一个了。\p你最好离开的时候再\n多抓点，我想说。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_HusbandWasLookingForYou:
+    .org 0x830b574
+    .area 32
+    .strn "我的丈夫一直在找你。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_YourMonHasGrownXLevels:
+    .org 0x830b64a
+    .area 35
+    .strn "因为等级足够，你的{STR_VAR_1}已经\n进化成{STR_VAR_2}。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_GoodToSeeYou:
+    .org 0x830b606
+    .area 68
+    .strn "啊，是你呀！很高兴见到你。\n你的宝可梦是做的最好的！$"
+    .endarea
+
+Route117_PokemonDayCare_Text_TakeYourMonBack:
+    .org 0x830b774
+    .area 33
+    .strn "想把你的宝可梦带回去吗？$"
+    .endarea
+
+Route117_PokemonDayCare_Text_ItWillCostX:
+    .org 0x830b6c7
+    .area 44
+    .strn "如果你想让你的{STR_VAR_1}回来，\n那要花费{STR_VAR_2}¥。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_NotEnoughMoney:
+    .org 0x830b5b0
+    .area 29
+    .strn "你没有足够的钱了⋯$"
+    .endarea
+
+Route117_PokemonDayCare_Text_HeresYourMon:
+    .org 0x830b6f3
+    .area 30
+    .strn "成交！\n这是你的宝可梦。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_TookBackMon:
+    .org 0x830b711
+    .area 40
+    .strn "{PLAYER}把{STR_VAR_1}从\n饲养婆婆那里拿回来了。$"
+    .endarea
+
+Route117_PokemonDayCare_Text_TakeOtherOneBackToo:
+    .org 0x830b5cd
+    .area 39
+    .strn "你想把另一只\n也带走么？$"
+    .endarea
+
+Route117_PokemonDayCare_Text_YourTeamIsFull:
+    .org 0x830b66d
+    .area 56
+    .strn "你的宝可梦小队满了。\n去腾出些空间再来找我。$"
+    .endarea
+
+Text_EggHatchHuh:
+    .org 0x830b7e6
+    .area 5
+    .strn "哼？$"
+    .endarea
+
+gText_WeHopeToSeeYouAgain:
+    .org 0x82eadc6
+    .area 26
+    .strn "欢迎下次再来！$"
+    .endarea
+
+LilycoveCity_Harbor_Text_PleaseBoard:
+    .org 0x827cdc2
+    .area 47
+    .strn "请先上船，\n等候启程。$"
+    .endarea
+
+GabbyAndTy_Text_KeepingAnEyeOutForYou:
+    .org 0x8304781
+    .area 44
+    .strn "玛丽：我们会\n一直看着你的！$"
+    .endarea
+
+GabbyAndTy_Text_TyPostBattle:
+    .org 0x83049c6
+    .area 60
+    .strn "达伊：你是个天才！\n这肯定是最棒的镜头了！$"
+    .endarea
+
+GabbyAndTy_Text_WhoAreYouInterview:
+    .org 0x8304203
+    .area 245
+    .strn "玛丽：真厉害！真厉害！\n能告诉我你是谁吗？\p一看到你我就知道\n我们发现了一位非凡的人！\p啊，我解释一下。\n我们四处旅行，采访\l各式各样的训练师。\p能占用你一些时间\n做一次采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_QuoteFromLastInterview:
+    .org 0x83042f8
+    .area 124
+    .strn "玛丽：“{STR_VAR_1}！”\p记得吗？上次的对战结果揭晓的时候\n你就是这么说的。\p我永远、永远都不会忘记的！$"
+    .endarea
+
+GabbyAndTy_Text_GiveUsAnInterviewThisTime:
+    .org 0x83047ee
+    .area 236
+    .strn "玛丽：哇，你果然不一般啊！\p自从上次我们战斗以来，你\n成长了不少——确实不少。\p看来我们选中你的时候\n并没有看错。\p那，不管怎样，\n这一回你愿意接受\l我们的采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_InterviewAgain:
+    .org 0x83045b4
+    .area 64
+    .strn "不管怎样，你今天愿意\n再接受我们的采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_YouStompedUsInterviewAgain:
+    .org 0x8304374
+    .area 138
+    .strn "上次我们战斗的时候，还没等我们\n整好攻势就被你打败了⋯\p不管怎样，你今天愿意\n再接受我们的采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_YouThrewABallAtUsInterviewAgain:
+    .org 0x83043fe
+    .area 189
+    .strn "记不记得上次我们战斗的时候\n你对我们扔精灵球？\p我们吓了一跳！那之后我们就\n把这都告诉了大家！\p不管怎样，你今天愿意\n再接受我们的采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_CleverItemSkillsInterviewAgain:
+    .org 0x83044bb
+    .area 127
+    .strn "上次我们战斗的时候，你使用道具\n得心应手的感觉给了我们很深的印象。\p不管怎样，你今天愿意\n再接受我们的采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_WeLookedRespectableInterviewAgain:
+    .org 0x830453a
+    .area 122
+    .strn "上次我们战斗的时候，\n我们干得似乎还不错。\p不管怎样，你今天愿意\n再接受我们的采访吗？$"
+    .endarea
+
+GabbyAndTy_Text_DescribeYourFeelings:
+    .org 0x83045f4
+    .area 120
+    .strn "真的可以吗？\n谢谢！\p好的，那就讲讲对我们战斗的\n感想吧。请尽量简短一点。\l开始吧！$"
+    .endarea
+
+GabbyAndTy_Text_PerfectWellBeSeeingYou:
+    .org 0x830466c
+    .area 204
+    .strn "玛丽：嗯，好！\n完美的总结啊！\p我直觉地感到这次的节目\n会非常成功。\p肯定有机会让电视台\n播放它的，注意一下吧！\p好了！\n下回再见！$"
+    .endarea
+
+GabbyAndTy_Text_DontGiveUpKeepingEyeOut:
+    .org 0x8304738
+    .area 73
+    .strn "玛丽：唔⋯\p那好吧，不过别放弃！\n我们会一直看着你的！$"
+    .endarea
+
+RustboroCity_Gym_Text_RoxanneIntro:
+    .org 0x82715b8
+    .area 225
+    .strn "你好，我是卡那兹市\n宝可梦道馆的馆主杜娟。\p因为想要在实战中验证\n在宝可梦训练师学校中所学，\l我才成为了道馆馆主。\p让我看看你用什么宝可梦，\n怎样战斗，好吗？$"
+    .endarea
+
+DewfordTown_Gym_Text_BrawlyIntro:
+    .org 0x8258e58
+    .area 196
+    .strn "我是藤树！\n武斗镇的道馆馆主！\p我曾与这里汹涌的巨浪搏斗，\n在漆黑的山洞中训练\l让自己变得更强！\p你想挑战我吗？\n让我看看你的力量！$"
+    .endarea
+
+MauvilleCity_Gym_Text_WattsonPostRematch:
+    .org 0x826bde5
+    .area 159
+    .strn "铁旋：我们还要\n继续充电，\p充满电之后，我们很乐意\n再次接受你的挑战。\p所以一定要再来，\n好吗？$"
+    .endarea
+
+LavaridgeTown_Gym_1F_Text_FlanneryIntro:
+    .org 0x825bc67
+    .area 343
+    .strn "欢迎⋯啊，不对。\p可怜的训练师，我很惊讶\n你能来到这里！\p我受人之托⋯\n啊，不对。\p我是亚莎，这里的\n道馆馆主！\p呃⋯\n虽然我刚刚成为馆主不久，\l但不要低估我的实力！\p用从爷爷那儿继承而来的能力，\n我，呃⋯会向你展示出我们\l在这片大地上磨炼出来的灼热的技能！$"
+    .endarea
+
+FortreeCity_Gym_Text_WinonaIntro:
+    .org 0x8275216
+    .area 235
+    .strn "我是娜琪，茵郁市\n宝可梦道馆的馆主。\p我是飞行系宝可梦的朋友，\n同它们一起在天空中翱翔⋯\p无论战斗多么困难，\n我们都会优雅地凯旋⋯\p见识一下我和飞行系宝可梦\n那华丽的舞步吧！$"
+    .endarea
+
+MossdeepCity_Gym_Text_TateAndLizaIntro:
+    .org 0x82804be
+    .area 361
+    .strn "枫：嘿嘿嘿⋯你惊讶吗？\p南：呵呵呵⋯你惊讶吗？\p枫：这里有两个道馆馆主。\n南：这里有两个道馆馆主。\p枫：我们是双胞胎！\n南：我们是双胞胎！\p枫：我们不需要交谈，因为⋯\n南：我们可以用意识⋯\p枫：互相感应到⋯\n南：对方的想法！\p枫：你能打败我们⋯\n南：这完美的组合吗？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_InterviewRequest:
+    .org 0x82f9835
+    .area 199
+    .strn "嗨，你看起来和你的\n{STR_VAR_1}已经很要好了。\p你知道吗？\n我是一个记者。\p我到处寻找采访者做\n关于宝可梦的采访。\p我想知道你能够分享一些\n关于{STR_VAR_1}的事吗？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_TellMeAnythingAboutYourMon:
+    .org 0x82f98fc
+    .area 78
+    .strn "谢谢你了！\p好的，那么，请告诉我任何\n关于{STR_VAR_1}的事吧。$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_HereIfYouGetUrgeToTellMe:
+    .org 0x82f97a3
+    .area 76
+    .strn "哦好的⋯\p如果你想要说些关于宝可梦\n的事情的话，我会在这里的！$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_ThatsAllForInterview2:
+    .org 0x82f994a
+    .area 253
+    .strn "哦⋯\n这看起来很有趣。\p你的确非常的离不开{STR_VAR_1}，\n是吗？\p现在对于你的想法\n有些了解了应该可以做节目了。\p我保证这将会是我们的下\n一期的节目。\l期待你的关注。\p就这样了l。\n再见！$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_EnjoyDoingInterviews:
+    .org 0x82f97ef
+    .area 70
+    .strn "我非常喜欢和你一起做\n关于宝可梦的采访。$"
+    .endarea
+
+SlateportCity_OceanicMuseum_1F_Text_InterviewRequest:
+    .org 0x82fa361
+    .area 205
+    .strn "哦？\n你看起来很喜欢宝可梦\p我是负责电视台的网络的。\p我在收集一些有关宝可梦和\n训练师的材料。\p如果你不介意的话\n能谈谈自己的看法吗？$"
+    .endarea
+
+SlateportCity_OceanicMuseum_1F_Text_InterviewRequestShort:
+    .org 0x82fa42e
+    .area 133
+    .strn "我在收集一些有关宝可梦和\n训练师的材料。\p如果你不介意的话\n能谈谈自己的看法吗？$"
+    .endarea
+
+SlateportCity_OceanicMuseum_1F_Text_TellMeExperienceInvolvingPokemon:
+    .org 0x82fa4b3
+    .area 117
+    .strn "你愿意？\n谢谢你！\p那么请你谈谈最近你和\n宝可梦们相处的\l经历。$"
+    .endarea
+
+SlateportCity_OceanicMuseum_1F_Text_LetMeKnowIfYouHaveStory:
+    .org 0x82fa528
+    .area 82
+    .strn "哦，我知道了⋯\p如果你有个有趣的事情的\n话请告诉我们吧。$"
+    .endarea
+
+SlateportCity_OceanicMuseum_1F_Text_ThatsAllForInterview:
+    .org 0x82fa57a
+    .area 148
+    .strn "哦多么令人振奋的故事啊！\p我肯定会把你的故事\n播到电视上的。\p有些时候是需要快奖的，我想，\n请大家密切关注后续的报道。$"
+    .endarea
+
+SlateportCity_OceanicMuseum_1F_Text_BetterWriteUpStory:
+    .org 0x82fa60e
+    .area 81
+    .strn "嗯⋯⋯\n我想我的电视节目已经有内容了。\p我得赶快去写了！$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_InterviewRequestHasName:
+    .org 0x82f9431
+    .area 223
+    .strn "哇哦！\p很显然你在{STR_VAR_1}上。灌注了很多的爱\p嗯⋯他叫{STR_VAR_2}。\p能问你一个问题吗？\p我是电视台的，我正在做一个\n宝可梦的专题。\p你能够回答我几个简单的\n问题吗？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_HereGoesQuickAnswers:
+    .org 0x82f9510
+    .area 68
+    .strn "太棒了谢谢你！\p好吧走这边吧。\n来做个快速问答怎么样？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_DescribeFeelingsFirstMetMon:
+    .org 0x82f9554
+    .area 92
+    .strn "当你第一次碰到{STR_VAR_1}，\n你是什么感觉？\p那时你是怎么描述这种\n感觉的？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_LikenMonToSomethingYouLike:
+    .org 0x82f95b0
+    .area 101
+    .strn "你的{STR_VAR_1}被你照料得很好啊。\p你如果想把他比喻做\n一样东西的话会是什么呢？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_WhatAttractedYouAboutMon:
+    .org 0x82f9615
+    .area 88
+    .strn "这个问题同样关系到你\n的{STR_VAR_1}。\p{STR_VAR_1}的哪一点\n吸引了你？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_WhatDoPokemonMeanToYou:
+    .org 0x82f966d
+    .area 119
+    .strn "OK是这样的。\p下一个问题呢\n会有一点难。\p这样的话⋯\p宝可梦对于你来说有什么样的意义呢？$"
+    .endarea
+
+SlateportCity_PokemonFanClub_Text_ThatsAllForInterview:
+    .org 0x82f96e4
+    .area 191
+    .strn "我知道了！\p恩⋯\p好的！\n谢谢你帮我解决了问题。\p和你谈话真是一件\n令人赏心悦目的事情啊。\p有可能的话我们的节目\n会上演的。一定要收看啊\p就这样了。\n再见！$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_InterviewRequest:
+    .org 0x82f80d6
+    .area 210
+    .strn "你好！你参加过华丽大赛\n是吗？\l你能说些华丽大赛的事吗。\p我是一个记者。我正在做\n一个华丽大赛的节目。\p如果可以的话我问你几个问题\n你能回答我吗？$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_DescribeContest:
+    .org 0x82f81a8
+    .area 87
+    .strn "你愿意？\n真是太感谢了。\p简单的说，认为你参加的\n比赛怎么样？$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_PleaseDoShareStoryWithMe:
+    .org 0x82f83b0
+    .area 80
+    .strn "哦真糟糕⋯\p好吧，如果你能想出一篇好点的\n文章的话，请告诉我吧。$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_WhatImageWhenYouHearX:
+    .org 0x82f81ff
+    .area 174
+    .strn "哦我知道了。\n听起来非常的有教育意义。\p你对现在的华丽大赛\n似乎很满意。\p我还有一个问题。\p当你听到“{STR_VAR_2}，”\n你是怎么想的？$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_ThatsAllForInterview:
+    .org 0x82f82ad
+    .area 259
+    .strn "原来是这样！\p这就是你是怎么看待\n“{STR_VAR_2}”的啊。\p谢谢了！\n你给了我一些启发。\p我想我现在能够写一篇\n关于华丽大赛的报道了。\p也许，只的也许\n节目会做到电视上。\l希望你能看到他！$"
+    .endarea
+
+LilycoveCity_ContestLobby_Text_LookingForwardToNextContest:
+    .org 0x82f8400
+    .area 54
+    .strn "我很期待你的下一场\n华丽大赛。$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_InterviewRequest:
+    .org 0x82f88c5
+    .area 182
+    .strn "啊！你是刚刚结束\n比赛的训练师吧？\p我正在到处收集对\n训练师的采访。\p您能跟我谈一谈\n有关战斗的感想吗？$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_DescribeYourBattle:
+    .org 0x82f8b3b
+    .area 131
+    .strn "哦我能问你几个问题吗？\p如果你要描述下你\n对于一场战斗的看法的\l话你会说些什么？$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_SorryWeDisturbedYou:
+    .org 0x82f8a0d
+    .area 98
+    .strn "哦⋯\n很抱歉打扰你了。\p希望你下次来对战塔的\n时候能给我们些采访时间。$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_ObviousYouHadGreatBattle:
+    .org 0x82f8a6f
+    .area 115
+    .strn "好的当然！\p你的脸上流露出了一\n副满意的表情⋯\p很明显你经历了一场\n奋战。$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_DifficultToMakeBattleTurnOutAsPlanned:
+    .org 0x82f8ae2
+    .area 89
+    .strn "哦，我知道了⋯\p想让战斗完全按计划\n进行并不是一件容易的事。$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_ThatsGreatLine:
+    .org 0x82f8bbe
+    .area 114
+    .strn "太帅了！\p你说得太好了！\n真期待你下一次的战斗。\p那么再见了！$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_SilentType:
+    .org 0x82f8c30
+    .area 132
+    .strn "原来是这样啊⋯\p不过，即使什么都不说\n也还是很帅啊？\p那么，期待下次能再\n跟你分享你的想法了！$"
+    .endarea
+
+BattleFrontier_BattleTowerLobby_Text_LookingForwardToNextBattle:
+    .org 0x82f8cb4
+    .area 45
+    .strn "我很期待你的下一次\n战斗！$"
+    .endarea
+
+Kecleon_Text_WantToUseDevonScope:
+    .org 0x82513c0
+    .area 64
+    .strn "有什么看不见的东西挡在路上。\p要使用得文观测镜吗？$"
+    .endarea
+
+Kecleon_Text_UseDevonScopeMonAttacked:
+    .org 0x8251400
+    .area 104
+    .strn "{PLAYER}使用了得文观测镜。\p看不见的宝可梦\n完全现形了！\p受惊的宝可梦攻击过来！$"
+    .endarea
+
+gText_Sudowoodo_Attacked:
+    .org 0x82ec352
+    .area 71
+    .strn "奇怪的树不喜欢\n吼吼鲸洒水壶！\p奇怪的树攻了上来！$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WouldYouLikeToHearMySong:
+    .org 0x830954f
+    .area 50
+    .strn "嘿，我是巴德。\n想听听我的歌吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WishICouldPlaySongForOthers:
+    .org 0x83095a7
+    .area 59
+    .strn "啊，多么动感的音乐⋯\n我真希望能演奏给别人听⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues1:
+    .org 0x8309581
+    .area 38
+    .strn "哎⋯\n你真是给我泼了一盆冷水⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WouldYouLikeToWriteSomeLyrics:
+    .org 0x83095e2
+    .area 122
+    .strn "是这样么？\n你有多喜欢我的歌？\p但是我对歌词\n一点都不满意。\p能为我写一篇新\n歌词吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_LetMeSingItForYou:
+    .org 0x8309682
+    .area 42
+    .strn "太感谢你了！\n让我为你尽情的唱吧。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_ThatHowYouWantedSongToGo:
+    .org 0x83096ac
+    .area 41
+    .strn "这就是你想让你的歌达到的\n效果吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_IllSingThisSongForAWhile:
+    .org 0x83096d5
+    .area 56
+    .strn "好极了！就是这样。\n我马上就唱这首歌。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_BardFeelingTheBlues2:
+    .org 0x830965c
+    .area 38
+    .strn "哎⋯\n你真是给我泼了一盆冷水⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_TeachWhatsHipAndHappening:
+    .org 0x830970d
+    .area 76
+    .strn "嘿，你！别人都叫我时髦青年。\n我会教给你如何走在时代的最前端。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_IAlreadyTaughtYou:
+    .org 0x8309759
+    .area 106
+    .strn "但是，嘿，我已经教了你很多\n潮流的东西了。\p我还想和别人分享这么\n美妙的话语。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_IveGotNothingNewToTeach:
+    .org 0x83097c3
+    .area 100
+    .strn "但是，嘿，你已经\n能抓住最新潮流的去向了。\p我没什么新东西可以交给你了！$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WantToTradeDecor:
+    .org 0x8307372
+    .area 55
+    .strn "我是装饰品交换大叔。\n要跟我交换装饰品吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_TraderFeelingTheBlues:
+    .org 0x83073a9
+    .area 38
+    .strn "是吗⋯⋯\n真是遗憾啊⋯⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WeveAlreadyTraded:
+    .org 0x83073cf
+    .area 49
+    .strn "不过，我们之前\n有交换过装饰品哦。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_OnceBelongedToPlayerDoYouWantIt:
+    .org 0x830746a
+    .area 58
+    .strn "这个可是{STR_VAR_1}\n用过的装饰品。\p要交换吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_YouDontWantAnything:
+    .org 0x8307440
+    .area 42
+    .strn "没有想要的吗？\n真遗憾⋯⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_YouDontHaveAnyDecor:
+    .org 0x83074a4
+    .area 64
+    .strn "嗯⋯⋯等一下，你这家伙，\n一件装饰品也没有嘛！$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_PickTheDecorToTrade:
+    .org 0x83074e4
+    .area 51
+    .strn "那么，选择你要用来\n跟我交换的装饰品吧。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_SoWellTradeTheseDecor:
+    .org 0x8307585
+    .area 40
+    .strn "那么，开始用我的{STR_VAR_3}\n和你的{STR_VAR_2}交换吧？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_SendDecorToYourPC:
+    .org 0x83075e5
+    .area 54
+    .strn "那么开始交换！\n我把我的装饰品发送到你的电脑。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_YouDontWantToTrade:
+    .org 0x8307517
+    .area 42
+    .strn "你不想跟我换？\n真遗憾⋯⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_ThatDecorIsInUse:
+    .org 0x83075ad
+    .area 56
+    .strn "这件装饰品在使用中。\n不能交换。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_YouveNoRoomForThis:
+    .org 0x8307541
+    .area 68
+    .strn "你有太多{STR_VAR_2}了。\n已经放不下了。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WillYouHearMyTale:
+    .org 0x83077b7
+    .area 87
+    .strn "我是吟游诗人。\n我可以告诉你传说中的\l训练师的故事。\p想听我的故事吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_CouldThereBeOtherLegends:
+    .org 0x830794b
+    .area 100
+    .strn "我开始想，是否还有其他\n训练师有着更感人的故事\l等待着人们的发现呢？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_IKnowNoTales:
+    .org 0x830786f
+    .area 120
+    .strn "不过，我不知道什么传说中的训练师。\n所以，也就不知道有什么故事。\p这世上存在能称为\n传说中的训练师的人吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_HaveYouAnyLegendaryTales:
+    .org 0x83079af
+    .area 86
+    .strn "你是训练师吗？\p那么告诉我吧，你听说\n过更遥远的传说吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_NotWorthyOfLegend:
+    .org 0x8307a42
+    .area 88
+    .strn "嗯⋯⋯\n我不满意啊⋯⋯\p希望你能让我听到\n值得成为传说的故事啊。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_YouDidStatXTimes:
+    .org 0x83078e7
+    .area 100
+    .strn "啊？！\n你⋯ 你⋯\p{STR_VAR_2}\n{STR_VAR_1}次？！\p太强了！\n这是新传说的诞生啊！$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_StorytellerFeelingTheBlues:
+    .org 0x830780e
+    .area 38
+    .strn "这样啊⋯⋯\n真遗憾⋯⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_IWishMorePeopleWereInterested:
+    .org 0x8307a9a
+    .area 87
+    .strn "真希望能有更多的人来听\n我这些关于传说中的训练师们\l的史诗般的故事。$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_HearMyStory:
+    .org 0x83093f0
+    .area 82
+    .strn "我是格蒂！\n我给你准备了一个非常炫的故事！\p想听听吗？$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_AlsoIWasThinking:
+    .org 0x8309468
+    .area 22
+    .strn "我也一直在想⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_GiddyFeelingTheBlues:
+    .org 0x8309442
+    .area 38
+    .strn "哎⋯\n你真是给我泼了一盆冷水⋯$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_WeShouldChatAgain:
+    .org 0x830947e
+    .area 57
+    .strn "就是这样了，我想⋯\p我们下次再聊吧！\n再见！$"
+    .endarea
+
+MoveTutor_Text_SwaggerWhichMon:
+    .org 0x834043b
+    .area 56
+    .strn "很好，想让哪只宝可梦\n学习虚张声势？$"
+    .endarea
+
+MoveTutor_Text_SwaggerDeclined:
+    .org 0x8340408
+    .area 51
+    .strn "哎？你不能进入\n状态？$"
+    .endarea
+
+MoveTutor_Text_SwaggerTaught:
+    .org 0x8340473
+    .area 61
+    .strn "我今后不会再吹嘘\n我的宝可梦了。$"
+    .endarea
+
+MoveTutor_Text_RolloutWhichMon:
+    .org 0x83405ea
+    .area 64
+    .strn "哦呵呵，当然！你的宝可梦\n变得像我一样就更出色了。$"
+    .endarea
+
+MoveTutor_Text_RolloutDeclined:
+    .org 0x83405bb
+    .area 47
+    .strn "你不要害羞。\n让我们滚起来！$"
+    .endarea
+
+MoveTutor_Text_RolloutTaught:
+    .org 0x834062a
+    .area 65
+    .strn "在草里打滚使我\n非常快乐。来吧，让我们滚起来！$"
+    .endarea
+
+MoveTutor_Text_FuryCutterWhichMon:
+    .org 0x8340762
+    .area 43
+    .strn "耶！\n把要学习的宝可梦交给我。$"
+    .endarea
+
+MoveTutor_Text_FuryCutterDeclined:
+    .org 0x8340740
+    .area 34
+    .strn "我们是不可能融洽相处的。$"
+    .endarea
+
+MoveTutor_Text_FuryCutterTaught:
+    .org 0x834078d
+    .area 72
+    .strn "当我连续击中对手时\n我会觉得很兴奋！$"
+    .endarea
+
+MoveTutor_Text_MimicWhichMon:
+    .org 0x83408ee
+    .area 69
+    .strn "噗噗！我当然能！\n让我看看你想要\l学会技能的宝可梦。$"
+    .endarea
+
+MoveTutor_MimicDeclined:
+    .org 0x83408bc
+    .area 50
+    .strn "嘘！我要让你的宝可梦\n学会模仿！$"
+    .endarea
+
+MoveTutor_Text_MimicTaught:
+    .org 0x8340933
+    .area 83
+    .strn "模仿是个伟大而深奥的技能。\p你能像我一样\n运用自如吗⋯？$"
+    .endarea
+
+MoveTutor_Text_MetronomeWhichMon:
+    .org 0x8340ad1
+    .area 51
+    .strn "好的！我来教你！\n想让哪只宝可梦学习？$"
+    .endarea
+
+MoveTutor_Text_MetronomeDeclined:
+    .org 0x8340aa5
+    .area 44
+    .strn "好的。等你改变主意了\n再来找我。$"
+    .endarea
+
+MoveTutor_Text_SleepTalkWhichMon:
+    .org 0x8340c88
+    .area 57
+    .strn "啊，多有眼光的孩子呀！\n你想让我教哪只宝可梦？$"
+    .endarea
+
+MoveTutor_Text_SleepTalkDeclined:
+    .org 0x8340c49
+    .area 63
+    .strn "噢，好，好。你也想用\n催醒来激发潜能⋯$"
+    .endarea
+
+MoveTutor_Text_SleepTalkTaught:
+    .org 0x8340cc1
+    .area 108
+    .strn "我从来都弄不清楚老婆那\n硬币把戏究竟是怎么一回事。\p要是从梦话中知道点什么\n那就太棒了。$"
+    .endarea
+
+MoveTutor_Text_SubstituteWhichMon:
+    .org 0x8340e95
+    .area 58
+    .strn "嘿嘿⋯\n你想让哪只宝可梦\l学会替身？$"
+    .endarea
+
+MoveTutor_Text_SubstituteDeclined:
+    .org 0x8340e55
+    .area 64
+    .strn "噢，不？\p宝可梦能将自己本身\n复制出来，你知道的。$"
+    .endarea
+
+MoveTutor_Text_SubstituteTaught:
+    .org 0x8340ecf
+    .area 91
+    .strn "我们人类更应该极度\n珍惜我们的生命！\p我希望你也走上这条路！$"
+    .endarea
+
+MoveTutor_Text_DynamicPunchWhichMon:
+    .org 0x83410af
+    .area 66
+    .strn "什么？你想学？你真是个好人啊！\n想要我教哪只宝可梦？$"
+    .endarea
+
+MoveTutor_Text_DynamicPunchDeclined:
+    .org 0x8341076
+    .area 57
+    .strn "该死！连你也来嘲笑我？\n打！打！打！$"
+    .endarea
+
+MoveTutor_Text_DoubleEdgeWhichMon:
+    .org 0x8341257
+    .area 48
+    .strn "好的，你希望哪只宝可梦\n能学会舍身一击？$"
+    .endarea
+
+MoveTutor_Text_DoubleEdgeDeclined:
+    .org 0x834123d
+    .area 26
+    .strn "噢⋯\n即使你拒绝我⋯$"
+    .endarea
+
+MoveTutor_Text_DoubleEdgeTaught:
+    .org 0x8341287
+    .area 50
+    .strn "我不再为爱而活着！\n我要更加坚强！$"
+    .endarea
+
+MoveTutor_Text_ExplosionTaught:
+    .org 0x83413c5
+    .area 156
+    .strn "长时间以来，我一直在教宝可梦\n如何使用大爆炸，但是\l我的大爆炸会引起火灾⋯\p也许这是个深渊，\n但我宁愿留在这⋯$"
+    .endarea
+
+gText_TheDecorWasTransferredToThePC:
+    .org 0x82eb7e8
+    .area 34
+    .strn "{STR_VAR_2}传进了\n电脑里。$"
+    .endarea
+
+gText_PlayerPutItemInBag:
+    .org 0x82eb78a
+    .area 31
+    .strn "{PLAYER}把{STR_VAR_2}\n放进了背包。$"
+    .endarea
+
+gText_PlayerFoundOneItem:
+    .org 0x82eb75f
+    .area 17
+    .strn "{PLAYER}发现了{STR_VAR_2}！$"
+    .endarea
+
+Text_BootUpPC:
+    .org 0x82eac45
+    .area 21
+    .strn "{PLAYER}登录了电脑。$"
+    .endarea
+
+gText_AccessedPlayersPC:
+    .org 0x82eacad
+    .area 18
+    .strn "连接到{PLAYER}的电脑。$"
+    .endarea
+
+gText_StorageSystemOpened:
+    .org 0x82eac8e
+    .area 31
+    .strn "打开宝可梦存储系统。$"
+    .endarea
+
+gText_AccessedSomeonesPC:
+    .org 0x82eac77
+    .area 23
+    .strn "连接到某人的电脑。$"
+    .endarea
+
+gText_AccessedLanettesPC:
+    .org 0x82eacbf
+    .area 23
+    .strn "连接到真弓的电脑。$"
+    .endarea
+
+gText_PkmnTransferredSomeonesPC:
+    .org 0x82ec3aa
+    .area 64
+    .strn "{STR_VAR_2}传到了\n某人的电脑上，\p放在盒子\n“{STR_VAR_1}”里。$"
+    .endarea
+
+gText_PkmnTransferredSomeonesPCBoxFull:
+    .org 0x82ec42a
+    .area 67
+    .strn "某人的电脑上盒子“{STR_VAR_3}”\n已经满了，\p{STR_VAR_2}传到了\n盒子“{STR_VAR_1}”里。$"
+    .endarea
+
+gText_PkmnTransferredLanettesPC:
+    .org 0x82ec3ea
+    .area 64
+    .strn "{STR_VAR_2}传到了\n真弓的电脑上，\p放在盒子\n“{STR_VAR_1}”里。$"
+    .endarea
+
+gText_PkmnTransferredLanettesPCBoxFull:
+    .org 0x82ec46d
+    .area 67
+    .strn "真弓的电脑上盒子“{STR_VAR_3}”\n已经满了，\p{STR_VAR_2}传到了\n盒子“{STR_VAR_1}”里。$"
+    .endarea
+
+gText_NoMoreRoomForPokemon:
+    .org 0x82ec4b0
+    .area 88
+    .strn "没有地方装宝可梦了！\p宝可梦盒子都满了，\n再也挤不进什么了！$"
+    .endarea
+
+PlayersHouse_1F_Text_IsntItNiceInHere:
+    .org 0x82530bc
+    .area 42
+    .strn "妈妈：怎么样，{PLAYER}？\n这儿不错吧？$"
+    .endarea
+
+PlayersHouse_1F_Text_MoversPokemonGoSetClock:
+    .org 0x82530e6
+    .area 222
+    .strn "搬家公司的宝可梦帮我们把东西\n都搬进来，还会帮忙打扫房间。\l真方便！\p{PLAYER}，你的房间在楼上，\n去看看吧，宝贝！\p爸爸给你买了个钟，\n这样就能知道时间了。\l别忘了调钟啊！$"
+    .endarea
+
+PlayersHouse_1F_Text_ArentYouInterestedInRoom:
+    .org 0x82531c4
+    .area 67
+    .strn "妈妈：怎么了，{PLAYER}？\p不想看看\n自己的房间吗？$"
+    .endarea
+
+PlayersHouse_2F_Text_ClockIsStopped:
+    .org 0x8253cfe
+    .area 50
+    .strn "钟停了⋯\p把它调好吧！$"
+    .endarea
+
+PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
+    .org 0x8253d30
+    .area 229
+    .strn "妈妈：{PLAYER}，喜欢你的\n新房间吗？\p好！房间都清理干净了！\p楼下也\n整理完毕了，\p让宝可梦帮忙搬家真方便啊！\p啊，最好去看看你桌子上的东西\n是不是都齐了。$"
+    .endarea
+
+PlayersHouse_1F_Text_MaybeDadWillBeOn:
+    .org 0x825325c
+    .area 53
+    .strn "妈妈：看！是橙华市道馆！\n爸爸可能也上电视了！$"
+    .endarea
+
+PlayersHouse_1F_Text_ItsOverWeMissedHim:
+    .org 0x8253291
+    .area 68
+    .strn "妈妈：唉⋯结束了。\p我们错过了爸爸的镜头。\n真遗憾。$"
+    .endarea
+
+PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
+    .org 0x82532d5
+    .area 142
+    .strn "对了，\n爸爸的一个朋友也住在镇上，\p他叫小田卷博士，\p就住在旁边，\n去拜访一下吧。$"
+    .endarea
+
+PlayersHouse_1F_Text_OhComeQuickly:
+    .org 0x8253236
+    .area 38
+    .strn "妈妈：啊！{PLAYER}，{PLAYER}！\n快！快过来！$"
+    .endarea
+
+PlayersHouse_1F_Text_ReportFromPetalburgGym:
+    .org 0x8253566
+    .area 73
+    .strn "访问记者：⋯以上就是\n关于橙华市道馆的报道。$"
+    .endarea
+
+PlayersHouse_1F_Text_DontPushYourselfTooHard:
+    .org 0x825345e
+    .area 80
+    .strn "别太勉强自己，宝贝，\n累了的话就回家来歇歇。\p加油吧！$"
+    .endarea
+
+PlayersHouse_1F_Text_IsThatAPokenav:
+    .org 0x82534ae
+    .area 123
+    .strn "妈妈：亲爱的，那是什么？口袋领航员？\n是得文公司的人给你的吗？\p那么，登记一下妈妈的信息\n怎么样？\p⋯ ⋯ ⋯$"
+    .endarea
+
+PlayersHouse_1F_Text_RegisteredMom:
+    .org 0x8253529
+    .area 31
+    .strn "把妈妈的信息\n登记进口袋领航员。$"
+    .endarea
+
+PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
+    .org 0x8253413
+    .area 75
+    .strn "妈妈：嗯？那是爸爸给你的徽章吗？\p那么妈妈也给你些东西吧！$"
+    .endarea
+
+PlayersHouse_1F_Text_YouShouldRestABit:
+    .org 0x82533a8
+    .area 84
+    .strn "妈妈：怎么样了，{PLAYER}？\n你好像有点累了，\p在家休息一下吧。$"
+    .endarea
+
+PlayersHouse_1F_Text_SeeYouHoney:
+    .org 0x8253363
+    .area 21
+    .strn "妈妈：再见，宝贝！$"
+    .endarea
+
+PlayersHouse_1F_Text_TakeCareHoney:
+    .org 0x82533fc
+    .area 23
+    .strn "妈妈：路上小心，亲爱的！$"
+    .endarea
+
+PlayersHouse_1F_Text_DidYouMeetProfBirch:
+    .org 0x8253378
+    .area 48
+    .strn "妈妈：你去拜访过\n小田卷博士了吗？$"
+    .endarea
+
+PlayersHouse_1F_Text_Vigoroth1:
+    .org 0x8253548
+    .area 11
+    .strn "喵呀呀呀！$"
+    .endarea
+
+PlayersHouse_1F_Text_Vigoroth2:
+    .org 0x8253553
+    .area 19
+    .strn "嗯，嗯嗯⋯$"
+    .endarea
+
+PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
+    .org 0x82536ae
+    .area 240
+    .strn "爸爸：嗯？\p嗨，{PLAYER}！\p有段时间没见了，\n让我看看⋯好像变强了嘛。\p但你老爹我也不会放弃，\n不会输给你的！\p啊，对了，有东西要给你，\n这是一个叫哈奇的人\l托我带给你的。$"
+    .endarea
+
+PlayersHouse_1F_Text_PortsInSlateportLilycove:
+    .org 0x825379e
+    .area 93
+    .strn "爸爸：唔，是乘坐游船的船票吧？\p记得没错的话，\n凯那市和水静市都有游船的码头。$"
+    .endarea
+
+PlayersHouse_1F_Text_BetterGetBackToGym:
+    .org 0x82537fb
+    .area 94
+    .strn "我该回橙华市道馆去了，\p老婆，谢谢你在我\n不在的时候看家。$"
+    .endarea
+
+PlayersHouse_1F_Text_DadShouldStayLonger:
+    .org 0x8253859
+    .area 146
+    .strn "妈妈：果然是你的爸爸⋯\p已经很久没回家了，\n一回来就滔滔不绝地讲宝可梦的事。\p他该在家多休息几天的。$"
+    .endarea
+
+PlayersHouse_1F_Text_IsThatABreakingStory:
+    .org 0x82538eb
+    .area 36
+    .strn "妈妈：是爆炸性新闻吗？$"
+    .endarea
+
+PlayersHouse_1F_Text_WhatColorDidTheySay:
+    .org 0x82539e7
+    .area 80
+    .strn "妈妈：{PLAYER}，你抓到那个了吗？\p播音员刚才说的\n宝可梦是什么颜色的？$"
+    .endarea
+
+PlayersHouse_1F_Text_StillUnknownPokemon:
+    .org 0x8253a37
+    .area 66
+    .strn "妈妈：呵呵，真有趣！\n竟然还有未知的宝可梦。$"
+    .endarea
+
+PlayersHouse_1F_Text_RunningShoesManual:
+    .org 0x8253606
+    .area 168
+    .strn "这是\n风速鞋的说明书。\p“穿上风速鞋，\n按B键奔跑。\p系好你的鞋带，在\n踏地的节奏中飞奔吧！”$"
+    .endarea
+
+gBirchDexRatingText_AreYouCurious:
+    .org 0x831f063
+    .area 79
+    .strn "小田卷博士：啊，{PLAYER}{KUN}！\p你想知道你的宝可梦图鉴\n是什么水平吗？$"
+    .endarea
+
+gBirchDexRatingText_Cancel:
+    .org 0x831f0b2
+    .area 65
+    .strn "嗯，你收集的宝可梦还不够多，\n没什么太大的价值啊。$"
+    .endarea
+
+gBirchDexRatingText_SoYouveSeenAndCaught:
+    .org 0x831f0f3
+    .area 64
+    .strn "唔唔⋯\p见过了{STR_VAR_1}只宝可梦，\n抓到了{STR_VAR_2}只宝可梦⋯$"
+    .endarea
+
+gBirchDexRatingText_OnANationwideBasis:
+    .org 0x831f704
+    .area 83
+    .strn "唔唔⋯\n从全国来看⋯\p见过了{STR_VAR_1}只宝可梦，\n抓到了{STR_VAR_2}只宝可梦⋯$"
+    .endarea
+
+Text_WouldYouLikeToMixRecords:
+    .org 0x82eabf8
+    .area 51
+    .strn "你想和其他训练师\n混合记录吗？$"
+    .endarea
+
+Text_RepelWoreOff:
+    .org 0x831dded
+    .area 25
+    .strn "喷雾器的效果渐渐消失了⋯$"
+    .endarea
+
+SafariZone_Text_WouldYouLikeToExit:
+    .org 0x831dee9
+    .area 50
+    .strn "你现在就要退出\n野生原野区吗？$"
+    .endarea
+
+SafariZone_Text_PlacePokeblockOnFeeder:
+    .org 0x831df85
+    .area 53
+    .strn "要在能量方块喂养器里面\n放进能量方块吗？$"
+    .endarea
+
+SecretBase_Text_IndentUseSecretPower:
+    .org 0x829abb8
+    .area 58
+    .strn "墙上有个凹洞。\p使用神秘力量吗？$"
+    .endarea
+
+Text_MonUsedFieldMove:
+    .org 0x82e6160
+    .area 12
+    .strn "{STR_VAR_1}用了{STR_VAR_2}！$"
+    .endarea
+
+SecretBase_Text_SmallIndentInWall:
+    .org 0x829ab94
+    .area 36
+    .strn "墙上有个凹洞。$"
+    .endarea
+
+SecretBase_Text_DiscoveredSmallCavern:
+    .org 0x829abf2
+    .area 27
+    .strn "发现一个小洞穴！$"
+    .endarea
+
+SecretBase_Text_TreeUseSecretPower:
+    .org 0x82ed917
+    .area 73
+    .strn "如果有藤蔓垂下来，\n就可以爬到树上去了。\p要使用神秘力量吗？$"
+    .endarea
+
+SecretBase_Text_TreeCanBeClimbed:
+    .org 0x82ed8e4
+    .area 51
+    .strn "如果有藤蔓垂下来，\n就可以爬到树上去了。$"
+    .endarea
+
+SecretBase_Text_VineDroppedDown:
+    .org 0x82ed960
+    .area 27
+    .strn "粗大的藤蔓垂了下来！$"
+    .endarea
+
+SecretBase_Text_ClumpUseSecretPower:
+    .org 0x82ed9c3
+    .area 94
+    .strn "如果弄掉这丛草，\n就可以进去了。\p要使用神秘力量吗？$"
+    .endarea
+
+SecretBase_Text_ClumpOfGrass:
+    .org 0x82ed97b
+    .area 72
+    .strn "如果弄掉这丛草，\n就可以进去了。$"
+    .endarea
+
+SecretBase_Text_DiscoveredSmallEntrance:
+    .org 0x82eda21
+    .area 29
+    .strn "发现了小小的入口！$"
+    .endarea
+
+SecretBase_Text_WantToMakeYourSecretBaseHere:
+    .org 0x829ac0d
+    .area 36
+    .strn "想在这里建造秘密基地吗？$"
+    .endarea
+
+SecretBase_Text_WouldYouLikeToMoveBases:
+    .org 0x82efbdb
+    .area 88
+    .strn "只能拥有一个秘密基地，\p要从{STR_VAR_1}的秘密\n基地搬过来吗？$"
+    .endarea
+
+SecretBase_Text_AllDecorationsWillBeReturned:
+    .org 0x82ef848
+    .area 93
+    .strn "秘密基地里的所有家具\n及装饰品都会回到电脑中，\p确定吗？$"
+    .endarea
+
+SecretBase_Text_MovingCompletedUseSecretPower:
+    .org 0x82efc33
+    .area 58
+    .strn "搬动完成。\p要使用神秘力量吗？$"
+    .endarea
+
+SecretBase_Text_Trainer0Intro:
+    .org 0x82eda3e
+    .area 153
+    .strn "你已经做了秘密基地了吗？\p在选定这个地方之前，\n我已经走了不知多少地方。\p既然你来了，\n我们战斗怎么样？$"
+    .endarea
+
+SecretBase_Text_Trainer0AcceptBattle:
+    .org 0x82edad7
+    .area 20
+    .strn "好！\n来吧！$"
+    .endarea
+
+SecretBase_Text_Trainer0PreChampion:
+    .org 0x82edb8b
+    .area 119
+    .strn "你已经做了秘密基地了吗？\p在选定这个地方之前，\n我已经走了不知多少地方。\p随便转转吧！$"
+    .endarea
+
+SecretBase_Text_Trainer0DeclineBattle:
+    .org 0x82edaeb
+    .area 25
+    .strn "哎？\n啊，现在不行啊⋯$"
+    .endarea
+
+SecretBase_Text_Trainer0PostBattle:
+    .org 0x82edb48
+    .area 67
+    .strn "我的秘密基地怎么样？\n明天也来玩吧。$"
+    .endarea
+
+SecretBase_Text_Trainer1Intro:
+    .org 0x82eddb1
+    .area 157
+    .strn "这个地方非常受欢迎，\n经常会有人来这里。\p啊！你也想要\n这个地方吗？\p那好，如果你能打败我，\n这地方就归你了。$"
+    .endarea
+
+SecretBase_Text_Trainer1AcceptBattle:
+    .org 0x82ede4e
+    .area 42
+    .strn "好的！\n我要保护我的秘密基地！$"
+    .endarea
+
+SecretBase_Text_Trainer1PreChampion:
+    .org 0x82edf07
+    .area 105
+    .strn "这个地方非常受欢迎，\n经常会有人来这里。\p我一直在等它打开，\n我一定要得到它！$"
+    .endarea
+
+SecretBase_Text_Trainer1DeclineBattle:
+    .org 0x82ede78
+    .area 57
+    .strn "呃？是吗？\n你对这里不感兴趣？$"
+    .endarea
+
+SecretBase_Text_Trainer1PostBattle:
+    .org 0x82eded2
+    .area 53
+    .strn "好的，我搬走之后，\n这个地方就是你的了！$"
+    .endarea
+
+SecretBase_Text_Trainer2Intro:
+    .org 0x82ee0d7
+    .area 145
+    .strn "拥有一座宅邸当然好，\n但我更喜欢这样的地方，\p因为各种各样的人\n都会来我这里做客。\p那么，来场战斗怎么样？$"
+    .endarea
+
+SecretBase_Text_Trainer2AcceptBattle:
+    .org 0x82ee168
+    .area 16
+    .strn "就是这样！$"
+    .endarea
+
+SecretBase_Text_Trainer2PreChampion:
+    .org 0x82ee242
+    .area 112
+    .strn "拥有一座宅邸当然好，\n但我更喜欢这样的地方，\p因为各种各样的人\n都会来我这里做客。$"
+    .endarea
+
+SecretBase_Text_Trainer2DeclineBattle:
+    .org 0x82ee178
+    .area 36
+    .strn "准备好的话就叫我吧！$"
+    .endarea
+
+SecretBase_Text_Trainer2PostBattle:
+    .org 0x82ee1c8
+    .area 122
+    .strn "哎，不管怎么说，我还得\n去买些家具和装饰品。\p希望我的秘密基地能成为\n大家都喜欢的地方。$"
+    .endarea
+
+SecretBase_Text_Trainer3Intro:
+    .org 0x82ee425
+    .area 142
+    .strn "有些人把秘密基地\n建在别人很难找到的地方，\l是因为想低调行事吗？\p不过你找到了我这里，\n来战斗如何？$"
+    .endarea
+
+SecretBase_Text_Trainer3AcceptBattle:
+    .org 0x82ee4b3
+    .area 27
+    .strn "我不会被你轻易打败的！$"
+    .endarea
+
+SecretBase_Text_Trainer3PreChampion:
+    .org 0x82ee549
+    .area 90
+    .strn "有些人把秘密基地\n建在别人很难找到的地方，\l是因为想低调行事吗？$"
+    .endarea
+
+SecretBase_Text_Trainer3DeclineBattle:
+    .org 0x82ee4ce
+    .area 55
+    .strn "哦⋯是因为你找来\n这个地方很累吗？$"
+    .endarea
+
+SecretBase_Text_Trainer3PostBattle:
+    .org 0x82ee512
+    .area 55
+    .strn "你的秘密基地在哪儿？\n我也会去拜访你的。$"
+    .endarea
+
+SecretBase_Text_Trainer4Intro:
+    .org 0x82ee770
+    .area 167
+    .strn "我寻找一个中意的地点，\n然后用喜欢的装饰品来装点它。\p我培养自己喜欢的宝可梦，\n并与它一同成长。\p这是我的生活。\n要和我战斗吗？$"
+    .endarea
+
+SecretBase_Text_Trainer4AcceptBattle:
+    .org 0x82ee817
+    .area 29
+    .strn "让我看看你的本事吧！$"
+    .endarea
+
+SecretBase_Text_Trainer4PreChampion:
+    .org 0x82ee8bc
+    .area 151
+    .strn "我寻找一个中意的地点，\n然后用喜欢的装饰品来装点它。\p我培养自己喜欢的宝可梦，\n并与它一同成长。\p每一天都是最好的一天。$"
+    .endarea
+
+SecretBase_Text_Trainer4DeclineBattle:
+    .org 0x82ee834
+    .area 49
+    .strn "我想有时候你\n也没有兴趣。$"
+    .endarea
+
+SecretBase_Text_Trainer4PostBattle:
+    .org 0x82ee88d
+    .area 47
+    .strn "我们都可以变得更强，\n一起加油吧！$"
+    .endarea
+
+SecretBase_Text_Trainer5Intro:
+    .org 0x82edc02
+    .area 150
+    .strn "很多地方都可以\n制造秘密基地，\p但这个是我最喜欢的地方。\n你也认为这地方不错吧？\p哦，要来一次战斗吗？$"
+    .endarea
+
+SecretBase_Text_Trainer5AcceptBattle:
+    .org 0x82edc98
+    .area 17
+    .strn "好了，来吧！$"
+    .endarea
+
+SecretBase_Text_Trainer5PreChampion:
+    .org 0x82edd40
+    .area 113
+    .strn "很多地方都可以\n制造秘密基地，\p但这个是我最喜欢的地方。\n你也认为这地方不错吧？$"
+    .endarea
+
+SecretBase_Text_Trainer5DeclineBattle:
+    .org 0x82edca9
+    .area 25
+    .strn "啊⋯\n现在不行吗，也罢。$"
+    .endarea
+
+SecretBase_Text_Trainer5PostBattle:
+    .org 0x82edd0a
+    .area 54
+    .strn "下次来这附近的话，\n再来我这里转转吧。$"
+    .endarea
+
+SecretBase_Text_Trainer6Intro:
+    .org 0x82edf70
+    .area 111
+    .strn "欢迎来到我的宝可梦研究所，\p我在调查\n秘密的战斗。\p想试试我有多么强吗？$"
+    .endarea
+
+SecretBase_Text_Trainer6AcceptBattle:
+    .org 0x82edfdf
+    .area 25
+    .strn "我会全力以赴的！$"
+    .endarea
+
+SecretBase_Text_Trainer6PreChampion:
+    .org 0x82ee08f
+    .area 72
+    .strn "欢迎来到我的宝可梦研究所，\p我在调查\n秘密的战斗。$"
+    .endarea
+
+SecretBase_Text_Trainer6DeclineBattle:
+    .org 0x82edff8
+    .area 27
+    .strn "啊，\n那么下次吧！$"
+    .endarea
+
+SecretBase_Text_Trainer6PostBattle:
+    .org 0x82ee051
+    .area 62
+    .strn "谢谢你和我战斗，\n明天也来玩吧。$"
+    .endarea
+
+SecretBase_Text_Trainer7Intro:
+    .org 0x82ee2b2
+    .area 155
+    .strn "我非常喜欢逛商店\n买家具和装饰品，\p也同样喜欢\n培养宝可梦。\p如果你愿意的话，\n跟我的宝可梦战斗怎么样？$"
+    .endarea
+
+SecretBase_Text_Trainer7AcceptBattle:
+    .org 0x82ee34d
+    .area 27
+    .strn "谢谢，\n开始吧？$"
+    .endarea
+
+SecretBase_Text_Trainer7PreChampion:
+    .org 0x82ee3c4
+    .area 97
+    .strn "我非常喜欢逛商店\n买家具和装饰品，\p也同样喜欢\n培养宝可梦。$"
+    .endarea
+
+SecretBase_Text_Trainer7DeclineBattle:
+    .org 0x82ee368
+    .area 23
+    .strn "啊，\n真遗憾⋯$"
+    .endarea
+
+SecretBase_Text_Trainer7PostBattle:
+    .org 0x82ee38a
+    .area 58
+    .strn "真高兴！\n现在我该去买东西了！$"
+    .endarea
+
+SecretBase_Text_Trainer8Intro:
+    .org 0x82ee5a3
+    .area 173
+    .strn "人们说有很多得到\n装饰品的方式，\p我们来比赛谁能得到\n更好的家具和装饰吧！\p不过同时，想战斗吗？$"
+    .endarea
+
+SecretBase_Text_Trainer8AcceptBattle:
+    .org 0x82ee650
+    .area 38
+    .strn "这里是我的秘密基地，\n我是不会输的！$"
+    .endarea
+
+SecretBase_Text_Trainer8PreChampion:
+    .org 0x82ee6e4
+    .area 140
+    .strn "人们说有很多得到\n装饰品的方式，\p我们来比赛谁能得到\n更好的家具和装饰吧！$"
+    .endarea
+
+SecretBase_Text_Trainer8DeclineBattle:
+    .org 0x82ee676
+    .area 30
+    .strn "我随时愿意跟你战斗。$"
+    .endarea
+
+SecretBase_Text_Trainer8PostBattle:
+    .org 0x82ee6aa
+    .area 58
+    .strn "收集装饰品我是不会输给你的，\n下次再来玩！$"
+    .endarea
+
+SecretBase_Text_Trainer9Intro:
+    .org 0x82ee953
+    .area 207
+    .strn "通过观察人们拥有的装饰品的\n种类和摆放它们的方法，\l就可以了解到很多关于\l这个人的个性和品位的事情。\p你看出我的品味如何了吗？\n无话可说了吗？\p要不要再看看我的战斗品味？$"
+    .endarea
+
+SecretBase_Text_Trainer9AcceptBattle:
+    .org 0x82eea22
+    .area 25
+    .strn "不能退缩！$"
+    .endarea
+
+SecretBase_Text_Trainer9PreChampion:
+    .org 0x82eeae2
+    .area 173
+    .strn "通过观察人们拥有的装饰品的\n种类和摆放它们的方法，\l就可以了解到很多关于\l这个人的个性和品位的事情。\p你看出我的品味如何了吗？\n无话可说了吗？$"
+    .endarea
+
+SecretBase_Text_Trainer9DeclineBattle:
+    .org 0x82eea3b
+    .area 47
+    .strn "我很乐意随时向你\n展示我的风格。$"
+    .endarea
+
+SecretBase_Text_Trainer9PostBattle:
+    .org 0x82eeaa7
+    .area 59
+    .strn "觉得我的处事风格怎么样？\n我一直在不断完善！$"
+    .endarea
+
+Route111_Text_MakingRoomUseTMToMakeYourOwn:
+    .org 0x82ef467
+    .area 165
+    .strn "那是什么？\n我在干什么？\p我想利用一个技能\n在这里打出我自己的地方。\p我知道！这个技能机器给你好了。\n用它也来造一个你自己的房间如何？$"
+    .endarea
+
+Route111_Text_DontWantThis:
+    .org 0x82ef6fa
+    .area 65
+    .strn "哦？你不想要？\n如果你改变主意了，就来告诉我，好吗？$"
+    .endarea
+
+Route111_Text_ExplainSecretPower:
+    .org 0x82ef50c
+    .area 494
+    .strn "找一棵看上去可以垂下\n藤蔓的大树，\p在树前面使用神秘力量，\n一些藤蔓就会从树上滑落下来，\l这样你就能爬上树去了。\p你可以在上面找到很多\n放置你喜欢的东西的地方，\p它就成为了你自己的秘密空间⋯\n一个秘密基地！\p你也做一个吧。\p另外，你不一定要把\n秘密基地建在树上，\p试试对着石头墙壁上的\n小洞使用神秘力量吧。\p我也要去找些别的地方了，\n好了，再见！$"
+    .endarea
+
+Route111_Text_DontHaveAnyRoom:
+    .org 0x82ef73b
+    .area 98
+    .strn "哦？你没有地方拿它了。\p我会暂时保管它的，以后\n再来拿吧，好吗？$"
+    .endarea
+
+gText_WantToUseSurf:
+    .org 0x82ec132
+    .area 55
+    .strn "水的颜色蓝蓝的⋯\n要冲浪吗？$"
+    .endarea
+
+gText_PlayerUsedSurf:
+    .org 0x82ec1a9
+    .area 14
+    .strn "{STR_VAR_1}使用冲浪！$"
+    .endarea
+
+Text_ThisIsATestSignpostMsg:
+    .org 0x83419b3
+    .area 44
+    .strn "这是对你的考验。\n能够给你指明方向。$"
+    .endarea
+
+TrainerHill_Entrance_Text_ChallengeTime:
+    .org 0x82cc1cd
+    .area 19
+    .strn "{STR_VAR_1}分{STR_VAR_2}。{STR_VAR_3}秒。$"
+    .endarea
+
+gText_RegisteredTrainerinPokeNav:
+    .org 0x82ebf6b
+    .area 33
+    .strn "把{STR_VAR_1} {STR_VAR_2}\n登录进口袋领航员。$"
+    .endarea
+
+gText_MomOrDadMightLikeThisProgram:
+    .org 0x82ebd35
+    .area 78
+    .strn "也许是{STR_VAR_1}喜欢的游戏\n⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯ ⋯\p该走了！$"
+    .endarea
+
+PlayersHouse_1F_Text_TheresAMovieOnTV:
+    .org 0x82535af
+    .area 87
+    .strn "上演着一部电影，\p两个人在巨大的\n琴键上跳舞。\p该走了！$"
     .endarea
 

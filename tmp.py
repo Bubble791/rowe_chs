@@ -21,7 +21,7 @@ def readSymbolData(ldfile):
 msgboxTable = []
 
 #跳过的文本命名
-skipStringName = ["gStringVar4"]
+skipStringName = ["gStringVar4", "gText_PlayerUsedVar2"]
 
 scriptDir = "data/maps/"
 for subDir in os.listdir(scriptDir):
@@ -36,6 +36,18 @@ for subDir in os.listdir(scriptDir):
                         stringName = text.split("msgbox ")[1].split(",")[0].replace("\n","").replace(" MSGBOX_DEFAULT", "").replace(" MSGBOX_AUTOCLOSE", "")
                         if stringName not in msgboxTable and stringName not in skipStringName:
                             msgboxTable.append(stringName)
+scriptDir = "data/scripts/"
+for subDir in os.listdir(scriptDir):
+    if ".inc" in subDir:
+        fullPath = scriptDir + subDir
+        with open(fullPath, "r") as scriptInc:
+            for text in scriptInc.readlines():
+                if "#" in text and ".pory" in text:
+                    continue
+                if "	msgbox " in text:
+                    stringName = text.split("msgbox ")[1].split(",")[0].replace("\n","").replace(" MSGBOX_DEFAULT", "").replace(" MSGBOX_AUTOCLOSE", "")
+                if stringName not in msgboxTable and stringName not in skipStringName:
+                    msgboxTable.append(stringName)
 
 # 文本字典
 stringTable = {}

@@ -3460,3 +3460,3219 @@ ViridianCity_Text_GymClosedWonderWhoLeaderIs:
     .strn "This Pokémon Gym is always closed.\pI wonder who the Leader is?$"
     .endarea
 
+Mevent_Text_TheresATicketForYou:
+    .org 0x82ec728
+    .area 94
+    .strn "Thank you for using the Mystery\nEvent System.\pYou must be {PLAYER}.\nThere is a ticket here for you.$"
+    .endarea
+
+Mevent_Text_TryUsingItAtLilycovePort:
+    .org 0x82ec786
+    .area 100
+    .strn "It appears to be for use at\nthe Lilycove City port.\pWhy not give it a try and see what\nit is about?$"
+    .endarea
+
+Route117_Text_DoYouWantEgg:
+    .org 0x830b1d7
+    .area 183
+    .strn "Ah, it's you!\pWe were raising your Pokémon,\nand my goodness, were we surprised!\pYour Pokémon had a Baby!\pWe don't know how it got there,\nbut your Pokémon had it.\pYou do want it, yes?$"
+    .endarea
+
+Debug_CheatStart_Text_2:
+    .org 0x82d7579
+    .area 4
+    .strn "...$"
+    .endarea
+
+EventScript_CutTree_Text_1:
+    .org 0x82e5dfa
+    .area 41
+    .strn "This tree looks like it can be cut down.$"
+    .endarea
+
+EventScript_CutTree_Text_0:
+    .org 0x82e5da8
+    .area 82
+    .strn "This tree looks like it can be cut down!\nWould you like to cut it using your Axe?$"
+    .endarea
+
+EventScript_RockSmash_Text_1:
+    .org 0x82e5e62
+    .area 59
+    .strn "It's a rugged rock, but a Pickaxe may be\nable to smash it.$"
+    .endarea
+
+EventScript_RockSmash_Text_0:
+    .org 0x82e5e23
+    .area 63
+    .strn "This rock appears to be breakable.\nWould you like to break it?$"
+    .endarea
+
+EventScript_StrengthBoulder_Text_2:
+    .org 0x82e5f1a
+    .area 58
+    .strn "It's a big boulder, but a tool may help\nto push it aside.$"
+    .endarea
+
+EventScript_StrengthBoulder_Text_0:
+    .org 0x82e5e9d
+    .area 67
+    .strn "It's a big boulder, do you want to use\nthe Power Glove to push it?$"
+    .endarea
+
+EventScript_StrengthBoulder_Text_1:
+    .org 0x82e5ee0
+    .area 58
+    .strn "The Power Glove made it possible to\nmove boulders around!$"
+    .endarea
+
+EventScript_UseStrength_Text_0:
+    .org 0x82e5f54
+    .area 76
+    .strn "{STR_VAR_1} used Strength!\p, {STR_VAR_1}'s Strength made it\npossible to move boulders around!$"
+    .endarea
+
+EventScript_UseWaterfall_Text_1:
+    .org 0x82e5feb
+    .area 53
+    .strn "A wall of water is crashing down with a\nmighty roar.$"
+    .endarea
+
+EventScript_UseWaterfall_Text_0:
+    .org 0x82e5fa0
+    .area 75
+    .strn "It's a large waterfall, do you want to\nuse the Waterfall Tool to climb it?$"
+    .endarea
+
+EventScript_UseDive_Text_0:
+    .org 0x82e6020
+    .area 46
+    .strn "The sea is deep here. Would you like to\nDive?$"
+    .endarea
+
+EventScript_UseDiveUnderwater_Text_0:
+    .org 0x82e604e
+    .area 63
+    .strn "Light is filtering down from above.\nWould you like to surface?$"
+    .endarea
+
+EventScript_Headbutt_Text_1:
+    .org 0x82e6100
+    .area 63
+    .strn "This moderately sized tree looks like it\nmight hide something.$"
+    .endarea
+
+EventScript_Headbutt_Text_0:
+    .org 0x82e608d
+    .area 115
+    .strn "This moderately sized tree looks like it\nmight hide something. Would you like to\lshake it using your Shaking tool?$"
+    .endarea
+
+EventScript_FailSweetScent_Text_0:
+    .org 0x82e613f
+    .area 33
+    .strn "Looks like there's nothing here⋯$"
+    .endarea
+
+Common_EventScript_FlyingTaxi_Text_1:
+    .org 0x82d98cc
+    .area 50
+    .strn "Do you want to Fly with us?, its\ncompletely free.$"
+    .endarea
+
+Common_EventScript_FlyingTaxi_Text_0:
+    .org 0x82d98a2
+    .area 42
+    .strn "Do you want to Fly with us, its only 2BP?$"
+    .endarea
+
+Common_EventScript_FlyingTaxi_Text_2:
+    .org 0x82d98fe
+    .area 108
+    .strn "But it seems you can't afford using the\nflying taxis right now.\pPlease come back when you have atleast\n2BP.$"
+    .endarea
+
+LilycoveCity_Harbor_EventScript_FerryAttendant_Text_0:
+    .org 0x82d996a
+    .area 60
+    .strn "Hello, are you here for the ferry?, May I\nsee your Tickets?$"
+    .endarea
+
+LilycoveCity_Harbor_EventScript_Ferry_Location_Select_Text_0:
+    .org 0x82d99a6
+    .area 28
+    .strn "Where would you like to go?$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_Text_0:
+    .org 0x82d99c2
+    .area 274
+    .strn "Oh, excuse me! I am a scientist. My name\nis Colress. My research focuses on\lregional variations between species.\lFor example, Vulpix from Kanto has\ldeveloped differently compared to\lthose found in Alola. It seems a similar\lphenomenon is occurring here in the\lSevii Islands.$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_Text_1:
+    .org 0x82d9ad4
+    .area 83
+    .strn "Thats why I came to these islands, to\nuncover the reasons behind why this\lhappens.$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_Text_2:
+    .org 0x82d9b27
+    .area 51
+    .strn "Now that I think of it, I never asked\nyour name...$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_Text_3:
+    .org 0x82d9b5a
+    .area 128
+    .strn "{PLAYER}, is it? I'll remember your\nname. To commemorate our encounter, I\lwill let you decide which Sevii Island I\lshould visit next!$"
+    .endarea
+
+Common_EventScript_Colress_Second_Encounter_Text_0:
+    .org 0x82d9bda
+    .area 173
+    .strn "Oh {PLAYER}, I was just finishing\norganizing the data that I found here,\lbut I'm already excited on what I will\lfind next so help me decide what Sevii\lIsland I should visit next!$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_0:
+    .org 0x82d9c87
+    .area 226
+    .strn "{PLAYER} this is so exciting! I finally\ncompleted my research here. The\lregional variations occur because of\lthe unique environments you helped me\lexplore. As a token of appreciation for\lyour hard work, I have some prizes for\lyou!!$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_1:
+    .org 0x82d9d69
+    .area 44
+    .strn "Do you know of the Pokémon called\nGenesect?$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_3:
+    .org 0x82d9db2
+    .area 78
+    .strn "Then I have no choice but to admit that\nyou are all I would expect you to be!$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_4:
+    .org 0x82d9e00
+    .area 141
+    .strn "Genesect is a Pokémon that lived 300\nmillion years ago. Then an organization\lcalled Team Plasma modified it,\lattaching a cannon to its back.$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_5:
+    .org 0x82d9e8d
+    .area 178
+    .strn "The cannon's abilities could be\nactivated using certain drives created\lby the scientists in the P2 Laboratory.\lI think that you might be able to use\lthem as they should be used.$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_6:
+    .org 0x82d9f3f
+    .area 261
+    .strn "Simply believing in your Pokémon will\nnot guarantee that you can do\leverything you want. But there are many\lthings that are guaranteed to fail if\lyou do not believe in them. It is the\ltrust between a Trainer and a Pokémon\lalone that can overcome those hurdles!$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_7:
+    .org 0x82da044
+    .area 97
+    .strn "My next quest will be looking for\nGenesect, I hope our paths cross again,\lthanks for everything!$"
+    .endarea
+
+Common_EventScript_Colress_Final_Encounter_Text_2:
+    .org 0x82d9d95
+    .area 29
+    .strn "Then allow me to inform you!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_4:
+    .org 0x82da1fa
+    .area 62
+    .strn "But we already visited that Island,\ntake this more seriously!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_3:
+    .org 0x82da1d0
+    .area 42
+    .strn "{PLAYER} what Sevii Island I should\nvisit next?$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_0:
+    .org 0x82da0a5
+    .area 155
+    .strn "One Island huh? I think there is a giant\nvolcano there, it could lead to some\linteresting information for my\lresearch, so let's see each other over\lthere!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_2:
+    .org 0x82da19c
+    .area 52
+    .strn "But we are already there, take this more\nseriously!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_5:
+    .org 0x82da238
+    .area 153
+    .strn "Two Island huh? I think there is a\nswamp route there, it could lead to some\linteresting information for my\lresearch, so let's see each other over\lthere!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_6:
+    .org 0x82da2d1
+    .area 166
+    .strn "Three Island huh? I think there is a\nForest full of berries there, it could\llead to some interesting information\lfor my research, so let's see each other\lover there!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_7:
+    .org 0x82da377
+    .area 162
+    .strn "Four Island huh? I think there is a\nreally cold cave in there, it could lead\lto some interesting information for my\lresearch, so let's see each other over\lthere!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_8:
+    .org 0x82da419
+    .area 160
+    .strn "Five Island huh? I think there is a\nWater Labrynth in there, it could lead\lto some interesting information for my\lresearch, so let's see each other over\lthere!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_9:
+    .org 0x82da4b9
+    .area 154
+    .strn "Six Island huh? I think there are some\nRuins in there, it could lead to some\linteresting information for my\lresearch, so let's see each other over\lthere!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_10:
+    .org 0x82da553
+    .area 153
+    .strn "Seven Island huh? I think there is a\nCanyon in there, it could lead to some\linteresting information for my\lresearch, so let's see each other over\lthere!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_11:
+    .org 0x82da5ec
+    .area 89
+    .strn "Eight Island?, first time I heard of\nsuch Island, let me search for\linformation on it...$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_12:
+    .org 0x82da645
+    .area 137
+    .strn "I see so that island was recently\ndiscovered by a famous Dragon Tamer,\lseems like an interesting place, let's\lsee each other over there!$"
+    .endarea
+
+Common_EventScript_Colress_First_Encounter_ChooseIsland_Text_1:
+    .org 0x82da140
+    .area 92
+    .strn "That's right, you will help me with my\nresearch since you seem like an\linteresting Trainer.$"
+    .endarea
+
+Common_EventScript_Colress_AskForWarping_Text_0:
+    .org 0x82da6ce
+    .area 67
+    .strn "I'm on my way back to that Island do you\nwant to go there with me?$"
+    .endarea
+
+Common_EventScript_Colress_NoWarp_Text_0:
+    .org 0x82da711
+    .area 49
+    .strn "Well then, {PLAYER}, I hope to see you\nagain in there.$"
+    .endarea
+
+Common_EventScript_Colress_WarpToSevii_Text_0:
+    .org 0x82da742
+    .area 33
+    .strn "Splendid! Let's get out of here!$"
+    .endarea
+
+Common_Evenscript_WarpUsingFerry_Text_1:
+    .org 0x82da7d8
+    .area 116
+    .strn "I'm terribly sorry, there seems to be a\nproblem visiting Lilycove right now,\lmaybe visiting it yourself could help.$"
+    .endarea
+
+Common_Evenscript_WarpUsingFerry_Text_0:
+    .org 0x82da763
+    .area 117
+    .strn "I'm terribly sorry, there seems to be a\nproblem visiting Slateport right now,\lmaybe visiting it yourself could help.$"
+    .endarea
+
+Common_Evenscript_CantSailThereWithoutATicket_Text_0:
+    .org 0x82da84c
+    .area 111
+    .strn "{PLAYER} doesn't have the Ticket to\nthis location⋯\pI'm terribly sorry.\pYou must have that Ticket to board the\nferry.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_01:
+    .org 0x82e5330
+    .area 67
+    .strn "This item is the Axe. You can use it cut\nsmall trees on your path.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_02:
+    .org 0x82e5373
+    .area 82
+    .strn "This item is the Waterfall Tool. It lets\nyou ascend using any waterfall you\lfind.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_03:
+    .org 0x82e53c5
+    .area 85
+    .strn "This item is the Good Rod. You can use it\nto find stronger Pokémon than the Old\lRod.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_04:
+    .org 0x82e541a
+    .area 57
+    .strn "This item is the Pickaxe. It lets you\nbreak small rocks.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_05:
+    .org 0x82e5453
+    .area 83
+    .strn "This item is a Catching Charm. It\nincrease the chance of getting a\lcritical catch.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_06:
+    .org 0x82e54a6
+    .area 58
+    .strn "This item is the Power Glove. It lets you\nmove big rocks.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_07:
+    .org 0x82e54e0
+    .area 82
+    .strn "This item is the Rock Climb Tool. It lets\nascend or descend using any rocky\lpath.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_08:
+    .org 0x82e5532
+    .area 126
+    .strn "This item is the Super Rod. Its the\nultimate Rod you can find, its used by\lthe pros for catching the strongest\lwater Pokémon.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_09:
+    .org 0x82e55b0
+    .area 71
+    .strn "This item is the Fly Charm. It lets you\nuse the Flying taxis for free.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_10:
+    .org 0x82e55f7
+    .area 92
+    .strn "This item is the Flying Mount. It lets\nyou move use Fly using your own Pokémon\lat any time!$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_11:
+    .org 0x82e5653
+    .area 151
+    .strn "This item is the Mega Bracelet. This\nitem will make you able to Mega Evolve\lyour Pokémon Pressing Start with a\lPokémon that can Mega Evolve in Battle.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_12:
+    .org 0x82e56ea
+    .area 101
+    .strn "This item is the Exp Charm. This item will\nmake it so you receive double the\lExperience from battle.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_13:
+    .org 0x82e574f
+    .area 115
+    .strn "This item is an Oval Charm. Its an item\nthat doubles the possibilites of\lgetting an Baby Pokémon from the\lDaycare.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_14:
+    .org 0x82e57c2
+    .area 88
+    .strn "This item is the Casino Charm. It will let\nyou use any of the casino machines for\lfree.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_15:
+    .org 0x82e581a
+    .area 70
+    .strn "This item is the Wonder Charm. It will\nlet you Wonder Trade for free.$"
+    .endarea
+
+Special_Gym_Text_Explain_Item_16:
+    .org 0x82e5860
+    .area 100
+    .strn "This item is the Shiny Charm. Its an item\nthat doubles the possibilites of\lgetting a shiny Pokémon.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_GymGuide_New_Text_0:
+    .org 0x82e0707
+    .area 93
+    .strn "Guide: Hello {PLAYER}, I see you came\nto this Gym again, do you want me to\ltake you to the Leader?$"
+    .endarea
+
+RustboroCity_Gym_EventScript_GymGuide_New_Text_2:
+    .org 0x82e078e
+    .area 53
+    .strn "I see, you can also go throught the Gym\nif you want.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_GymGuide_New_Text_1:
+    .org 0x82e0764
+    .area 42
+    .strn "Let me tell the leader that you are\nhere.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_New_Text_5:
+    .org 0x82e0905
+    .area 38
+    .strn "Please take these items with you too.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_New_Text_6:
+    .org 0x82e092b
+    .area 261
+    .strn "That Technical Machine contains the\nmove Rock Tomb.\pIt not only inflicts damage by dropping\nrocks, it also lowers the target Speed.\pIf you use a TM, it instantly teaches\nthe move to a Pokémon.\pA TM can be used indefinitely, so use it\nwithout thinking it twice.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_New_Text_0:
+    .org 0x82e07c3
+    .area 34
+    .strn "Please take these items with you.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_New_Text_1:
+    .org 0x82e07e5
+    .area 52
+    .strn "Roxanne: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_New_Text_2:
+    .org 0x82e0819
+    .area 124
+    .strn "Roxanne: My Pokémon are tired for\ntoday, but the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_New_Text_3:
+    .org 0x82e0895
+    .area 70
+    .strn "Roxanne: I will tell them to get ready,\nso take care on your way out.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_Give_Gifts_Text_0:
+    .org 0x82e0a30
+    .area 89
+    .strn "Roxanne: This move raises the speed of\nRock-type Pokémon by 2 stages, its\lreally useful.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_Give_Gifts_Text_1:
+    .org 0x82e0a89
+    .area 119
+    .strn "Roxanne: This move does damage every\ntime an opposing Pokémon enters to the\lbattle, try it at the start of the\lbattle.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_Give_Gifts_Text_2:
+    .org 0x82e0b00
+    .area 104
+    .strn "Roxanne: This is a Rock-type damage\nmove made specially for Rock-type\lPokémon with high Special Attack.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_Give_Gifts_Text_3:
+    .org 0x82e0b68
+    .area 116
+    .strn "Roxanne: This is a Rock-type damage\nmove with a high base attack, but\lmisses a lot too so be careful when\lusing it.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_Give_Gifts_Text_4:
+    .org 0x82e0bdc
+    .area 66
+    .strn "Roxanne: Take this as an special gift\nfrom me, it's an Aggronite.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Roxanne_Give_Gifts_Text_5:
+    .org 0x82e0c1e
+    .area 54
+    .strn "Make an Aggron hold it to unleash its\ntrue potential.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_4:
+    .org 0x82e0d07
+    .area 11
+    .strn "Aron: ron?$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_5:
+    .org 0x82e0d12
+    .area 57
+    .strn "The Pokémon is currently eating a little\nchunk of metal.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_8:
+    .org 0x82e0d67
+    .area 13
+    .strn "Lairon: ron?$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_9:
+    .org 0x82e0d74
+    .area 50
+    .strn "The Pokémon is currently eating a chunk\nof metal.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_14:
+    .org 0x82e0e65
+    .area 13
+    .strn "Aggron: ron?$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_15:
+    .org 0x82e0e72
+    .area 64
+    .strn "The Pokémon is currently eating what it\nlooks to be a big rock.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_0:
+    .org 0x82e0c54
+    .area 11
+    .strn "Aron: ron!$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_1:
+    .org 0x82e0c5f
+    .area 82
+    .strn "The Pokémon seems like it wants a\nrematch with You, its skin look's really\lshiny.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_2:
+    .org 0x82e0cb1
+    .area 13
+    .strn "Aron: ron...$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_3:
+    .org 0x82e0cbe
+    .area 73
+    .strn "The Pokémon seems tired after today's\nbattle, its better to let it rest.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_6:
+    .org 0x82e0d4b
+    .area 13
+    .strn "Lairon: ron!$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_7:
+    .org 0x82e0d58
+    .area 15
+    .strn "Lairon: ron...$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_10:
+    .org 0x82e0da6
+    .area 13
+    .strn "Aggron: ron!$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_11:
+    .org 0x82e0db3
+    .area 83
+    .strn "The Pokémon seems like it wants a\nrematch with You, its skin look's really\ltought.$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_12:
+    .org 0x82e0e06
+    .area 15
+    .strn "Aggron: ron...$"
+    .endarea
+
+RustboroCity_Gym_EventScript_Gym_Aaron_Text_13:
+    .org 0x82e0e15
+    .area 80
+    .strn "The Pokémon is currently looking at a\nshiny rock on its arm with\ldetermination.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_New_Text_4:
+    .org 0x82e0fd0
+    .area 118
+    .strn "That technical machine contains the\nmove Bulk Up.\pIt's a move that raises both Attack and\nDefense stats for the User.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_New_Text_0:
+    .org 0x82e0eb2
+    .area 51
+    .strn "Brawly: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_New_Text_1:
+    .org 0x82e0ee5
+    .area 123
+    .strn "Brawly: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_New_Text_2:
+    .org 0x82e0f60
+    .area 69
+    .strn "Brawly: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_Give_Gifts_Text_0:
+    .org 0x82e1046
+    .area 95
+    .strn "Brawly: This move not only inflicts\ndamage, it also lowers the target Speed\lstat by one stage.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_Give_Gifts_Text_1:
+    .org 0x82e10a5
+    .area 95
+    .strn "Brawly: This move confuses the target\nbut it also raises its attack stat, use\lit with caution.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_Give_Gifts_Text_2:
+    .org 0x82e1104
+    .area 126
+    .strn "Brawly: This is a Fighting-type damage\nmove with a really high base attack, but\lmisses a lot too so be careful when\lusing it.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_Give_Gifts_Text_3:
+    .org 0x82e1182
+    .area 111
+    .strn "Brawly: This is a Fighting-type damage\nmove made specially for Fighting-type\lPokémon with high Special Attack.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_Give_Gifts_Text_4:
+    .org 0x82e11f1
+    .area 66
+    .strn "Brawly: Take this as an special gift\nfrom me, it's a Heracronite.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Brawly_Give_Gifts_Text_5:
+    .org 0x82e1233
+    .area 56
+    .strn "Make a Heracross hold it to unleash its\nreal potential.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_4:
+    .org 0x82e1348
+    .area 16
+    .strn "Makuhita: hita?$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_5:
+    .org 0x82e1358
+    .area 58
+    .strn "The Pokémon is looking at a little\nsurfboard on its hand.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_10:
+    .org 0x82e146e
+    .area 16
+    .strn "Hariyama: yama?$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_11:
+    .org 0x82e147e
+    .area 76
+    .strn "The Pokémon is currently looking at\nyou, it may be studying your movements.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_0:
+    .org 0x82e126b
+    .area 16
+    .strn "Makuhita: hita!$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_1:
+    .org 0x82e127b
+    .area 98
+    .strn "The Pokémon seems like it wants a\nrematch with You, it has a really\lprofessional fighting stance.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_2:
+    .org 0x82e12dd
+    .area 18
+    .strn "Makuhita: hita...$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_3:
+    .org 0x82e12ef
+    .area 89
+    .strn "The Pokémon seems tired after today's\nbattle, but even then it has a lot of\lenergy left.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_6:
+    .org 0x82e1392
+    .area 16
+    .strn "Hariyama: yama!$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_7:
+    .org 0x82e13a2
+    .area 89
+    .strn "The Pokémon seems like it wants a\nrematch, it is stomping the ground with\ldetermination.$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_8:
+    .org 0x82e13fb
+    .area 18
+    .strn "Hariyama: yama...$"
+    .endarea
+
+DewfordTown_Gym_EventScript_Gym_Makuhita_Text_9:
+    .org 0x82e140d
+    .area 97
+    .strn "The Pokémon seems tired after today's\nbattle, but its thanking you for the\lbattle very politely.$"
+    .endarea
+
+MauvilleCity_Gym_Text_WattsonIntro_New:
+    .org 0x82e59f6
+    .area 297
+    .strn "What? You say you've gotten past all my\nrigged doors? Wahahahah! Now, that is\lamusing! The plans to reform Mauville\lare done for now. Making traps for my\lGym and battling with young Trainers\llike you are the things I live for now!\lThen I, Wattson, the Leader of Mauville\lGym, shall electrify you!$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_New_Text_4:
+    .org 0x82e15eb
+    .area 136
+    .strn "That technical machine contains the\nmove Thunder Wave.\pThis move paralyzes the target so you\ncan attack before them, its really\luseful.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_New_Text_0:
+    .org 0x82e14ca
+    .area 52
+    .strn "Wattson: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_New_Text_1:
+    .org 0x82e14fe
+    .area 124
+    .strn "Wattson: My Pokémon are tired for\ntoday, but the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_New_Text_2:
+    .org 0x82e157a
+    .area 70
+    .strn "Wattson: I will tell them to get ready,\nso take care on your way out.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_Give_Gifts_Text_0:
+    .org 0x82e1673
+    .area 94
+    .strn "Wattson: This move inflicts damage and\nalways lands, use it if you had your\laccuracy lowered.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_Give_Gifts_Text_1:
+    .org 0x82e16d1
+    .area 112
+    .strn "Wattson: This move inflicts damage and\nalways rises the user Special Attack so\lit becomes stronger on each hit.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_Give_Gifts_Text_2:
+    .org 0x82e1741
+    .area 138
+    .strn "Wattson: This move inflicts damage and\nlets you switch your Pokémon on the\lsame turn, use it to switch if you are\lfaster than your enemy.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_Give_Gifts_Text_3:
+    .org 0x82e17cb
+    .area 175
+    .strn "Wattson: This is an Electric-type\ndamage move made specially for\lElectric-type Pokémon with high\lPhysical Attack, it also inflicts recoil\ldamage to the user so use it wisely.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_Give_Gifts_Text_4:
+    .org 0x82e187a
+    .area 65
+    .strn "Wattson: Take this as an special gift\nfrom me, it's a Manectite.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Wattson_Give_Gifts_Text_5:
+    .org 0x82e18bb
+    .area 56
+    .strn "Make a Manectric hold it to unleash its\nreal potential.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_4:
+    .org 0x82e19c3
+    .area 18
+    .strn "Electrike: trike?$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_5:
+    .org 0x82e19d5
+    .area 40
+    .strn "The Pokémon is chewing on a little toy.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_12:
+    .org 0x82e1b0a
+    .area 17
+    .strn "Manectric: tric?$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_13:
+    .org 0x82e1b1b
+    .area 43
+    .strn "The Pokémon is currently eating\nsomething.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_0:
+    .org 0x82e18f3
+    .area 18
+    .strn "Electrike: trike!$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_1:
+    .org 0x82e1905
+    .area 100
+    .strn "The Pokémon seems like it wants a\nrematch with You, its fur looks like it\lhas a lot of electricity.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_2:
+    .org 0x82e1969
+    .area 20
+    .strn "Electrike: trike...$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_3:
+    .org 0x82e197d
+    .area 70
+    .strn "The Pokémon seems tired after today's\nbattle, it let out a loud yawn.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_6:
+    .org 0x82e19fd
+    .area 17
+    .strn "Manectric: tric!$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_7:
+    .org 0x82e1a0e
+    .area 77
+    .strn "The Pokémon seems like it wants a\nrematch, it may even create\lthunderclouds.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_8:
+    .org 0x82e1a5b
+    .area 19
+    .strn "Manectric: tric...$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_9:
+    .org 0x82e1a6e
+    .area 69
+    .strn "The Pokémon seems tired after today's\nbattle, but it is still alert.$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_10:
+    .org 0x82e1ab3
+    .area 16
+    .strn "Manectric: ron!$"
+    .endarea
+
+MauvilleCity_Gym_EventScript_Gym_Electrike_Text_11:
+    .org 0x82e1ac3
+    .area 71
+    .strn "The Pokémon is proudly wearing a collar\nwith an stone attatched to it.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_New_Text_4:
+    .org 0x82e1c69
+    .area 154
+    .strn "That technical machine contains the\nmove Will-o-Wisp.\pThis move burns the target damaging\nthe Pokémon every turn while also\llowering its Physical Attack.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_New_Text_0:
+    .org 0x82e1b46
+    .area 53
+    .strn "Flannery: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_New_Text_1:
+    .org 0x82e1b7b
+    .area 125
+    .strn "Flannery: My Pokémon are tired for\ntoday, but the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_New_Text_2:
+    .org 0x82e1bf8
+    .area 71
+    .strn "Flannery: I will tell them to get ready,\nso take care on your way out.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Give_Gifts_Text_0:
+    .org 0x82e1d03
+    .area 80
+    .strn "Flannery: This move inflicts damage and\nalways lowers the enemy Special Attack.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Give_Gifts_Text_1:
+    .org 0x82e1d53
+    .area 105
+    .strn "Flannery: This move inflicts damage\ndepending on the user's weight, use it\lwith Pokémon like my Torkoal.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Give_Gifts_Text_2:
+    .org 0x82e1dbc
+    .area 107
+    .strn "Flannery: This is an Fire-type damage\nmove made specially for Fire-type\lPokémon with high Physical Attack.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Give_Gifts_Text_3:
+    .org 0x82e1e27
+    .area 191
+    .strn "Flannery: This is one of the strongest\nFire-type moves but it also lowers the\luser Special Attack after each use, use\lit only while you are in a pinch or with a\lPokémon holding a White Herb.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Give_Gifts_Text_4:
+    .org 0x82e1ee6
+    .area 68
+    .strn "Flannery: Take this as an special gift\nfrom me, it's a Houndoomite.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Flannery_Give_Gifts_Text_5:
+    .org 0x82e1f2a
+    .area 55
+    .strn "Make a Houndoom hold it to unleash its\nreal potential.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Gym_Torkoal_Text_4:
+    .org 0x82e2025
+    .area 15
+    .strn "Torkoal: koal?$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Gym_Torkoal_Text_5:
+    .org 0x82e2034
+    .area 52
+    .strn "The Pokémon seems curious about how\nstrong you are.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Gym_Torkoal_Text_0:
+    .org 0x82e1f61
+    .area 15
+    .strn "Torkoal: koal!$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Gym_Torkoal_Text_1:
+    .org 0x82e1f70
+    .area 90
+    .strn "The Pokémon seems like it wants a\nrematch with You, the smoke on its back\lits really hot.$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Gym_Torkoal_Text_2:
+    .org 0x82e1fca
+    .area 17
+    .strn "Torkoal: koal...$"
+    .endarea
+
+LavaridgeTown_Gym_1F_EventScript_Gym_Torkoal_Text_3:
+    .org 0x82e1fdb
+    .area 74
+    .strn "The Pokémon seems tired after today's\nbattle, its better to leave it rest$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_New_Text_4:
+    .org 0x82e2181
+    .area 151
+    .strn "That technical machine contains the\nmove False swipe.\pThis move inflicts damage but never\ndefeats the target, its a perfect for\lcatching wild Pokémon.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_New_Text_0:
+    .org 0x82e2068
+    .area 74
+    .strn "Dad: {PLAYER}, please come back\ntomorrow so you can battle with your\ldad again.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_New_Text_1:
+    .org 0x82e20b2
+    .area 98
+    .strn "Dad: {PLAYER}, I'm tired for today,\nbut the trainers here need training,\lcould you shape them a little?$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_New_Text_2:
+    .org 0x82e2114
+    .area 66
+    .strn "Dad: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_Give_Gifts_Text_0:
+    .org 0x82e2218
+    .area 60
+    .strn "Dad: This move lowers the target\nSpecial Attack by 1 stage.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_Give_Gifts_Text_1:
+    .org 0x82e2254
+    .area 102
+    .strn "Dad: This move changes depending on\nwhere you use it, its great for Pokémon\lwithout a lot of variety.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_Give_Gifts_Text_2:
+    .org 0x82e22ba
+    .area 69
+    .strn "Dad: This move inflicts damage and\nbecomes stronger if the user has.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_Give_Gifts_Text_3:
+    .org 0x82e22ff
+    .area 117
+    .strn "Dad: This is the strongest physical\nNormal-type move, it does not let you\lattack on the next turn, so use it\lwisely.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_Give_Gifts_Text_4:
+    .org 0x82e2374
+    .area 65
+    .strn "Dad: Take this as an special gift from\nme, it's a Kangaskhanite.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Norman_Give_Gifts_Text_5:
+    .org 0x82e23b5
+    .area 57
+    .strn "Make a Kangaskhan hold it to unleash\nits real potential.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_4:
+    .org 0x82e249e
+    .area 15
+    .strn "Slakoth: koth?$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_5:
+    .org 0x82e24ad
+    .area 62
+    .strn "The Pokémon is currently loafing around\nwhile looking at you.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_9:
+    .org 0x82e2562
+    .area 17
+    .strn "Vigoroth: roth!!$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_10:
+    .org 0x82e2573
+    .area 37
+    .strn "The Pokémon is warmly welcoming you.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_15:
+    .org 0x82e266d
+    .area 16
+    .strn "Slaking: king!!$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_16:
+    .org 0x82e267d
+    .area 55
+    .strn "The Pokémon looks surprised on how muh\nyou have grown.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_0:
+    .org 0x82e23ee
+    .area 15
+    .strn "Slakoth: koth!$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_1:
+    .org 0x82e23fd
+    .area 67
+    .strn "The Pokémon seems like it has some\nenergy and wants to battle you.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_2:
+    .org 0x82e2440
+    .area 17
+    .strn "Slakoth: koth...$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_3:
+    .org 0x82e2451
+    .area 77
+    .strn "The Pokémon seems tired after today's\nbattle, it let out a really loud yawn.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_6:
+    .org 0x82e24eb
+    .area 16
+    .strn "Vigoroth: roth!$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_7:
+    .org 0x82e24fb
+    .area 85
+    .strn "The Pokémon seems like it wants a\nrematch with You, it looks determined\lto beat you.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_8:
+    .org 0x82e2550
+    .area 18
+    .strn "Vigoroth: roth...$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_11:
+    .org 0x82e2598
+    .area 15
+    .strn "Slaking: king!$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_12:
+    .org 0x82e25a7
+    .area 86
+    .strn "The Pokémon seems like it wants a\nrematch, it looks proud on how much you\lhave grown.$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_13:
+    .org 0x82e25fd
+    .area 17
+    .strn "Slaking: king...$"
+    .endarea
+
+PetalburgCity_Gym_EventScript_Gym_Slakoth_Text_14:
+    .org 0x82e260e
+    .area 95
+    .strn "The Pokémon seems tired after today's\nbattle, but it still looks happy that\lyou are so strong.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_New_Text_4:
+    .org 0x82e27d2
+    .area 97
+    .strn "That technical machine contains the\nmove Roost.\pIt's a move that cures your Flying-type\nPokémon.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_New_Text_0:
+    .org 0x82e26b4
+    .area 51
+    .strn "Winona: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_New_Text_1:
+    .org 0x82e26e7
+    .area 123
+    .strn "Winona: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_New_Text_2:
+    .org 0x82e2762
+    .area 69
+    .strn "Winona: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_Give_Gifts_Text_0:
+    .org 0x82e2833
+    .area 88
+    .strn "Winona: This move inflicts damage and\nnever fails, use it when you are low on\laccuracy.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_Give_Gifts_Text_1:
+    .org 0x82e288b
+    .area 91
+    .strn "Winona: This move inflicts double the\ndamage if its used by a Pokémon without\la held item.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_Give_Gifts_Text_2:
+    .org 0x82e28e6
+    .area 119
+    .strn "Winona: This is a two turns Flying-type\nmove, its really powerful and lets you\lstay out of the enemy range for 1 turn.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_Give_Gifts_Text_3:
+    .org 0x82e295d
+    .area 100
+    .strn "Winona: This is one of the best\nFlying-type moves, it does a lot of\ldamage but also hurts the user.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_Give_Gifts_Text_4:
+    .org 0x82e29c1
+    .area 62
+    .strn "Winona: Take this as an special gift\nfrom me, it's a Altaria.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Winona_Give_Gifts_Text_5:
+    .org 0x82e29ff
+    .area 54
+    .strn "Make a Altaria hold it to unleash its\nreal potential.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_4:
+    .org 0x82e2af8
+    .area 14
+    .strn "Taillow: low?$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_5:
+    .org 0x82e2b06
+    .area 64
+    .strn "The Pokémon is looking confused on how\nyou finished the puzzle.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_10:
+    .org 0x82e2bfa
+    .area 14
+    .strn "Swellow: low?$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_11:
+    .org 0x82e2c08
+    .area 54
+    .strn "The Pokémon is currently looking at you\nwhile flying.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_0:
+    .org 0x82e2a35
+    .area 14
+    .strn "Taillow: low!$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_1:
+    .org 0x82e2a43
+    .area 78
+    .strn "The Pokémon seems like it wants a\nrematch with You, it is flying really\lfast.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_2:
+    .org 0x82e2a91
+    .area 16
+    .strn "Taillow: low...$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_3:
+    .org 0x82e2aa1
+    .area 87
+    .strn "The Pokémon seems tired after today's\nbattle, it is currently eating a\lsunflower seed.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_6:
+    .org 0x82e2b46
+    .area 14
+    .strn "Swellow: low!$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_7:
+    .org 0x82e2b54
+    .area 69
+    .strn "The Pokémon seems like it wants a\nrematch, it is flying really fast.$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_8:
+    .org 0x82e2b99
+    .area 16
+    .strn "Swellow: low...$"
+    .endarea
+
+FortreeCity_Gym_EventScript_Gym_Taillow_Text_9:
+    .org 0x82e2ba9
+    .area 81
+    .strn "The Pokémon seems tired after today's\nbattle, it may want to rest a little\lmore.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_10:
+    .org 0x82e2dc8
+    .area 147
+    .strn "Tate: That technical machine contains\nthe move Calm Mind.\pLiza: This move raises your Pokémon\nSpecial Attack and Special Defense at\lthe same time.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_0:
+    .org 0x82e2c3e
+    .area 18
+    .strn "Tate: Please take$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_1:
+    .org 0x82e2c50
+    .area 28
+    .strn "Liza: these items with you.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_2:
+    .org 0x82e2c6c
+    .area 25
+    .strn "Tate: Come back tomorrow$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_3:
+    .org 0x82e2c85
+    .area 30
+    .strn "Liza: so we can battle again.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_4:
+    .org 0x82e2ca3
+    .area 79
+    .strn "Tate: Our Pokémon are tired for today,\ndo you want to try battling them again?$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_5:
+    .org 0x82e2cf2
+    .area 48
+    .strn "Liza: but the other trainers here need\ntraining$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_6:
+    .org 0x82e2d22
+    .area 46
+    .strn "Tate: Do you want to try battling them\nagain?$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_7:
+    .org 0x82e2d50
+    .area 37
+    .strn "Tate: I will tell them to get ready.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_New_Text_8:
+    .org 0x82e2d75
+    .area 36
+    .strn "Liza: so take care on your way out.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_0:
+    .org 0x82e2e5b
+    .area 30
+    .strn "Tate: This move can only hit.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_1:
+    .org 0x82e2e79
+    .area 31
+    .strn "Liza: if the Target is asleep.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_2:
+    .org 0x82e2e98
+    .area 41
+    .strn "Tate: This move reverses the turn\norder.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_3:
+    .org 0x82e2ec1
+    .area 28
+    .strn "Liza: but only for 5 turns.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_4:
+    .org 0x82e2edd
+    .area 33
+    .strn "Tate: This move inflicts damage.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_5:
+    .org 0x82e2efe
+    .area 52
+    .strn "Liza: but its based on the target\nphysical Defense.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_6:
+    .org 0x82e2f32
+    .area 72
+    .strn "Tate: Take this as an special gift from\nus, it's a pair of Mega Stones.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_TateAndLiza_Give_Gifts_Text_7:
+    .org 0x82e2f7a
+    .area 77
+    .strn "Liza: Make a Gardevoir or a Gallade hold\nit to unleash their real potential.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_GymGuide_New_Text_0:
+    .org 0x82e2fc7
+    .area 94
+    .strn "Guide: Hello {PLAYER}, I see you came\nto this Gym again, do you want me to\ltake you to the Leaders?$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_GymGuide_New_Text_1:
+    .org 0x82e3025
+    .area 36
+    .strn "Let me tell them that you are here.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Solrock_Text_3:
+    .org 0x82e30b5
+    .area 15
+    .strn "Solrock: rock?$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Solrock_Text_0:
+    .org 0x82e3049
+    .area 15
+    .strn "Solrock: rock!$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Solrock_Text_1:
+    .org 0x82e3058
+    .area 76
+    .strn "The Pokémon seems like it wants a\nrematch with You, it looks really bright.$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Solrock_Text_2:
+    .org 0x82e30a4
+    .area 17
+    .strn "Solrock: rock...$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Lunatone_Text_2:
+    .org 0x82e30e6
+    .area 16
+    .strn "Lunatone: tone?$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Lunatone_Text_0:
+    .org 0x82e30c4
+    .area 16
+    .strn "Lunatone: tone!$"
+    .endarea
+
+MossdeepCity_Gym_EventScript_Gym_Lunatone_Text_1:
+    .org 0x82e30d4
+    .area 18
+    .strn "Lunatone: tone...$"
+    .endarea
+
+SootopolisCity_Gym_1F_Text_JuanIntro:
+    .org 0x82840bc
+    .area 362
+    .strn "Welcome Challenger my name is Juan,\nThe Gym leader of Sootopolis.\pOnce, I had given up my position as\nthe Gym Leader to my apprentice,\lHowever, a compelling reason arose\lfor me to make a comeback.\pAh, but enough chatter. Let us,\nbegin our match, shall we?\pPlease, you shall bear witness to our\nartistry.\lA grand illusion of water sculpted\lby Pokémon and myself!$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_New_Text_3:
+    .org 0x82e31e3
+    .area 122
+    .strn "That Technical Machine contains the\nmove Water Pulse.\pThis move inflicts damage and has a\nchance of confusing the target.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_New_Text_0:
+    .org 0x82e30f6
+    .area 49
+    .strn "Juan: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_New_Text_1:
+    .org 0x82e3127
+    .area 121
+    .strn "Juan: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_New_Text_2:
+    .org 0x82e31a0
+    .area 67
+    .strn "Juan: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_Give_Gifts_Text_0:
+    .org 0x82e325d
+    .area 77
+    .strn "Juan: This move inflicts damage and has\na high chance of burning the target.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_Give_Gifts_Text_1:
+    .org 0x82e32aa
+    .area 71
+    .strn "Juan: This move does damages\neverything on the field even your\lallies.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_Give_Gifts_Text_2:
+    .org 0x82e32f1
+    .area 77
+    .strn "Juan: This is a Physical oriented\nWater-type move, it can flinch the\ltarget.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_Give_Gifts_Text_3:
+    .org 0x82e333e
+    .area 104
+    .strn "Juan: This is one of the best physical\nWater-type moves it has a chance of\llowering the target defense.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_Give_Gifts_Text_4:
+    .org 0x82e33a6
+    .area 62
+    .strn "Juan: Take this as an special gift from\nme, it's an Gyarados.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Juan_Give_Gifts_Text_5:
+    .org 0x82e33e4
+    .area 56
+    .strn "Make an Gyarados hold it to unleash its\nreal potential.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_3:
+    .org 0x82e3485
+    .area 13
+    .strn "Horsea: sea?$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_4:
+    .org 0x82e3492
+    .area 62
+    .strn "The Pokémon is currently looking\nshooting ink from its mouth.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_7:
+    .org 0x82e34ec
+    .area 13
+    .strn "Seadra: dra?$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_8:
+    .org 0x82e34f9
+    .area 55
+    .strn "The Pokémon is currently looking at\nsome ring targets.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_11:
+    .org 0x82e354f
+    .area 15
+    .strn "Seaking: king?$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_12:
+    .org 0x82e355e
+    .area 53
+    .strn "The Pokémon is currently shooting some\nring targets.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_0:
+    .org 0x82e341c
+    .area 13
+    .strn "Horsea: sea!$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_1:
+    .org 0x82e3429
+    .area 77
+    .strn "The Pokémon seems like it wants a\nrematch with You, it looks really\lexcited.$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_2:
+    .org 0x82e3476
+    .area 15
+    .strn "Horsea: sea...$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_5:
+    .org 0x82e34d0
+    .area 13
+    .strn "Seadra: dra!$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_6:
+    .org 0x82e34dd
+    .area 15
+    .strn "Seadra: dra...$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_9:
+    .org 0x82e3530
+    .area 14
+    .strn "Seaking: ron!$"
+    .endarea
+
+SootopolisCity_Gym_1F_EventScript_Gym_Horsea_Text_10:
+    .org 0x82e353e
+    .area 17
+    .strn "Seaking: king...$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_5:
+    .org 0x82e3738
+    .area 233
+    .strn "I'm Falkner, this Island Pokémon Gym\nLeader! People say you can clip\lFlying-type Pokémon's wings with a jolt\lof electricity... I won't allow such\linsults to bird Pokémon! I'll show you\lthe real power of the magnificent bird\lPokémon!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_6:
+    .org 0x82e3821
+    .area 160
+    .strn "For pity's sake! My dad's cherished bird\nPokémon... But a defeat is a defeat. All\lright. Take this official Pokémon\lLeague Badge. This one is the Zephyr\lBadge.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_8:
+    .org 0x82e38ec
+    .area 99
+    .strn "I'm going to train harder to become the\ngreatest Bird Keeper of all so let's\lfight again tomorrow!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_0:
+    .org 0x82e3593
+    .area 88
+    .strn "Falkner: Hi! I've been waiting for you!\nIt's a pleasure to be able to battle you\lagain.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_1:
+    .org 0x82e35eb
+    .area 87
+    .strn "Falkner: Mmm... It's still a long way to\nbecome the best Trainer, but I won't\lgive up!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_2:
+    .org 0x82e3642
+    .area 52
+    .strn "Falkner: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_3:
+    .org 0x82e3676
+    .area 124
+    .strn "Falkner: My Pokémon are tired for\ntoday, but the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Text_4:
+    .org 0x82e36f2
+    .area 70
+    .strn "Falkner: I will tell them to get ready,\nso take care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Falkner_Give_Gifts_Text_0:
+    .org 0x82e394f
+    .area 32
+    .strn "Please take this item with you.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_5:
+    .org 0x82e3b9e
+    .area 170
+    .strn "I'm Bugsy! I never lose when it comes to\nbug Pokémon. My research is going to\lmake me the authority on bug Pokémon!\lLet me demonstrate what I've learned\lfrom my studies.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_6:
+    .org 0x82e3c48
+    .area 106
+    .strn "Whoa, amazing! You're an expert on\nPokémon! My research isn't complete\lyet. OK, you win. Take this Badge.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_8:
+    .org 0x82e3cd9
+    .area 127
+    .strn "Bug-type Pokémon are deep. There are\nmany mysteries to explore. Study your\ltop choices thoroughly. Let's fight\lagain tomorrow!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_0:
+    .org 0x82e3a46
+    .area 54
+    .strn "Bugsy: Good to see you again! Behold my\nbug research!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_1:
+    .org 0x82e3a7c
+    .area 50
+    .strn "Bugsy: You must have studied a lot\nabout Pokémon!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_2:
+    .org 0x82e3aae
+    .area 50
+    .strn "Bugsy: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_3:
+    .org 0x82e3ae0
+    .area 122
+    .strn "Bugsy: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Bugsy_Text_4:
+    .org 0x82e3b5a
+    .area 68
+    .strn "Bugsy: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_5:
+    .org 0x82e3f14
+    .area 137
+    .strn "Hi! I'm Whitney! Everyone was into\nPokémon, so I got into it too! Pokémon\lare super-cute! You want to battle? I'm\lwarning you--I'm good!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_6:
+    .org 0x82e3f9d
+    .area 129
+    .strn "...Sniff... What? What do you want? A\nBadge? Oh, right. I forgot. Here's Plain\lBadge, isn't it just perfect for a cutie\llike me?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_8:
+    .org 0x82e4048
+    .area 58
+    .strn "Ah, that was a good cry! Come for a visit\nagain! Bye-bye!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_0:
+    .org 0x82e3daf
+    .area 51
+    .strn "Whitney: I never break my promises! Are\nyou ready?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_1:
+    .org 0x82e3de2
+    .area 60
+    .strn "Whitney: You really are strong! But I\nwon't lose next time!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_2:
+    .org 0x82e3e1e
+    .area 52
+    .strn "Whitney: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_3:
+    .org 0x82e3e52
+    .area 124
+    .strn "Whitney: My Pokémon are tired for\ntoday, but the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Whitney_Text_4:
+    .org 0x82e3ece
+    .area 70
+    .strn "Whitney: I will tell them to get ready,\nso take care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_5:
+    .org 0x82e42b4
+    .area 181
+    .strn "Whether you choose to believe or not,\nmystic power does exist.\pYou can bear witness to the fruits of\nmy training.\pYou must make your soul one with that\nof Pokémon. Can you do this?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_6:
+    .org 0x82e4369
+    .area 127
+    .strn "I don't think our potentials are so\ndifferent. But you seem to have\lsomething more than that... So be it.\lThis Badge is yours.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_8:
+    .org 0x82e440e
+    .area 120
+    .strn "I see... Your journey has taken you to\nfar-away places. And you have\lwitnessed much more than I. I envy you\lfor that...$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_0:
+    .org 0x82e4145
+    .area 53
+    .strn "Morty: I was just talking about you...\nLet's battle!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_1:
+    .org 0x82e417a
+    .area 74
+    .strn "Morty: I've lost again... You may have\nsomething more than just strength.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_2:
+    .org 0x82e41c4
+    .area 50
+    .strn "Morty: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_3:
+    .org 0x82e41f6
+    .area 122
+    .strn "Morty: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Morty_Text_4:
+    .org 0x82e4270
+    .area 68
+    .strn "Morty: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_5:
+    .org 0x82e460c
+    .area 204
+    .strn "WAHAHAH! So you've come this far! Let\nme tell you, I'm tough!\pI can crush stones and shatter bones!\pScared now, are you? What? It has\nnothing to do with Pokémon? That's\ltrue! Come on. We shall do battle!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_6:
+    .org 0x82e46d8
+    .area 76
+    .strn "Hmm... I lost? How about that! All right.\nYou're worthy of the Storm Badge!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_8:
+    .org 0x82e474c
+    .area 103
+    .strn "Wahahah! I enjoyed battling you! But a\nloss is a loss! From now on, I'm going to\ltrain 24 hours a day!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_0:
+    .org 0x82e44b9
+    .area 49
+    .strn "Chuck: There you are! Taste my 24-hour\ntraining!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_1:
+    .org 0x82e44ea
+    .area 50
+    .strn "Chuck: Wahaha! A battle with you is\nnever boring!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_2:
+    .org 0x82e451c
+    .area 50
+    .strn "Chuck: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_3:
+    .org 0x82e454e
+    .area 122
+    .strn "Chuck: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Chuck_Text_4:
+    .org 0x82e45c8
+    .area 68
+    .strn "Chuck: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_5:
+    .org 0x82e4960
+    .area 205
+    .strn "Please allow me to introduce myself. I'm\nJasmine, a Gym Leader. I use the...clang!\lSteel type! ...Do you know about the\lSteel type? They are very hard, cold,\lsharp, and really strong! Um... I'm not\llying.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_6:
+    .org 0x82e4a2d
+    .area 125
+    .strn "You are a better trainer than me, in\nboth skill and kindness. In accordance\lwith League rules, I confer upon you\lthis Badge.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_8:
+    .org 0x82e4ad6
+    .area 53
+    .strn "Um... I don't know how to say this, but\ngood luck...$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_0:
+    .org 0x82e47e8
+    .area 56
+    .strn "Jasmine: We're here as we promised... Are\nyou prepared?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_1:
+    .org 0x82e4820
+    .area 74
+    .strn "Jasmine: Properly tempered steel won't\nbe made rusty by things like this!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_2:
+    .org 0x82e486a
+    .area 52
+    .strn "Jasmine: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_3:
+    .org 0x82e489e
+    .area 124
+    .strn "Jasmine: My Pokémon are tired for\ntoday, but the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Jasmine_Text_4:
+    .org 0x82e491a
+    .area 70
+    .strn "Jasmine: I will tell them to get ready,\nso take care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_5:
+    .org 0x82e4ce6
+    .area 296
+    .strn "Pokémon have many experiences in their\nlives, just like we do. I, too, have seen\land suffered much in my life. Since I am\lyour elder, let me show you what I mean.\lI have been with Pokémon since before\lyou were born. I do not lose easily. I,\lPryce--the winter trainer--shall\ldemonstrate my power!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_6:
+    .org 0x82e4e0e
+    .area 132
+    .strn "I am impressed by your prowess. With\nyour strong will, I know you will\lovercome all life's obstacles. You are\lworthy of this Badge!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_8:
+    .org 0x82e4ebc
+    .area 134
+    .strn "When the ice and snow melt, spring\narrives. You and your Pokémon will be\ltogether for many years to come.\lCherish your time together!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_0:
+    .org 0x82e4b33
+    .area 86
+    .strn "Pryce: Finally. No need for words. A\nPokémon battle is the way for us to\lcommunicate.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_1:
+    .org 0x82e4b89
+    .area 109
+    .strn "Pryce: If it's someone like you, I'm sure\nyou'll keep winning and will find\lsomething important. Keep it up.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_2:
+    .org 0x82e4bf6
+    .area 50
+    .strn "Pryce: Come back tomorrow so we can\nbattle again.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_3:
+    .org 0x82e4c28
+    .area 122
+    .strn "Pryce: My Pokémon are tired for today,\nbut the other trainers here need\ltraining, do you want to try battling\lthem again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Pryce_Text_4:
+    .org 0x82e4ca2
+    .area 68
+    .strn "Pryce: I will tell them to get ready, so\ntake care on your way out.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_5:
+    .org 0x82e509e
+    .area 224
+    .strn "I am Clair. The world's best Dragon\nmaster. I can hold my own against even\lthe Pokémon League's Elite Four. Do you\lstill want to take me on? ...Fine. Let's\ldo it! As a trainer, I will use my full\lpower against any opponent!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_6:
+    .org 0x82e517e
+    .area 127
+    .strn "What I was missing until now... Battling\nwith you made me realize what it is.\lThat's how I feel. You are worthy of\lthis Badge!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_8:
+    .org 0x82e5226
+    .area 136
+    .strn "Whatever you have to face from now,\ndon't you dare give up! If you do, I'll\lfeel even worse about having lost to\lyou! Give it your all.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_0:
+    .org 0x82e4f7b
+    .area 35
+    .strn "...You are here. Now let's battle!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_1:
+    .org 0x82e4f9e
+    .area 37
+    .strn "Way to go. ... Now give it your all!$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_2:
+    .org 0x82e4fc3
+    .area 43
+    .strn "Come back tomorrow so we can battle\nagain.$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_3:
+    .org 0x82e4fee
+    .area 115
+    .strn "My Pokémon are tired for today, but the\nother trainers here need training, do\lyou want to try battling them again?$"
+    .endarea
+
+Common_Eventscript_Gym_Leader_Clair_Text_4:
+    .org 0x82e5061
+    .area 61
+    .strn "I will tell them to get ready, so take\ncare on your way out.$"
+    .endarea
+
+Snorlax_Text_MonSprawledOutInSlumber:
+    .org 0x82ea7a7
+    .area 61
+    .strn "A Pokémon is sprawled out in\na deep and comfortable slumber.$"
+    .endarea
+
+Snorlax_Text_WantToUsePokeFlute:
+    .org 0x82ea864
+    .area 35
+    .strn "Do you want to use the Blue Flute?$"
+    .endarea
+
+Snorlax_Text_PlayedPokeFlute:
+    .org 0x82ea887
+    .area 26
+    .strn "{PLAYER} played the Blue Flute.$"
+    .endarea
+
+Snorlax_Text_SnorlaxWokeUp:
+    .org 0x82ea7e4
+    .area 51
+    .strn "The Pokémon woke up!\pIt attacked in a grumpy rage!$"
+    .endarea
+
+MauvilleCity_PokemonCenter_1F_Text_HaveYouHeardOfPhrase:
+    .org 0x8309827
+    .area 85
+    .strn "Hey, have you heard about\n“{STR_VAR_1}”?\pWhat's it mean? Well⋯\nAsk your daddy or mommy, okay?$"
+    .endarea
+
+Mevent_Text_FillOutQuestionnaire:
+    .org 0x82ec533
+    .area 57
+    .strn "There is a questionnaire.\nWould you like to fill it out?$"
+    .endarea
+
+Mevent_Text_YouKnowThoseWordsEvent:
+    .org 0x82ec69a
+    .area 83
+    .strn "Oh, hello!\nYou know those words?\pThat means you must know about\nthe Mystery Event.$"
+    .endarea
+
+Mevent_Text_YouCanAccessMysteryEvent:
+    .org 0x82ec6ed
+    .area 59
+    .strn "Once you save your game, you can\naccess the Mystery Event.$"
+    .endarea
+
+Mevent_Text_YouKnowThoseWordsGift:
+    .org 0x82ec5da
+    .area 134
+    .strn "Oh, hello!\nYou know those words?\pThat means you must know about\nthe Mystery Gift.\pFrom now on, you should be\nreceiving Mystery Gifts!$"
+    .endarea
+
+Mevent_Text_YouCanAccessMysteryGift:
+    .org 0x82ec660
+    .area 58
+    .strn "Once you save your game, you can\naccess the Mystery Gift.$"
+    .endarea
+
+Mevent_Text_QuestionnaireThankYou:
+    .org 0x82ec56c
+    .area 110
+    .strn "Thank you for taking the time to\nfill out our questionnaire.\pYour feedback will be used for\nfuture reference.$"
+    .endarea
+
+MoveTutor_Text_SwaggerTeach:
+    .org 0x83402ee
+    .area 282
+    .strn "Heh! My Pokémon totally rules!\nIt's cooler than any Pokémon!\pI was lipping off with a swagger in\nmy step like that when the Chairman\lchewed me out.\pThat took the swagger out of my step.\pIf you'd like, I'll teach the move\nSwagger to a Pokémon of yours.\lIn exchange of a Heart Scale.$"
+    .endarea
+
+MoveTutor_Text_NoHeartScale:
+    .org 0x8341461
+    .area 57
+    .strn "Oh, that's disappointing.\pYou dont have any Heart\nScale.$"
+    .endarea
+
+MoveTutor_Text_RolloutTeach:
+    .org 0x83404b0
+    .area 267
+    .strn "Did you know that you can go from\nhere a long way in that direction\lwithout changing direction?\pI might even be able to roll\nthat way.\pDo you think your Pokémon will\nwant to roll, too?\pI can teach the move Rollout to\na Pokémon of yours, in exchange\lof a Heart Scale.$"
+    .endarea
+
+MoveTutor_Text_FuryCutterTeach:
+    .org 0x834066b
+    .area 213
+    .strn "There's a move that gets stronger\nwhen you keep using it in a row.\pIt's a Bug-type move, and it is\nwickedly cool.\pIt's called Fury Cutter.\nI can teach the move to a Pokémon\nof yours, in exchange of a Heart\lScale.$"
+    .endarea
+
+MoveTutor_MimicTeach:
+    .org 0x83407d5
+    .area 231
+    .strn "Ah, young one!\pI am also a young one, but I mimic\nthe styles and speech of the elderly\lfolks of this town.\pWhat do you say, young one?\nWould you agree to it if I were to\loffer to teach the move Mimic\lin exchange of a Heart Scale?.$"
+    .endarea
+
+MoveTutor_Text_MetronomeTeach:
+    .org 0x8340986
+    .area 287
+    .strn "I want all sorts of things!\nBut I used up my allowance⋯\pWouldn't it be nice if there were\na spell that made money appear when\lyou waggle a finger?\pIf you want, I can teach your Pokémon\nthe move Metronome for a Heart Scale.\pMoney won't appear, but your Pokémon\lwill waggle a finger. Yes?$"
+    .endarea
+
+MoveTutor_Text_MetronomeTaught:
+    .org 0x8340b04
+    .area 130
+    .strn "When a Pokémon waggles its finger\nlike a Metronome, all sorts of nice\lthings happen.\pWouldn't it be nice if we could\luse it, too?$"
+    .endarea
+
+MoveTutor_Text_SleepTalkTeach:
+    .org 0x8340b86
+    .area 195
+    .strn "Humph! My wife relies on Hidden\nPower to stay awake.\pShe should just take a nap like I do,\nand Sleep Talk.\pI can teach your Pokémon how to\nSleep Talk instead, For a cute\lHeart Scale. Interested?$"
+    .endarea
+
+MoveTutor_Text_SubstituteTeach:
+    .org 0x8340d2d
+    .area 296
+    .strn "When I see the wide world from up\nhere on the roof⋯\pI think about how nice it would be\nif there were more than just one me\lso I could enjoy all sorts of lives.\pOf course it's not possible.\nGiggle⋯\pI know! Would you be interested in\nhaving a Pokémon learn Substitute\lin Exchange of a Heart Scale?$"
+    .endarea
+
+MoveTutor_Text_DynamicPunchTeach:
+    .org 0x8340f2a
+    .area 332
+    .strn "I can't do this anymore!\pIt's utterly hopeless!\pI'm a Fighting-type Trainer,\nso I can't win at the Battle Tent\lno matter how hard I try!\pArgh! Punch! Punch! Punch!\nPunch! Punch! Punch!\pWhat, don't look at me that way!\nI'm only hitting the ground!\pOr do you want me to teach your\nPokémon Dynamic Punch?, In\lExchange of a Heart Scale$"
+    .endarea
+
+MoveTutor_Text_DynamicPunchTaught:
+    .org 0x83410f1
+    .area 62
+    .strn "I want you to win at the Battle Tent\nusing that DynamicPunch!$"
+    .endarea
+
+MoveTutor_Text_DoubleEdgeTeach:
+    .org 0x834112f
+    .area 270
+    .strn "Sigh⋯\pSootopolis's Gym Leader is really\nlovably admirable.\pBut that also means I have many\nrivals for his attention.\pHe's got appeal with a Double-Edge.\nI couldn't even catch his eye.\pPlease, let me teach your Pokémon\nthe move Double-Edge, in exchange\nof a Heart Scale!$"
+    .endarea
+
+MoveTutor_Text_ExplosionTeach:
+    .org 0x83412b9
+    .area 268
+    .strn "I don't intend to be going nowhere\nfast in the sticks like this forever.\pYou watch me, I'll get out to the city\nand become a huge hit.\pSeriously, I'm going to cause\na huge Explosion of popularity!\pIf you overheard that, I'll happily\ngive you this TM for your Pokémon!$"
+    .endarea
+
+MoveTutor_Text_ThisMoveCanOnlyBeLearnedOnce:
+    .org 0x83402b9
+    .area 53
+    .strn "I will take your Heart Scale\nfor this. Is that okay?$"
+    .endarea
+
+MysteryEventClub_Text_CollectTrainerProfiles:
+    .org 0x830a7fe
+    .area 120
+    .strn "Hello there, Trainer!\nYou've got a wonderful smile, there.\pI have a hobby--collecting the profiles\nof Pokémon Trainers.$"
+    .endarea
+
+MysteryEventClub_Text_MayISeeYourProfile:
+    .org 0x830a876
+    .area 42
+    .strn "So, how about it?\nMay I see your profile?$"
+    .endarea
+
+MysteryEventClub_Text_EasyChatExplanation:
+    .org 0x830a8a0
+    .area 576
+    .strn "You make your own profile by putting\ntogether four words or phrases.\pHere, I'll show you an example of a\nprofile using four pieces of text.\pYou can switch those four pieces with\nother text pieces any which way you\llike to make your own profile.\pThere are a lot of text pieces that\nyou can use.\pThey are arranged in groups like\nPokémon, lifestyles, and hobbies so\lit is easier to look them up.\pSo, first, choose the group of text\npieces to display a list of choices.\pThen, pick the choice you want.\pRepeat for the remaining text choices,\nand you'll have your very own profile.$"
+    .endarea
+
+MysteryEventClub_Text_LetsSeeItThen:
+    .org 0x830aae0
+    .area 40
+    .strn "Yes! Thank you!\nSo, let's see it, then.$"
+    .endarea
+
+MysteryEventClub_Text_NotIntoItRightNow:
+    .org 0x830ab53
+    .area 63
+    .strn "Oh? You're not into it right now?\pWell, anytime is good by me!$"
+    .endarea
+
+MysteryEventClub_Text_FantasticProfile:
+    .org 0x830ac99
+    .area 149
+    .strn "F-fantastic!\pYour profile, it's wonderful!\nIt really says what you're about.\pWhy, anyone hearing this profile would\nbe captivated by you!\pThank you!$"
+    .endarea
+
+MysteryEventClub_Text_ImagineYouWouldHaveWonderfulProfile:
+    .org 0x830ab08
+    .area 75
+    .strn "Oh, no, really?\pI imagine someone like you would have\na wonderful profile⋯$"
+    .endarea
+
+MysteryEventClub_Text_YouHaveWonderfulSmile:
+    .org 0x830ab92
+    .area 52
+    .strn "Hello there, Trainer!\nYou've got a wonderful smile.$"
+    .endarea
+
+MysteryEventClub_Text_MayISeeYourNewProfile:
+    .org 0x830abc6
+    .area 28
+    .strn "May I see your new profile?$"
+    .endarea
+
+MysteryEventClub_Text_EvenBetterThanLastProfile:
+    .org 0x830abe2
+    .area 79
+    .strn "Yes! Thank you!\pI hope it's even better than the profile\nyou showed me before.$"
+    .endarea
+
+MysteryEventClub_Text_LikeProfileWayItIs:
+    .org 0x830ac31
+    .area 104
+    .strn "Oh, you like your profile the way it is.\pI don't blame you--it's a wonderful\nprofile the way it is now.$"
+    .endarea
+
+gText_ObtainedTheItem:
+    .org 0x82eb710
+    .area 13
+    .strn "Obtained {STR_VAR_2}!$"
+    .endarea
+
+FiveIsland_Meadow_Text_Rocket1PostBattle:
+    .org 0x83495c3
+    .area 43
+    .strn "You don't have any business here!\nGo home!$"
+    .endarea
+
+FiveIsland_Meadow_Text_Rocket2PostBattle:
+    .org 0x8349657
+    .area 109
+    .strn "You're wanting to know what's inside\nthis Warehouse?\pIt's better you didn't know.\nFor your own sake, I mean.$"
+    .endarea
+
+FiveIsland_Meadow_Text_Rocket3PostBattle:
+    .org 0x8349714
+    .area 58
+    .strn "You won't be able to get in without\nthe passwords anyway.$"
+    .endarea
+
+FiveIsland_RocketWarehouse_EventScript_Admin1_Text_0:
+    .org 0x82e67ce
+    .area 8
+    .strn "Lalalah$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_Mason_Text_2:
+    .org 0x82e6845
+    .area 70
+    .strn "Lalalah⋯ My POKéMON, I send them out,\nall the girls scream and shout!$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_Madeline_Text_2:
+    .org 0x82e68d6
+    .area 61
+    .strn "If you treat your POKéMON with\nkindness, they'll understand.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_Nicolas_Text_2:
+    .org 0x82e695e
+    .area 95
+    .strn "Trainers like you from cities, they sure\nare tough. You'll be headed for the\ltower, won't you?$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_Eve_Text_2:
+    .org 0x82e6a0d
+    .area 40
+    .strn "Eve: I'm going to work harder with Jon.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_Jon_Text_2:
+    .org 0x82e6aa8
+    .area 74
+    .strn "Jon: When I'm with Eve, I feel giddy\nwhether I win or lose. It's magical!$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_Miah_Text_2:
+    .org 0x82e6b35
+    .area 76
+    .strn "What's that? I don't act the way I look?\nHeh, that's a part of my strategy!$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Lex_Text_2:
+    .org 0x82e6bd4
+    .area 70
+    .strn "Lex: I think it was a good experience\nfor Nya. You have my gratitude.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Nya_Text_2:
+    .org 0x82e6c72
+    .area 123
+    .strn "Nya: I think I'm going to need much more\nseasoning and tutoring under Lex ⋯So,\lLex, please, may I stay with you like\lthis?$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_BlackBelt_Text_0:
+    .org 0x82e6ced
+    .area 173
+    .strn "Training by oneself is certainly not a\nbad thing. But it's also not bad to aim\lfor the top with a partner. Even Bruno\lHe trained with a fellow by the name of\lBrawly before.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Jackson_Text_2:
+    .org 0x82e6e07
+    .area 122
+    .strn "From far out among the stars, our\nplanet is just a drop of water. But we\lwant to protect that drop of water for\leveryone.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Katelyn_Text_2:
+    .org 0x82e6ed6
+    .area 72
+    .strn "Your mom bought those snazzy Running\nShoes for you? She must adore you.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Evan_Text_2:
+    .org 0x82e6fba
+    .area 150
+    .strn "You see them every so often, trainers\nwith awesome Pokémon who have no idea\lwhat to do. Before training Pokémon,\ltrainers themselves need to grow up.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Cyndy_Text_2:
+    .org 0x82e708b
+    .area 59
+    .strn "The way I am now, I may have to hold off\non Trainer Tower⋯$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Leroy_Text_2:
+    .org 0x82e711b
+    .area 70
+    .strn "The way you battle has given me a lot of\nuseful data. Thanks so much!$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_Michelle_Text_2:
+    .org 0x82e71fc
+    .area 95
+    .strn "For some reason, I get furious over the\nslightest thing. I'll calm myself by\lbreathing deeply.$"
+    .endarea
+
+SixIsland_RuinValley_EventScript_Daryl_Text_2:
+    .org 0x82e72a9
+    .area 32
+    .strn "Experience the joy of climbing!$"
+    .endarea
+
+SixIsland_RuinValley_EventScript_Stanly_Text_2:
+    .org 0x82e730c
+    .area 101
+    .strn "I suggest to you that you, too, give a\nthought to the secrets and mysteries\lof our world once a day.$"
+    .endarea
+
+SixIsland_RuinValley_EventScript_Foster_Text_2:
+    .org 0x82e73d8
+    .area 89
+    .strn "There are several ruins on the Sevii\nIslands. The majority of them date back\la long way.$"
+    .endarea
+
+SixIsland_RuinValley_EventScript_Larry_Text_2:
+    .org 0x82e74b8
+    .area 80
+    .strn "Those ruins over there⋯ I haven't had\nany luck in finding how I can get inside.$"
+    .endarea
+
+SixIsland_RuinValley_EventScript_Hector_Text_2:
+    .org 0x82e7578
+    .area 115
+    .strn "The door to the ruins⋯ It has these\nstrange patterns engraved on the\loutside. I don't know what they mean,\lthough.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Riley_Text_2:
+    .org 0x82e7625
+    .area 41
+    .strn "I'm going to observe the night sky here.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Allison_Text_2:
+    .org 0x82e76b9
+    .area 104
+    .strn "I'm not saying that you shouldn't catch\nPokémon. I just want people to raise\ltheir Pokémon responsibly.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Jonah_Text_2:
+    .org 0x82e779c
+    .area 118
+    .strn "By the way, “appeal” is a weird word, if\nyou think about it. Like, is it like an\lorange peel? Or like a ringing bell?$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Dalia_Text_2:
+    .org 0x82e7877
+    .area 110
+    .strn "First, exhale. Blow everything out. When\nyou can't exhale anymore, Inhale the\lclean air! Isn't it refreshing?$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Nash_Text_2:
+    .org 0x82e7928
+    .area 87
+    .strn "The funny patterns on the ground⋯ They\nlook like the patterns on my grandpa's\lclothes.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Joana_Text_2:
+    .org 0x82e7a11
+    .area 75
+    .strn "I'm going to keep on collecting Bug\nPokémon. Am I the only girl like that?$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Garret_Text_2:
+    .org 0x82e7ab1
+    .area 66
+    .strn "There's a girl near the bush who\nmeasures Heracross for Trainers.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Bethany_Text_2:
+    .org 0x82e7b50
+    .area 84
+    .strn "In the same way your mother raised you\nfull of love, you should raise your\lPokémon.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Cordell_Text_2:
+    .org 0x82e7bff
+    .area 93
+    .strn "Ayup, you townies come around all so\ndandy with a hat that flashy⋯ How\labout giving me that?$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Vance_Text_2:
+    .org 0x82e7cba
+    .area 53
+    .strn "I'm going to bring my little brother here\nnext time.$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Layton_Text_2:
+    .org 0x82e7d4e
+    .area 108
+    .strn "There are places here in Pattern Bush\nwhere grass won't grow. What could be\lthe cause of such a phenomenon?$"
+    .endarea
+
+SixIsland_PatternBush_EventScript_Marcy_Text_2:
+    .org 0x82e7e0a
+    .area 59
+    .strn "A little cut like that⋯ A little spit's\nenough to cure it!$"
+    .endarea
+
+SixIsland_GreenPath_EventScript_Jaclyn_Text_2:
+    .org 0x82e7e92
+    .area 80
+    .strn "I am so scatterbrained! I need to focus\nso I can teleport properly to my house!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Bird_Keeper_Rod_Text_2:
+    .org 0x82e7f00
+    .area 70
+    .strn "Those here are training night and day\nto become bird Pokémon masters.$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Bird_Keeper_Abe_Text_2:
+    .org 0x82e7f8d
+    .area 49
+    .strn "This is pathetic, losing to some rookie\ntrainer⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Twins_Amy_Text_2:
+    .org 0x82e8010
+    .area 27
+    .strn "Amy: You're really strong!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Twins_May_Text_1:
+    .org 0x82e805c
+    .area 45
+    .strn "May: Our bug Pokémon lost! Oh, what a\nshame.$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Bug_Catcher_Al_Text_2:
+    .org 0x82e80de
+    .area 74
+    .strn "They're so cool, but most girls don't\nlike bug Pokémon. I don't know why⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Bug_Catcher_Josh_Text_2:
+    .org 0x82e8157
+    .area 42
+    .strn "I guess I should teach them better\nmoves⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Beauty_Victoria_Text_2:
+    .org 0x82e81e3
+    .area 46
+    .strn "Wow, you must be good to beat me! Keep\nit up!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Beauty_Samantha_Text_2:
+    .org 0x82e8262
+    .area 44
+    .strn "I taught Pokémon moves from a lot of\ntypes.$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Lass_Carrie_Text_2:
+    .org 0x82e82ec
+    .area 30
+    .strn "Do my Pokémon think I'm cute?$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Lass_Bridget_Text_2:
+    .org 0x82e836e
+    .area 103
+    .strn "I'm trying to beat Whitney, but⋯ It's\ndepressing. I'm okay! If I lose, I'll just\ltry harder next time!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Sage_Jeffrey_Text_2:
+    .org 0x82e847c
+    .area 29
+    .strn "Where did Pokémon come from?$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Sage_Ping_Text_2:
+    .org 0x82e84d3
+    .area 81
+    .strn "We use only Ghost-type Pokémon. No\nNormal or Fighting type attack can harm\lthem!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Medium_Martha_Text_2:
+    .org 0x82e853f
+    .area 37
+    .strn "The one who wants to win most--will!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Medium_Grace_Text_2:
+    .org 0x82e85ac
+    .area 93
+    .strn "Fine. I shall tell you the secret of the\ninvisible floor. The path is right before\lour eyes!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_BlackBelt_Yoshi_Text_2:
+    .org 0x82e866c
+    .area 54
+    .strn "You seem to have a strong bond with\nyour Pokémon too!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_BlackBelt_Lao_Text_2:
+    .org 0x82e86d4
+    .area 66
+    .strn "Fighting Pokémon are afraid of Psychic,\nFlying and Fairy types...$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_BlackBelt_Nob_Text_2:
+    .org 0x82e874a
+    .area 24
+    .strn "I lost! I'm speechless!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_BlackBelt_Lung_Text_2:
+    .org 0x82e87b8
+    .area 44
+    .strn "My Pokémon lost⋯ My⋯ my pride is\nshattered⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Skier_Roxxane_Text_2:
+    .org 0x82e884b
+    .area 66
+    .strn "If you don't skate with precision, you\nwon't get far in this Gym.$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Skier_Clarissa_Text_2:
+    .org 0x82e88c3
+    .area 48
+    .strn "I shouldn't have been bragging about my\nskiing⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Boarder_Ronald_Text_2:
+    .org 0x82e8943
+    .area 60
+    .strn "I think there's a move a Pokémon can\nuse while it's frozen.$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Boarder_Brad_Text_2:
+    .org 0x82e89f8
+    .area 52
+    .strn "This Gym is great. I love boarding with\nmy Pokémon!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Boarder_Douglass_Text_2:
+    .org 0x82e8a65
+    .area 124
+    .strn "The secret behind Pryce's power⋯ He\nmeditates under a waterfall daily to\lstrengthen his mind and body, or was\lthat Chuck's⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Cooltrainer_Cody_Text_2:
+    .org 0x82e8b2e
+    .area 87
+    .strn "Members of our dragon-user clan can\nuse dragon Pokémon only after our\lMaster allows it$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Cooltrainer_Fran_Text_2:
+    .org 0x82e8bdc
+    .area 33
+    .strn "Uh-oh⋯ Clair is going to be mad⋯$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Cooltrainer_Paul_Text_2:
+    .org 0x82e8c5a
+    .area 38
+    .strn "You want to meet Lance? Not a chance!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Cooltrainer_Mike_Text_2:
+    .org 0x82e8cb7
+    .area 51
+    .strn "I know my shortcomings now. Thanks for\nshowing me!$"
+    .endarea
+
+Sevii_Gym_Trainers_EventScript_Cooltrainer_Lola_Text_2:
+    .org 0x82e8d66
+    .area 59
+    .strn "Dragons are weak against Dragon, Ice\nand Fairy type moves.$"
+    .endarea
+
+gText_PkmnCenterJack_GotPokemonQuestions:
+    .org 0x82eb00c
+    .area 45
+    .strn "Do you need anything?\nFeel free to ask away.$"
+    .endarea
+
+Text_IVChecker_1:
+    .org 0x82eb535
+    .area 11
+    .strn "Your {STR_VAR_1}...$"
+    .endarea
+
+Text_IVChecker_2:
+    .org 0x82eb540
+    .area 51
+    .strn "Your Pokémon's IVs are...\nHP: {STR_VAR_1}, Atk: {STR_VAR_2}, Def: {STR_VAR_3}$"
+    .endarea
+
+Text_IVChecker_3:
+    .org 0x82eb573
+    .area 51
+    .strn "SpAtk: {STR_VAR_1}, SpDef: {STR_VAR_2}, Speed: {STR_VAR_3}\nCome back anytime!$"
+    .endarea
+
+gText_PkmnCenterJack_CantTeachMoves:
+    .org 0x82eb0cf
+    .area 61
+    .strn "You need to get more badges\nbefore I can help you with that.$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MockBattle:
+    .org 0x82eb5fb
+    .area 47
+    .strn "What kind of mock battle do you want\nto start?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MockBattle_Easy:
+    .org 0x82eb62a
+    .area 25
+    .strn "Easy Mock Battle: Start!$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MockBattle_Normal:
+    .org 0x82eb643
+    .area 27
+    .strn "Normal Mock Battle: Start!$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MockBattle_Hard:
+    .org 0x82eb65e
+    .area 25
+    .strn "Hard Mock Battle: Start!$"
+    .endarea
+
+Common_PkmnCenterJack_Text_CritiqueWhichMonNickname:
+    .org 0x82eb10c
+    .area 48
+    .strn "Which Pokémon's nickname should\nI rate for you?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_DoVisitAgain:
+    .org 0x82eb252
+    .area 48
+    .strn "All right. Let me know if you\nchange your mind.$"
+    .endarea
+
+Common_PkmnCenterJack_Text_FineNameSuggestBetterOne:
+    .org 0x82eb13c
+    .area 113
+    .strn "Hmmm⋯ {STR_VAR_1}, is it? That is\nquite a fine nickname.\pBut I think we could give it\none even better. What do you think?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_ThatIsMerelyAnEgg:
+    .org 0x82eb314
+    .area 33
+    .strn "Now, now⋯\nThat is merely an Egg.$"
+    .endarea
+
+Common_PkmnCenterJack_Text_WhatShallNewNameBe:
+    .org 0x82eb1ad
+    .area 51
+    .strn "I see! What would you like the new\nnickname to be?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_NameNoDifferentYetSuperior:
+    .org 0x82eb282
+    .area 146
+    .strn "Done! From now on, this Pokémon\nshall be known as {STR_VAR_1}!\pIt looks no different from before,\nand yet, this is vastly superior!\pHow fortunate for you!$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MonShallBeKnownAsName:
+    .org 0x82eb1e0
+    .area 114
+    .strn "Done! From now on, this Pokémon\nshall be known as {STR_VAR_1}!\pYou're right, that does seem to\nfit it better. Nicely done!$"
+    .endarea
+
+Common_PkmnCenterJack_Text_WhichMonShouldForget:
+    .org 0x82eb3c7
+    .area 36
+    .strn "Which Pokémon should forget a move?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_WhichMoveShouldBeForgotten:
+    .org 0x82eb3eb
+    .area 32
+    .strn "Which move should be forgotten?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MonsMoveShouldBeForgotten:
+    .org 0x82eb43c
+    .area 44
+    .strn "Hm! {STR_VAR_1}'s {STR_VAR_2}?\nThat move should be forgotten?$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MonHasForgottenMove:
+    .org 0x82eb468
+    .area 57
+    .strn "It worked to perfection!\p{STR_VAR_1} has forgotten\n{STR_VAR_2} completely.$"
+    .endarea
+
+Common_PkmnCenterJack_Text_MonOnlyKnowsOneMove:
+    .org 0x82eb40b
+    .area 49
+    .strn "{STR_VAR_1} knows only one move\nso it can't be forgotten⋯$"
+    .endarea
+
+Common_PkmnCenterJack_Text_EggCantForgetMoves:
+    .org 0x82eb4da
+    .area 36
+    .strn "What?\nNo Egg should know any moves.$"
+    .endarea
+
+Common_PkmnCenterJack_Text_ComeAgain:
+    .org 0x82eb4a1
+    .area 57
+    .strn "Come again if there are moves that\nneed to be forgotten.$"
+    .endarea
+
+Common_PkmnCenterJack_Text_CantForgetSurf:
+    .org 0x82eb4fe
+    .area 49
+    .strn "Hm!\pYour {STR_VAR_1} doesn't seem willing\nto forget Surf.$"
+    .endarea
+
+gText_PkmnCenterJack_TeachMoves:
+    .org 0x82eb039
+    .area 50
+    .strn "What kind of move you want\nyour Pokémon to learn?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Lower_Difficulty_Text_3:
+    .org 0x82d81b3
+    .area 42
+    .strn "You are already in the lowest\ndifficulty!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Lower_Difficulty_Text_0:
+    .org 0x82d8154
+    .area 37
+    .strn "Do you want to lower the difficulty?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Change_Costume_Text_0:
+    .org 0x82d81dd
+    .area 38
+    .strn "What outfit do you want to use today?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Change_Costume_Text_1:
+    .org 0x82d8203
+    .area 44
+    .strn "Come this way so you can change your\noutfit$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Change_Costume_Text_3:
+    .org 0x82d826a
+    .area 46
+    .strn "Come back anytime you want to change\noutfits!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Change_Costume_Text_2:
+    .org 0x82d822f
+    .area 59
+    .strn "Sorry but this costume has not been\nadded to the game yet.$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_WonderTrade_Text_1:
+    .org 0x82d82d1
+    .area 53
+    .strn "Do you want to try Wonder Trading?, its\nfree for you$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_WonderTrade_Text_3:
+    .org 0x82d836a
+    .area 38
+    .strn "Please take care of your new Pokémon.$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_WonderTrade_Text_0:
+    .org 0x82d8298
+    .area 57
+    .strn "Do you want to try Wonder Trading, its\nonly 5BP per try?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_WonderTrade_Text_2:
+    .org 0x82d8306
+    .area 100
+    .strn "But it seems you can't afford wonder\ntrading right now.\pPlease come back when you have atleast\n5BP.$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_WonderTrade_Cancel_Text_0:
+    .org 0x82d8390
+    .area 53
+    .strn "All right. Let me know if you want to\ngive it a try.$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_EggMoveTutor_Price_Text_2:
+    .org 0x82d8445
+    .area 46
+    .strn "Sorry, you need 6 badges to use this\nservice!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_EggMoveTutor_Price_Text_0:
+    .org 0x82d83c5
+    .area 77
+    .strn "Learning an Egg move will cost you 4\nBattle Points, do you want to continue?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_EggMoveTutor_Price_Text_1:
+    .org 0x82d8412
+    .area 51
+    .strn "It seems like you don't have enough\nBattle Points!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Egg_TutorMoveTutor_ChooseMon_Text_0:
+    .org 0x82d8473
+    .area 37
+    .strn "Which Pokémon should I teach a move?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Egg_TutorMoveTutor_ChooseMon_Text_3:
+    .org 0x82d84ee
+    .area 30
+    .strn "Which move should I teach it?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Egg_TutorMoveTutor_ChooseMon_Text_4:
+    .org 0x82d850c
+    .area 90
+    .strn "Your Pokémon was able to learn the move\nsuccessfuly, please continue to use\lour services!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Egg_TutorMoveTutor_ChooseMon_Text_1:
+    .org 0x82d8498
+    .area 38
+    .strn "Sorry, I can't teach moves to an Egg!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_Egg_TutorMoveTutor_ChooseMon_Text_2:
+    .org 0x82d84be
+    .area 48
+    .strn "Sorry, this Pokémon can't learn any\nTutor Move!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_TutorMoveTutor_Price_Text_1:
+    .org 0x82d85b4
+    .area 46
+    .strn "Sorry, you need 9 badges to use this\nservice!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_TutorMoveTutor_Price_Text_0:
+    .org 0x82d8566
+    .area 78
+    .strn "Learning a Tutor move will cost you 6\nBattle Points, do you want to continue?$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_TmMoveTutor_Price_Text_1:
+    .org 0x82d862d
+    .area 47
+    .strn "Sorry, you need 12 badges to use this\nservice!$"
+    .endarea
+
+Common_EventScript_PkmnCenterJack_TmMoveTutor_Price_Text_0:
+    .org 0x82d85e2
+    .area 75
+    .strn "Learning a TM move will cost you 8\nBattle Points, do you want to continue?$"
+    .endarea
+
+PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
+    .org 0x825390f
+    .area 216
+    .strn "We bring you this news flash!\pIn various Hoenn locales, there have\nbeen reports of a Blue colored\lPokémon.\pThe identity of this Pokémon is\nsaid to be the sea guardian.\pWe now return you to the regular\nmovie program.$"
+    .endarea
+
+Text_RepelAskAnother:
+    .org 0x831de06
+    .area 35
+    .strn "Would you like to use another one?$"
+    .endarea
+
+Text_LureWoreOff:
+    .org 0x831de29
+    .area 24
+    .strn "Lure's effect wore off⋯$"
+    .endarea
+
+FourIsland_LoreleisHouse_EventScript_Lorelei_Text_0:
+    .org 0x82e93b7
+    .area 82
+    .strn "My niece Lorelei is a famous trainer in\nKanto, she really likes Ice-type\lPokémon.$"
+    .endarea
+
+FourIsland_LoreleisHouse_EventScript_Doll_Text_0:
+    .org 0x82e9409
+    .area 18
+    .strn "It's a Poké-Doll.$"
+    .endarea
+
+FourIsland_House1_EventScript_FatMan_Text_0:
+    .org 0x82e941b
+    .area 36
+    .strn "There! Boing! You're awfully heavy!$"
+    .endarea
+
+FourIsland_House2_EventScript_StickerMan_Text_0:
+    .org 0x82e943f
+    .area 70
+    .strn "Giggle⋯ I collected a ton of Stickers, I\nwish I could show them off⋯.$"
+    .endarea
+
+FiveIsland_PokemonCenter_1F_EventScript_Chef_Text_0:
+    .org 0x82e9485
+    .area 67
+    .strn "I'm on my way to prepare a meal for a\ncertain high-society person.$"
+    .endarea
+
+FiveIsland_PokemonCenter_1F_EventScript_CooltrainerF_Text_0:
+    .org 0x82e94c8
+    .area 117
+    .strn "You're on a quest to catch every single\nkind of Pokémon? ⋯How incredible.\lPlease tell me if you catch a strong\lone!.$"
+    .endarea
+
+FiveIsland_House1_EventScript_Woman_Text_0:
+    .org 0x82e953d
+    .area 179
+    .strn "Don't worry about buying anything for\ndinner tonight! ⋯That's what my\lhusband said when he went off fishing\ltoday. I'm not sure if I can count on him\lto live up to that promise..$"
+    .endarea
+
+FiveIsland_House2_EventScript_OldMan_Text_0:
+    .org 0x82e95f0
+    .area 165
+    .strn "That Meadow has belonged to our family\nfor generations. I should have had a\lgiant mansion built on it. It would be\lpreferable to having those thugs run\lwild on it!.$"
+    .endarea
+
+SixIsland_EventScript_Boy_Text_0:
+    .org 0x82e9695
+    .area 73
+    .strn "When you're this far away from the city,\nthe sky at night is fantastic..$"
+    .endarea
+
+SixIsland_EventScript_Hiker_Text_0:
+    .org 0x82e96de
+    .area 102
+    .strn "Keep going this way and you'll get to\nthe Water Path. Stay on that and you'll\lget to the Ruin Valley.$"
+    .endarea
+
+SixIsland_PokemonCenter_1F_EventScript_OldMan_Text_0:
+    .org 0x82e9744
+    .area 169
+    .strn "You know of Pokémon that evolve only\nupon trading, yes? But did you know\lthat there are still others? Some\lPokémon evolve only when traded while\lholding specific items.$"
+    .endarea
+
+SixIsland_PokemonCenter_1F_EventScript_Hiker_Text_0:
+    .org 0x82e97ed
+    .area 134
+    .strn "For ten years, I've searched for Ruins.\nNo, make that twenty years. I get this\lfeeling that there's something hidden\lon this island..$"
+    .endarea
+
+SixIsland_Mart_EventScript_Picnicker_Text_0:
+    .org 0x82e9873
+    .area 47
+    .strn "I should buy some Mail and write him a\nletter⋯$"
+    .endarea
+
+SixIsland_Mart_EventScript_OldWoman_Text_0:
+    .org 0x82e98a2
+    .area 168
+    .strn "Play with Pokémon lots and live a long\nlife! Take Agatha, for example. She set\la record for being the oldest-ever\lElite Four member. She spurs me to do\lbigger things..$"
+    .endarea
+
+SixIsland_House_EventScript_OldMan_Text_0:
+    .org 0x82e994a
+    .area 157
+    .strn "There's nothing that young people'd\nfind exciting here on this island. But,\lthis is a good place in terms of nature\land history. Relax and enjoy your stay..$"
+    .endarea
+
+SevenIsland_EventScript_Scientist_Text_0:
+    .org 0x82e99e7
+    .area 132
+    .strn "This island has been left virtually\nuntouched in its natural state. It\lcould be a little difficult to hike\laround because of that..$"
+    .endarea
+
+SevenIsland_EventScript_SwordsDanceTutor_Text_0:
+    .org 0x82e9a6b
+    .area 126
+    .strn "I saw some Tentacools that were\nwalking on land, that's a really strange\lthing to happen since they are\lWater-type Pokémon...$"
+    .endarea
+
+SevenIsland_EventScript_OldWoman_Text_0:
+    .org 0x82e9ae9
+    .area 215
+    .strn "These islands are called the Sevii\nIslands because there are seven. ⋯Or at\lleast that's what the young people\lbelieve. The truth is, these islands are\lso named because they are said to have\lbeen made in seven days.$"
+    .endarea
+
+SevenIsland_PokemonCenter_1F_EventScript_Beauty_Text_0:
+    .org 0x82e9bc0
+    .area 57
+    .strn "If you're confident, you should check\nout Trainer Tower.$"
+    .endarea
+
+SevenIsland_PokemonCenter_1F_EventScript_OldMan_Text_0:
+    .org 0x82e9bf9
+    .area 136
+    .strn "On this island, different events occur\ndepending on connections. What are\lthose connections? They are for you to\ldiscover on your own..$"
+    .endarea
+
+SevenIsland_PokemonCenter_1F_EventScript_Sailor_Text_0:
+    .org 0x82e9c81
+    .area 134
+    .strn "Did you ride a Seagallop ferry to get\nhere? There are at least ten of those\lhigh-speed ships. I don't know where\lthey all go, though.$"
+    .endarea
+
+SevenIsland_Mart_EventScript_Hiker_Text_0:
+    .org 0x82e9d07
+    .area 61
+    .strn "Okay, preparations are complete for me\nto explore the Ruins.$"
+    .endarea
+
+SevenIsland_Mart_EventScript_Fisher_Text_0:
+    .org 0x82e9d44
+    .area 143
+    .strn "I need to fish on Seven Island. That\nwill complete my fishing tour of the\lSevii Islands. I'd better stock up on\lsome Poké Balls first, though.$"
+    .endarea
+
+SevenIsland_Mart_EventScript_Lass_Text_0:
+    .org 0x82e9dd3
+    .area 125
+    .strn "Pokémon have personalities of their\nown, just like people. My Pikachu has a\lHasty nature, so it grew to be a speedy\lPokémon.$"
+    .endarea
+
+SevenIsland_House_Room1_EventScript_OldWoman_Text_0:
+    .org 0x82e9e50
+    .area 205
+    .strn "I may not look like much now, but when I\nwas younger⋯ I flew everywhere,\lchallenging Trainers wherever I found\lthem. Now, my only source of enjoyment\lis reminiscing about the past while\lwatching battles..$"
+    .endarea
+
+SixIsland_WaterPath_House1_EventScript_Beauty_Text_0:
+    .org 0x82e9f1d
+    .area 86
+    .strn "Hera, hera, Heracross!\nBig and shiny, it's the bug boss!\lLove it, need it, Heracross!$"
+    .endarea
+
+SixIsland_WaterPath_House2_EventScript_Man_Text_0:
+    .org 0x82e9f73
+    .area 101
+    .strn "My height is 67.0 inches on the button.\pI know it is this precisely because my\nneighbor measured me.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_House_EventScript_BaldingMan_Text_0:
+    .org 0x82e9fd8
+    .area 61
+    .strn "Dance, dance!\nChansey Dance!\pYou join in, too!\nDance, dance!$"
+    .endarea
+
+SevenIsland_SevaultCanyon_House_EventScript_Chansey_Text_0:
+    .org 0x82ea015
+    .area 25
+    .strn "Chansey: Chansi! Chansi!$"
+    .endarea
+
+SevenIsland_SevaultCanyon_Entrance_EventScript_RouteSign_Text_0:
+    .org 0x82ea02e
+    .area 90
+    .strn "Sevault Canyon Entrance trainers are\nasked to refrain from damaging plants\lin the Canyon.$"
+    .endarea
+
+SevenIsland_SevaultCanyon_EventScript_RouteSign_Text_0:
+    .org 0x82ea088
+    .area 34
+    .strn "Sevault Canyon Tanoby Ruins ahead$"
+    .endarea
+
+SixIsland_GreenPath_EventScript_LeftRouteSign_Text_0:
+    .org 0x82ea0aa
+    .area 30
+    .strn "Green Path Pattern Bush Ahead$"
+    .endarea
+
+SixIsland_GreenPath_EventScript_RightRouteSign_Text_0:
+    .org 0x82ea0c8
+    .area 44
+    .strn "Green Path, Think Green, Keep Nature\nClean!$"
+    .endarea
+
+SixIsland_EventScript_IslandSign_Text_0:
+    .org 0x82ea0f4
+    .area 41
+    .strn "Six Island\nFortune Island of Aged Wisdom$"
+    .endarea
+
+SevenIsland_EventScript_IslandSign_Text_0:
+    .org 0x82ea11d
+    .area 38
+    .strn "Seven Island\nQuest Island of Infinity$"
+    .endarea
+
+SixIsland_WaterPathEventScript_RouteSign_Text_0:
+    .org 0x82ea143
+    .area 29
+    .strn "Water Path\nLeads Ruin Valley$"
+    .endarea
+
+Text_ExploudSurf:
+    .org 0x82ec169
+    .area 64
+    .strn "The water is dyed a deep blue⋯\nCall Poke Ride's Lapras to Surf?$"
+    .endarea
+
+UDTrade_Text_SpeciesNotAllowed:
+    .org 0x8342f2a
+    .area 44
+    .strn "I'm sorry, but {STR_VAR_1} is not\nallowed in the {STR_VAR_2}.$"
+    .endarea
+
+UDTrade_Text_ItemNotAllowed:
+    .org 0x8342f56
+    .area 55
+    .strn "I'm sorry, but {STR_VAR_1} can't carry\na Held Item into the {STR_VAR_2}.$"
+    .endarea
+
+UDTrade_Text_MoveNotAllowed:
+    .org 0x8342fcd
+    .area 66
+    .strn "I'm sorry, but {STR_VAR_1} can't go\ninto the {STR_VAR_2} while\lknowing the move {STR_VAR_3}.$"
+    .endarea
+
+UDTrade_Text_on_Mantainance:
+    .org 0x8342efa
+    .area 48
+    .strn "I'm sorry, but {STR_VAR_1} is not\nworking at the moment.$"
+    .endarea
+
+UDTrade_Text_Mode_Not_Allowed_To_Trade:
+    .org 0x8342f8d
+    .area 64
+    .strn "I'm sorry, but you can't trade\nwith the modes you have enabled.$"
+    .endarea
+
+Common_EventScript_Mesprit_Encounter_Text_0:
+    .org 0x82e9126
+    .area 16
+    .strn "Mesprit: Mes...$"
+    .endarea
+
+Common_EventScript_Mesprit_Encounter_Text_1:
+    .org 0x82e9136
+    .area 32
+    .strn "Mesprit teleported to somewhere$"
+    .endarea
+
+Common_EventScript_Cobalion_Encounter_Text_0:
+    .org 0x82e9156
+    .area 16
+    .strn "Cobalion: Coba!$"
+    .endarea
+
+Common_EventScript_Cobalion_Encounter_Text_1:
+    .org 0x82e9166
+    .area 30
+    .strn "Cobalion escaped to somewhere$"
+    .endarea
+
+Common_EventScript_Virizion_Encounter_Text_0:
+    .org 0x82e9184
+    .area 16
+    .strn "Virizion: Viri!$"
+    .endarea
+
+Common_EventScript_Virizion_Encounter_Text_1:
+    .org 0x82e9194
+    .area 30
+    .strn "Virizion escaped to somewhere$"
+    .endarea
+
+Common_EventScript_Keldeo_Encounter_Text_0:
+    .org 0x82e91b2
+    .area 13
+    .strn "Keldeo: Kel!$"
+    .endarea
+
+Common_EventScript_Keldeo_Encounter_Text_1:
+    .org 0x82e91bf
+    .area 28
+    .strn "Keldeo escaped to somewhere$"
+    .endarea
+
+Common_EventScript_Victini_Encounter_Text_0:
+    .org 0x82e91db
+    .area 14
+    .strn "Victini: Vic!$"
+    .endarea
+
+Common_EventScript_Victini_Encounter_Text_1:
+    .org 0x82e91e9
+    .area 32
+    .strn "Victini teleported to somewhere$"
+    .endarea
+
