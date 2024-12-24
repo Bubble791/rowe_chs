@@ -7320,7 +7320,7 @@ COLOR_TABLE = {
     9:"LIGHT_BLUE",
 }
 
-def format(byteslist, offset, isbattle = False):
+def format(byteslist, offset = 0, isbattle = False):
     string = ""
     slot = 0
 

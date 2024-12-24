@@ -15615,12 +15615,13 @@ Route124_DivingTreasureHuntersHouse_Text_YouHaventGotAnyShards:
     .area 113
     .strn "你没有找到什么宝藏啊⋯\p如果你发现了碎片，比如\n红色碎片，就来和我交换吧！$"
     .endarea
-
+/*
 Route124_DivingTreasureHuntersHouse_Text_ShardTradeBoard:
     .org 0x82d4f53
     .area 254
     .strn "{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 15}红色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}炎之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 6}黄色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 115}雷之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 12}蓝色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 121}水之石{CLEAR_TO 200}\p{CLEAR_TO 10}想要的物品{CLEAR_TO 124}交换物品\n{CLEAR_TO 8}绿色碎片{CLEAR_TO 89}{LEFT_ARROW}{RIGHT_ARROW}{CLEAR_TO 123}叶之石$"
     .endarea
+*/
 
 Route125_Text_NolenPostBattle:
     .org 0x831a6d0
