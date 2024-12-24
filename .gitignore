@@ -2,7 +2,7 @@
 *.o
 *.i
 *.elf
-*.gba
+rowe_ch.gba
 *.gba.bak
 *.sgm
 *.sa1
@@ -13,7 +13,7 @@
 *.8bpp
 *.gbapal
 *.lz
-*.rl
+*.pyc
 *.latfont
 *.hwjpnfont
 *.fwjpnfont
@@ -44,3 +44,4 @@ data/layouts/
 data/tilesets/
 data/maps/**/*.json
 source/
+rom/

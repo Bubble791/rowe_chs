@@ -56,7 +56,7 @@ MAKEFLAGS += --no-print-directory
 
 .PHONY: all clean
 
-all: rom.gba
+all: build/rom.elf
 
 clean:
 	rm -f $(patsubst %.pory,%.inc,$(shell find data/ -type f -name '*.pory'))
@@ -71,8 +71,7 @@ $(DATA_ASM_BUILDDIR)/%.o: data_dep = $(shell $(SCANINC) -I include -I "" $(DATA_
 $(DATA_ASM_BUILDDIR)/%.o: $(DATA_ASM_SUBDIR)/%.s $$(data_dep)
 	$(PREPROC) $< charmap.txt | $(CPP) -I include | $(AS) $(ASFLAGS) -o $@
 
-rom.gba: $(OBJS)
+build/rom.elf: $(OBJS)
 	$(LD) -Map rom.map -T ld_script.txt -o build/rom.elf
-	$(OBJCOPY) -O binary build/rom.elf $@
 	@$(OBJDUMP) -t build/rom.elf | sort -u | grep -E "^0[2389]" | $(PERL) -p -e 's/^(\w{8}) (\w).{6} \S+\t(\w{8}) (\S+)$$/\1 \2 \3 \4/g' > rom.sym
 
