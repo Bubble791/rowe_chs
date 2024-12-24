@@ -265,13 +265,13 @@ EverGrandeCity_PokemonLeague_1F_Text_PowerCandy:
 EverGrandeCity_PokemonLeague_1F_Text_PowerCandy_Bought:
     .org 0x82885af
     .area 44
-    .strn "Oh, yeah... Returns not accepted,\ngot that?$"
+    .strn "哦，是的⋯\n不接受退货，明白吗？$"
     .endarea
 
 EverGrandeCity_PokemonLeague_1F_Text_PowerCandy_Decline:
     .org 0x828854c
     .area 56
-    .strn "No? You say no? I'm only doing this!\nas a favor to you!$"
+    .strn "不？你说不？\n这是在帮你一个忙！$"
     .endarea
 
 EverGrandeCity_PokemonLeague_1F_Text_PowerCandy_no_Money:
@@ -283,13 +283,13 @@ EverGrandeCity_PokemonLeague_1F_Text_PowerCandy_no_Money:
 FallarborTown_Text_MyPreciousAzurill:
     .org 0x8246a04
     .area 88
-    .strn "See! Take a look!\nThis is my precious Azumarill!\pIt's slick and smooth and plushy, too!$"
+    .strn "看！看一看！\n这是我的宝贝玛力露丽！\p它又光滑又柔软！$"
     .endarea
 
 FallarborTown_Text_Azurill:
     .org 0x8246a5c
     .area 23
-    .strn "Azumarill: Rooreelooo.$"
+    .strn "玛力露丽: Rooreelooo。$"
     .endarea
 
 FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
@@ -6619,7 +6619,7 @@ UDTrade_Text_Mode_Not_Allowed_To_Trade:
 Common_EventScript_Mesprit_Encounter_Text_0:
     .org 0x82e9126
     .area 16
-    .strn "艾姆利多: Mes...$"
+    .strn "艾姆利多: Mes⋯$"
     .endarea
 
 Common_EventScript_Mesprit_Encounter_Text_1:
@@ -6655,7 +6655,7 @@ Common_EventScript_Virizion_Encounter_Text_1:
 Common_EventScript_Keldeo_Encounter_Text_0:
     .org 0x82e91b2
     .area 13
-    .strn "凯路迪欧: Kel！$"
+    .strn "凯路迪欧: K！$"
     .endarea
 
 Common_EventScript_Keldeo_Encounter_Text_1:
@@ -6667,7 +6667,7 @@ Common_EventScript_Keldeo_Encounter_Text_1:
 Common_EventScript_Victini_Encounter_Text_0:
     .org 0x82e91db
     .area 14
-    .strn "比克提尼: Vic！$"
+    .strn "比克提尼: Vi！$"
     .endarea
 
 Common_EventScript_Victini_Encounter_Text_1:
