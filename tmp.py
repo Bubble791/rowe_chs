@@ -98,14 +98,25 @@ with open("rom/bpee_ch.gba", "rb") as rom:
 #################################################################
 #                     最终处理
 #################################################################
+newText = []
 for text in stringTable:
     if stringTable[text]["vanillaText"] == "":
-        print("// new")
-    print(f"{text}:")
-    print("    .org " + stringTable[text]["offset"])
-    print("    .area " + stringTable[text]["bytecount"])
+        newText.append(text)
+        continue
     if stringTable[text]["vanillaText"].upper() == stringTable[text]["nowText"].upper():
         texts = stringTable[text]["chineseText"]
     else:
-        texts = stringTable[text]["nowText"]
+        newText.append(text)
+        continue
+    print(f"{text}:")
+    print("    .org " + stringTable[text]["offset"])
+    print("    .area " + stringTable[text]["bytecount"])
     print(f"    .strn \"{texts}\"\n    .endarea\n")
+
+with open("translate/eng_text.s", "w") as engfile:
+    for text in newText:
+        texts = stringTable[text]["nowText"]
+        engfile.writelines(f"{text}:\n")
+        engfile.writelines("    .org " + stringTable[text]["offset"] + "\n")
+        engfile.writelines("    .area " + stringTable[text]["bytecount"] + "\n")
+        engfile.writelines(f"    .strn \"{texts}\"\n    .endarea\n\n")
