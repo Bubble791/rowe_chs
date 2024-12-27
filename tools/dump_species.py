@@ -1,5 +1,5 @@
 import os
-from text import charmap, charMapFC
+from text import charmap, charMapFC, format
 
 chs_name = {
 "SPECIES_BULBASAUR" : "妙蛙种子",
@@ -1567,21 +1567,75 @@ def ConverName(string):
     
     return string
 
-with open("rowe_eu.gba", "rb") as rom:
-    rom.seek(0x144)
-    speciesname = ExtractPointer(rom.read(4)) - 0x08000000
-    movename = ExtractPointer(rom.read(4))
+def checkname(checkName):
+    with open("tools/movedata.txt", "r") as file:
+        for word in file.readlines():
+            data = word.split("	")
+            engname = data[3]
+            chname = data[1]
+            if engname == checkName:
+                return chname
+    return checkName
 
-    rom.seek(speciesname)
-    species = 1866
+
+def getMoveDex(name):
+    start = False
+    des_start = False
+    desstring = ""
+    with open("tools/move_info.h", "r") as file:
+        for word in file.readlines():
+            if "COMPOUND_STRING" in word and name in word:
+                start = True
+            if start == True and "description" in word:
+                des_start = True
+            if des_start == True and ".effect =" in word:
+                return desstring.replace("        .description = ", "")[:-1]
+            elif des_start == True:
+                desstring += word
+    return name + "not found"
+
+# with open("rowe_eu.gba", "rb") as rom:
+#     rom.seek(0x148)
+#     speciesname = ExtractPointer(rom.read(4)) - 0x08000000
+#     movename = ExtractPointer(rom.read(4))
+
+#     rom.seek(speciesname)
+#     species = 827
+#     offsetlist = []
+#     while True:
+#         offsetlist.append(rom.tell())
+#         stringbytes = rom.read(17)
+#         if species == 0:
+#             break
+#         species -= 1
+#     for index, offset in enumerate(offsetlist):
+#         name = ProcessString(rom, offset, 17)
+#         name = checkname(name)
+#         #print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
+#         print(f"// {name}\n[{index}] = {getMoveDex(name)}")
+
+#表格类文本
+with open("rowe_eu.gba", "rb") as rom:
+    rom.seek(0xdf99a4)
+    species = 611
     offsetlist = []
     while True:
-        offsetlist.append(rom.tell())
-        stringbytes = rom.read(0xD)
+        offsetlist.append(ExtractPointer(rom.read(4)))
         if species == 0:
             break
         species -= 1
+    
     for index, offset in enumerate(offsetlist):
-        name = ProcessString(rom, offset, 0xD)
-        name = ConverName(name)
-        print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
+        bytelist = []
+        if offset == 0:
+            print(f"[{index}] = COMPOUND_STRING(\"\"),    // {hex(offset)}")
+            continue
+        rom.seek(offset - 0x08000000)
+        while True:
+            data = rom.read(1)[0]
+            if data == 0xFF:
+                break
+            bytelist.append(data)
+        
+        name = format(bytelist, offset - 0x08000000)
+        print(f"[{index}] = COMPOUND_STRING(\"{name}\"),    // {hex(offset)}")
