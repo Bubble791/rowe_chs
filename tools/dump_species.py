@@ -1,5 +1,5 @@
 import os
-from text import charmap, charMapFC
+from text import charmap, charMapFC, format
 
 chs_name = {
 "SPECIES_BULBASAUR" : "妙蛙种子",
@@ -1594,38 +1594,48 @@ def getMoveDex(name):
                 desstring += word
     return name + "not found"
 
-with open("rowe_eu.gba", "rb") as rom:
-    rom.seek(0x148)
-    speciesname = ExtractPointer(rom.read(4)) - 0x08000000
-    movename = ExtractPointer(rom.read(4))
-
-    rom.seek(speciesname)
-    species = 827
-    offsetlist = []
-    while True:
-        offsetlist.append(rom.tell())
-        stringbytes = rom.read(17)
-        if species == 0:
-            break
-        species -= 1
-    for index, offset in enumerate(offsetlist):
-        name = ProcessString(rom, offset, 17)
-        name = checkname(name)
-        #print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
-        print(f"// {name}\n[{index}] = {getMoveDex(name)}")
-
-#表格类文本
 # with open("rowe_eu.gba", "rb") as rom:
-#     rom.seek(0xe5b6bc)
+#     rom.seek(0x148)
+#     speciesname = ExtractPointer(rom.read(4)) - 0x08000000
+#     movename = ExtractPointer(rom.read(4))
+
+#     rom.seek(speciesname)
 #     species = 827
 #     offsetlist = []
 #     while True:
-#         offsetlist.append(ExtractPointer(rom.read(4)))
+#         offsetlist.append(rom.tell())
+#         stringbytes = rom.read(17)
 #         if species == 0:
 #             break
 #         species -= 1
-    
 #     for index, offset in enumerate(offsetlist):
-#         name = ProcessString(rom, offset - 0x08000000, 0xFF)
+#         name = ProcessString(rom, offset, 17)
+#         name = checkname(name)
+#         #print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
+#         print(f"// {name}\n[{index}] = {getMoveDex(name)}")
 
-#         print(f"[{index}] = COMPOUND_STRING(\"{name}\"),    // {hex(offset)}")
+#表格类文本
+with open("rowe_eu.gba", "rb") as rom:
+    rom.seek(0xdf99a4)
+    species = 611
+    offsetlist = []
+    while True:
+        offsetlist.append(ExtractPointer(rom.read(4)))
+        if species == 0:
+            break
+        species -= 1
+    
+    for index, offset in enumerate(offsetlist):
+        bytelist = []
+        if offset == 0:
+            print(f"[{index}] = COMPOUND_STRING(\"\"),    // {hex(offset)}")
+            continue
+        rom.seek(offset - 0x08000000)
+        while True:
+            data = rom.read(1)[0]
+            if data == 0xFF:
+                break
+            bytelist.append(data)
+        
+        name = format(bytelist, offset - 0x08000000)
+        print(f"[{index}] = COMPOUND_STRING(\"{name}\"),    // {hex(offset)}")

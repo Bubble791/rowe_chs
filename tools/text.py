@@ -7320,11 +7320,13 @@ COLOR_TABLE = {
     9:"LIGHT_BLUE",
 }
 
-def format(byteslist, offset = 0, isbattle = False):
+isbattle = True
+
+def format(byteslist, offset):
     string = ""
     slot = 0
 
-    if 1:
+    if True:
         while slot < len(byteslist):
             if byteslist[slot] == 0xF8:
                 slot += 1
@@ -7332,10 +7334,6 @@ def format(byteslist, offset = 0, isbattle = False):
                 if param not in charmap[0xF8]:
                     return string
                 string += charmap[0xF8][param]
-            elif byteslist[slot] >= 0x1 and byteslist[slot] <= 0x1E and byteslist[slot] != 0x1B:
-                charindex = byteslist[slot] << 8 | byteslist[slot + 1]
-                slot += 1
-                string += charmap[charindex]
             elif byteslist[slot] == 0xFD:
                 slot += 1
                 if isbattle == True:
@@ -7360,15 +7358,12 @@ def format(byteslist, offset = 0, isbattle = False):
                     param2 = byteslist[slot + 1]
                     addParam = COLOR_TABLE[param2] + "}"
                     slot += 1
-                elif param == 19:
-                    param2 = byteslist[slot + 1]
-                    addParam = str(param2) + "}"
-                    slot += 1
                 if param not in charmap[0xFC]:
                     return string
                 string += charmap[0xFC][param] + addParam
             else:
                 string += charmap[byteslist[slot]]
             slot += 1
-    #return f"    .area {len(byteslist)}\n    .strn \"" + string + "\"\n    .endarea\n"
+
     return string
+
