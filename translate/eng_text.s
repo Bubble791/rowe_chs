@@ -25,7 +25,7 @@ BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
 BattleFrontier_PokemonCenter_1F_Text_Skitty:
     .org 0x82caf78
     .area 22
-    .strn "优雅猫:Mya myaaah！$"
+    .strn "优雅猫:Myamyaaah！$"
     .endarea
 
 DewfordTown_Text_GiveYouOneOfMyRods:
