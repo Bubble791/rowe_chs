@@ -1577,6 +1577,23 @@ def checkname(checkName):
                 return chname
     return checkName
 
+
+def getMoveDex(name):
+    start = False
+    des_start = False
+    desstring = ""
+    with open("tools/move_info.h", "r") as file:
+        for word in file.readlines():
+            if "COMPOUND_STRING" in word and name in word:
+                start = True
+            if start == True and "description" in word:
+                des_start = True
+            if des_start == True and ".effect =" in word:
+                return desstring.replace("        .description = ", "")[:-1]
+            elif des_start == True:
+                desstring += word
+    return name + "not found"
+
 with open("rowe_eu.gba", "rb") as rom:
     rom.seek(0x148)
     speciesname = ExtractPointer(rom.read(4)) - 0x08000000
@@ -1594,4 +1611,21 @@ with open("rowe_eu.gba", "rb") as rom:
     for index, offset in enumerate(offsetlist):
         name = ProcessString(rom, offset, 17)
         name = checkname(name)
-        print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
+        #print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
+        print(f"// {name}\n[{index}] = {getMoveDex(name)}")
+
+#表格类文本
+# with open("rowe_eu.gba", "rb") as rom:
+#     rom.seek(0xe5b6bc)
+#     species = 827
+#     offsetlist = []
+#     while True:
+#         offsetlist.append(ExtractPointer(rom.read(4)))
+#         if species == 0:
+#             break
+#         species -= 1
+    
+#     for index, offset in enumerate(offsetlist):
+#         name = ProcessString(rom, offset - 0x08000000, 0xFF)
+
+#         print(f"[{index}] = COMPOUND_STRING(\"{name}\"),    // {hex(offset)}")
