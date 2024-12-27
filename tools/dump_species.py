@@ -1567,21 +1567,31 @@ def ConverName(string):
     
     return string
 
+def checkname(checkName):
+    with open("tools/movedata.txt", "r") as file:
+        for word in file.readlines():
+            data = word.split("	")
+            engname = data[3]
+            chname = data[1]
+            if engname == checkName:
+                return chname
+    return checkName
+
 with open("rowe_eu.gba", "rb") as rom:
-    rom.seek(0x144)
+    rom.seek(0x148)
     speciesname = ExtractPointer(rom.read(4)) - 0x08000000
     movename = ExtractPointer(rom.read(4))
 
     rom.seek(speciesname)
-    species = 1866
+    species = 827
     offsetlist = []
     while True:
         offsetlist.append(rom.tell())
-        stringbytes = rom.read(0xD)
+        stringbytes = rom.read(17)
         if species == 0:
             break
         species -= 1
     for index, offset in enumerate(offsetlist):
-        name = ProcessString(rom, offset, 0xD)
-        name = ConverName(name)
+        name = ProcessString(rom, offset, 17)
+        name = checkname(name)
         print(f"[{index}] = _(\"{name}\"),    // {hex(offset)}")
