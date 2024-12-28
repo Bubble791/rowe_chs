@@ -42,4 +42,79 @@
     .word gMoveDescriptionPointers
 
 
+.org 0x09A7A200
+.importobj "build/translate/battle_message.o"
+
+.org 0x8184358
+    .word gBattleStringsTable
+
+.org 0x8184434
+    .word gBattleStringsTable
+
+.org 0x818447c
+    .word gBattleStringsTable
+
+.org 0x8184518
+    .word gBattleStringsTable
+
+.org 0x81846fc
+    .word gBattleStringsTable
+
+.org 0x818477c
+    .word gBattleStringsTable
+
+.org 0x81847c4
+    .word gBattleStringsTable
+
+.org 0x818480c
+    .word gBattleStringsTable
+
+.org 0x8184840
+    .word gBattleStringsTable
+
+.org 0x818486c
+    .word gBattleStringsTable
+
+.org 0x8184eb4
+    .word gBattleStringsTable
+
+.org 0x8184f94
+    .word gBattleStringsTable
+
+.org 0x8184fdc
+    .word gBattleStringsTable
+
+.org 0x8185074
+    .word gBattleStringsTable
+
+.org 0x81850f4
+    .word gBattleStringsTable
+
+.org 0x8185134
+    .word gBattleStringsTable
+
+.org 0x8185248
+    .word gBattleStringsTable
+
+.org 0x81852b4
+    .word gBattleStringsTable
+
+.org 0x81852fc
+    .word gBattleStringsTable
+
+.org 0x8185348
+    .word gBattleStringsTable
+
+.org 0x8185380
+    .word gBattleStringsTable
+
+.org 0x81853b0
+    .word gBattleStringsTable
+
+.org 0x81941a4
+    .word gBattleStringsTable
+
+.org 0x8195180
+    .word gBattleStringsTable
+
 .close
