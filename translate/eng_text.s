@@ -3577,13 +3577,13 @@ EventScript_FailSweetScent_Text_0:
 Common_EventScript_FlyingTaxi_Text_1:
     .org 0x82d98cc
     .area 50
-    .strn "你想和我们一起飞吗？\n它完全免费。$"                              
+    .strn "你想使用飞行出租车吗？\n它完全免费。$"                              
     .endarea
 
 Common_EventScript_FlyingTaxi_Text_0:
     .org 0x82d98a2
     .area 42
-    .strn "你想和我们一起飞吗,\n只要2BP？$"                      
+    .strn "你想使用飞行出租车吗？\n只要2BP？$"                      
     .endarea
 
 Common_EventScript_FlyingTaxi_Text_2:
