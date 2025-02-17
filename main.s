@@ -1,22 +1,23 @@
 .gba
 .thumb
 
-.open "rowe_eu.gba", "rowe_ch.gba", 0x08000000
+.open "newrom/rowe2.2.1(字库).gba", "rowe2.2.1_ch.gba", 0x08000000
 
 // 汉化文本
 .loadtable "./tools/PMRSEFRLG_charmap.txt"
 
-.include "translate/vanilla_script.s"
-.include "translate/eng_text.s"
+.include "new_version_translate/vanilla_script.s"
+// .include "new_version_translate/eng_text.s"
 
 // 宠物名字
-.org 0x083f0554
+.org 0x083F1BC4
 .importobj "build/translate/species_name.o"
 
 // 技能名字
-.org 0x083f6423
+.org 0x083f7A93
 .importobj "build/translate/move_name.o"
 
+/*
 // 技能介绍
 .org 0x08E51A18
 .area 0xA980
@@ -116,5 +117,5 @@
 
 .org 0x8195180
     .word gBattleStringsTable
-
+*/
 .close
