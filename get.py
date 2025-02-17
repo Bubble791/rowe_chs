@@ -50,8 +50,8 @@ def RealRepoint(rom: _io.BufferedReader, offsetTuples: [(int, int, str)]):
 
     return offsetList
 
-with open("rowe_eu.gba", "rb") as rom:
-    offsetsToRepointTogether = [(0x184358, 0, 0)]
+with open("newrom/rowe2.2.1.gba", "rb") as rom:
+    offsetsToRepointTogether = [(0x1c4, 0, 0)]
 
     for i in RealRepoint(rom, offsetsToRepointTogether):
-        print(f".org {i}\n    .word gBattleStringsTable\n")
+        print(f".org {i}\n    .word gAbilityDescriptionPointers\n")

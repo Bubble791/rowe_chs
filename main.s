@@ -17,105 +17,113 @@
 .org 0x083f7A93
 .importobj "build/translate/move_name.o"
 
-/*
+.org 0x083FDFCB
+.importobj "build/translate/ability_name.o"
+
 // 技能介绍
-.org 0x08E51A18
-.area 0xA980
+// 表格地址E22FC4
+.org 0x09A65C00
 .importobj "build/translate/move_des.o"
-.endarea
-
-.org 0x080F47D4
-    .word gMoveDescriptionPointers
-
-.org 0x080F4858
-    .word gMoveDescriptionPointers
-
-.org 0x080F48D4
-    .word gMoveDescriptionPointers
-
-.org 0x080F493C
-    .word gMoveDescriptionPointers
-
-.org 0x082101F0
-    .word gMoveDescriptionPointers
-
-.org 0x0821F1F0
-    .word gMoveDescriptionPointers
-
-
-.org 0x09A7A200
 .importobj "build/translate/battle_message.o"
+.importobj "build/translate/ability_des.o"
 
-.org 0x8184358
+.org 0x80f4388
+    .word gMoveDescriptionPointers
+
+.org 0x80f440c
+    .word gMoveDescriptionPointers
+
+.org 0x80f4488
+    .word gMoveDescriptionPointers
+
+.org 0x80f44f0
+    .word gMoveDescriptionPointers
+
+.org 0x8210114
+    .word gMoveDescriptionPointers
+
+.org 0x821f118
+    .word gMoveDescriptionPointers
+
+.org 0x8184014
     .word gBattleStringsTable
 
-.org 0x8184434
+.org 0x81840f0
     .word gBattleStringsTable
 
-.org 0x818447c
+.org 0x8184138
     .word gBattleStringsTable
 
-.org 0x8184518
+.org 0x81841d4
     .word gBattleStringsTable
 
-.org 0x81846fc
+.org 0x81843b8
     .word gBattleStringsTable
 
-.org 0x818477c
+.org 0x8184438
     .word gBattleStringsTable
 
-.org 0x81847c4
+.org 0x8184480
     .word gBattleStringsTable
 
-.org 0x818480c
+.org 0x81844c8
     .word gBattleStringsTable
 
-.org 0x8184840
+.org 0x81844fc
     .word gBattleStringsTable
 
-.org 0x818486c
+.org 0x8184528
     .word gBattleStringsTable
 
-.org 0x8184eb4
+.org 0x8184b70
     .word gBattleStringsTable
 
-.org 0x8184f94
+.org 0x8184c50
     .word gBattleStringsTable
 
-.org 0x8184fdc
+.org 0x8184c98
     .word gBattleStringsTable
 
-.org 0x8185074
+.org 0x8184d30
     .word gBattleStringsTable
 
-.org 0x81850f4
+.org 0x8184db0
     .word gBattleStringsTable
 
-.org 0x8185134
+.org 0x8184df0
     .word gBattleStringsTable
 
-.org 0x8185248
+.org 0x8184f04
     .word gBattleStringsTable
 
-.org 0x81852b4
+.org 0x8184f70
     .word gBattleStringsTable
 
-.org 0x81852fc
+.org 0x8184fb8
     .word gBattleStringsTable
 
-.org 0x8185348
+.org 0x8185004
     .word gBattleStringsTable
 
-.org 0x8185380
+.org 0x818503c
     .word gBattleStringsTable
 
-.org 0x81853b0
+.org 0x818506c
     .word gBattleStringsTable
 
-.org 0x81941a4
+.org 0x8193e60
     .word gBattleStringsTable
 
-.org 0x8195180
+.org 0x8194e3c
     .word gBattleStringsTable
-*/
+
+.org 0x80001c4
+    .word gAbilityDescriptionPointers
+
+.org 0x80f58c0
+    .word gAbilityDescriptionPointers
+
+.org 0x820cdc4
+    .word gAbilityDescriptionPointers
+
 .close
