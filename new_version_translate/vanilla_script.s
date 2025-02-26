@@ -41976,3 +41976,2243 @@
 .area 357
 .strn "{STR_VAR_1}\p⋯ ⋯ ⋯ ⋯ ⋯ ⋯\n当我赢得比赛时⋯\p{STR_VAR_1}\p⋯你会当真吗？\p我知道。如果你呢能当真，那就再好不过了。\n十分感谢你能帮我。\p我希望我能\n说好这句话。\p我似乎在寻求帮助时\n有点儿太正经了。\p我现在应该立即和你告别\n并且自己想办法了。\p谢谢你，我的朋友！\n我为刚才对你的怀疑表示道歉！$"
 .endarea
+
+.org 0x833da4b
+.area 34
+.strn "The best candidate to be a champ!$"
+.endarea
+
+.org 0x833da6d
+.area 22
+.strn "A sure—finalist team.$"
+.endarea
+
+.org 0x833da83
+.area 29
+.strn "A likely top—three finisher.$"
+.endarea
+
+.org 0x833daa0
+.area 29
+.strn "A candidate to finish first.$"
+.endarea
+
+.org 0x833dabd
+.area 33
+.strn "A team with top—class potential.$"
+.endarea
+
+.org 0x833dade
+.area 37
+.strn "The dark horse team this tournament.$"
+.endarea
+
+.org 0x833db03
+.area 28
+.strn "A better—than—average team.$"
+.endarea
+
+.org 0x833db1f
+.area 32
+.strn "This tournament's average team.$"
+.endarea
+
+.org 0x833db3f
+.area 31
+.strn "A team with average potential.$"
+.endarea
+
+.org 0x833db5e
+.area 28
+.strn "A weaker—than—average team.$"
+.endarea
+
+.org 0x833db7a
+.area 34
+.strn "A team looking for its first win.$"
+.endarea
+
+.org 0x833db9c
+.area 35
+.strn "One win will make this team proud.$"
+.endarea
+
+.org 0x833dbbf
+.area 22
+.strn "Overall, a weak team.$"
+.endarea
+
+.org 0x833dbd5
+.area 32
+.strn "A team with very low potential.$"
+.endarea
+
+.org 0x833dbf5
+.area 39
+.strn "A team unlikely to win the tournament.$"
+.endarea
+
+.org 0x833dc1c
+.area 31
+.strn "The team most unlikely to win.$"
+.endarea
+
+.org 0x833dc3b
+.area 35
+.strn "The perfect, invincible superstar!$"
+.endarea
+
+.org 0x833dc5e
+.area 41
+.strn "Willing to risk total disaster at times.$"
+.endarea
+
+.org 0x833dc87
+.area 34
+.strn "Skilled at enduring long battles.$"
+.endarea
+
+.org 0x833dca9
+.area 37
+.strn "Varies tactics to suit the opponent.$"
+.endarea
+
+.org 0x833dcce
+.area 29
+.strn "Has a tough winning pattern.$"
+.endarea
+
+.org 0x833dceb
+.area 36
+.strn "Occasionally uses a very rare move.$"
+.endarea
+
+.org 0x833dd0f
+.area 37
+.strn "Uses startling and disruptive moves.$"
+.endarea
+
+.org 0x833dd34
+.area 33
+.strn "Constantly watches HP in battle.$"
+.endarea
+
+.org 0x833dd55
+.area 36
+.strn "Good at storing then loosing power.$"
+.endarea
+
+.org 0x833dd79
+.area 28
+.strn "Skilled at enfeebling foes.$"
+.endarea
+
+.org 0x833dd95
+.area 35
+.strn "Prefers tactics that rely on luck.$"
+.endarea
+
+.org 0x833ddb8
+.area 33
+.strn "Attacks with a regal atmosphere.$"
+.endarea
+
+.org 0x833ddd9
+.area 37
+.strn "Attacks with powerful, low—PP moves.$"
+.endarea
+
+.org 0x833ddfe
+.area 39
+.strn "Skilled at enfeebling, then attacking.$"
+.endarea
+
+.org 0x833de25
+.area 36
+.strn "Battles while enduring all attacks.$"
+.endarea
+
+.org 0x833de49
+.area 39
+.strn "Skilled at upsetting foes emotionally.$"
+.endarea
+
+.org 0x833de70
+.area 39
+.strn "Uses strong and straightforward moves.$"
+.endarea
+
+.org 0x833de97
+.area 32
+.strn "Aggressively uses strong moves.$"
+.endarea
+
+.org 0x833deb7
+.area 40
+.strn "Battles while cleverly dodging attacks.$"
+.endarea
+
+.org 0x833dedf
+.area 36
+.strn "Skilled at using upsetting attacks.$"
+.endarea
+
+.org 0x833df03
+.area 25
+.strn "Uses many popular moves.$"
+.endarea
+
+.org 0x833df1c
+.area 37
+.strn "Has moves for powerful combinations.$"
+.endarea
+
+.org 0x833df41
+.area 31
+.strn "Uses high—probability attacks.$"
+.endarea
+
+.org 0x833df60
+.area 37
+.strn "Aggressively uses spectacular moves.$"
+.endarea
+
+.org 0x833df85
+.area 33
+.strn "Emphasizes offense over defense.$"
+.endarea
+
+.org 0x833dfa6
+.area 33
+.strn "Emphasizes defense over offense.$"
+.endarea
+
+.org 0x833dfc7
+.area 35
+.strn "Attacks quickly with strong moves.$"
+.endarea
+
+.org 0x833dfea
+.area 37
+.strn "Often uses moves with added effects.$"
+.endarea
+
+.org 0x833e00f
+.area 35
+.strn "Uses a well—balanced mix of moves.$"
+.endarea
+
+.org 0x833e032
+.area 26
+.strn "This is sample message 1.$"
+.endarea
+
+.org 0x833e04c
+.area 26
+.strn "This is sample message 2.$"
+.endarea
+
+.org 0x833e066
+.area 26
+.strn "This is sample message 3.$"
+.endarea
+
+.org 0x833e080
+.area 26
+.strn "This is sample message 4.$"
+.endarea
+
+.org 0x833e09a
+.area 26
+.strn "Emphasizes HP and Attack.$"
+.endarea
+
+.org 0x833e0b4
+.area 27
+.strn "Emphasizes HP and Defense.$"
+.endarea
+
+.org 0x833e0cf
+.area 25
+.strn "Emphasizes HP and Speed.$"
+.endarea
+
+.org 0x833e0e8
+.area 30
+.strn "Emphasizes HP and Sp. Attack.$"
+.endarea
+
+.org 0x833e106
+.area 31
+.strn "Emphasizes HP and Sp. Defense.$"
+.endarea
+
+.org 0x833e125
+.area 31
+.strn "Emphasizes Attack and Defense.$"
+.endarea
+
+.org 0x833e144
+.area 29
+.strn "Emphasizes Attack and Speed.$"
+.endarea
+
+.org 0x833e161
+.area 34
+.strn "Emphasizes Attack and Sp. Attack.$"
+.endarea
+
+.org 0x833e183
+.area 35
+.strn "Emphasizes Attack and Sp. Defense.$"
+.endarea
+
+.org 0x833e1a6
+.area 30
+.strn "Emphasizes Defense and Speed.$"
+.endarea
+
+.org 0x833e1c4
+.area 35
+.strn "Emphasizes Defense and Sp. Attack.$"
+.endarea
+
+.org 0x833e1e7
+.area 36
+.strn "Emphasizes Defense and Sp. Defense.$"
+.endarea
+
+.org 0x833e20b
+.area 33
+.strn "Emphasizes Speed and Sp. Attack.$"
+.endarea
+
+.org 0x833e22c
+.area 34
+.strn "Emphasizes Speed and Sp. Defense.$"
+.endarea
+
+.org 0x833e24e
+.area 39
+.strn "Emphasizes Sp. Attack and Sp. Defense.$"
+.endarea
+
+.org 0x833e275
+.area 15
+.strn "Emphasizes HP.$"
+.endarea
+
+.org 0x833e284
+.area 19
+.strn "Emphasizes Attack.$"
+.endarea
+
+.org 0x833e297
+.area 20
+.strn "Emphasizes Defense.$"
+.endarea
+
+.org 0x833e2ab
+.area 18
+.strn "Emphasizes Speed.$"
+.endarea
+
+.org 0x833e2bd
+.area 23
+.strn "Emphasizes Sp. Attack.$"
+.endarea
+
+.org 0x833e2d4
+.area 24
+.strn "Emphasizes Sp. Defense.$"
+.endarea
+
+.org 0x833e2ec
+.area 24
+.strn "Neglects HP and Attack.$"
+.endarea
+
+.org 0x833e304
+.area 25
+.strn "Neglects HP and Defense.$"
+.endarea
+
+.org 0x833e31d
+.area 23
+.strn "Neglects HP and Speed.$"
+.endarea
+
+.org 0x833e334
+.area 28
+.strn "Neglects HP and Sp. Attack.$"
+.endarea
+
+.org 0x833e350
+.area 29
+.strn "Neglects HP and Sp. Defense.$"
+.endarea
+
+.org 0x833e36d
+.area 29
+.strn "Neglects Attack and Defense.$"
+.endarea
+
+.org 0x833e38a
+.area 27
+.strn "Neglects Attack and Speed.$"
+.endarea
+
+.org 0x833e3a5
+.area 32
+.strn "Neglects Attack and Sp. Attack.$"
+.endarea
+
+.org 0x833e3c5
+.area 33
+.strn "Neglects Attack and Sp. Defense.$"
+.endarea
+
+.org 0x833e3e6
+.area 28
+.strn "Neglects Defense and Speed.$"
+.endarea
+
+.org 0x833e402
+.area 33
+.strn "Neglects Defense and Sp. Attack.$"
+.endarea
+
+.org 0x833e423
+.area 34
+.strn "Neglects Defense and Sp. Defense.$"
+.endarea
+
+.org 0x833e445
+.area 31
+.strn "Neglects Speed and Sp. Attack.$"
+.endarea
+
+.org 0x833e464
+.area 32
+.strn "Neglects Speed and Sp. Defense.$"
+.endarea
+
+.org 0x833e484
+.area 37
+.strn "Neglects Sp. Attack and Sp. Defense.$"
+.endarea
+
+.org 0x833e4a9
+.area 13
+.strn "Neglects HP.$"
+.endarea
+
+.org 0x833e4b6
+.area 17
+.strn "Neglects Attack.$"
+.endarea
+
+.org 0x833e4c7
+.area 18
+.strn "Neglects Defense.$"
+.endarea
+
+.org 0x833e4d9
+.area 16
+.strn "Neglects Speed.$"
+.endarea
+
+.org 0x833e4e9
+.area 21
+.strn "Neglects Sp. Attack.$"
+.endarea
+
+.org 0x833e4fe
+.area 22
+.strn "Neglects Sp. Defense.$"
+.endarea
+
+.org 0x833e514
+.area 39
+.strn "Raises Pokémon in a well—balanced way.$"
+.endarea
+
+.org 0x833e53b
+.area 22
+.strn "Let the battle begin!$"
+.endarea
+
+.org 0x833e551
+.area 17
+.strn "{STR_VAR_1} won using {STR_VAR_2}!$"
+.endarea
+
+.org 0x833e562
+.area 21
+.strn "{STR_VAR_1} became the champ!$"
+.endarea
+
+.org 0x833e577
+.area 19
+.strn "{STR_VAR_1} won by default!$"
+.endarea
+
+.org 0x833e58a
+.area 28
+.strn "{STR_VAR_1} won outright by default!$"
+.endarea
+
+.org 0x833e5a6
+.area 29
+.strn "{STR_VAR_1} won without using a move!$"
+.endarea
+
+.org 0x833e5c3
+.area 31
+.strn "{STR_VAR_1} won outright with no moves!$"
+.endarea
+
+.org 0x833e5e2
+.area 17
+.strn "Round 1, Match 1$"
+.endarea
+
+.org 0x833e5f3
+.area 17
+.strn "Round 1, Match 2$"
+.endarea
+
+.org 0x833e604
+.area 17
+.strn "Round 1, Match 3$"
+.endarea
+
+.org 0x833e615
+.area 17
+.strn "Round 1, Match 4$"
+.endarea
+
+.org 0x833e626
+.area 17
+.strn "Round 1, Match 5$"
+.endarea
+
+.org 0x833e637
+.area 17
+.strn "Round 1, Match 6$"
+.endarea
+
+.org 0x833e648
+.area 17
+.strn "Round 1, Match 7$"
+.endarea
+
+.org 0x833e659
+.area 17
+.strn "Round 1, Match 8$"
+.endarea
+
+.org 0x833e66a
+.area 17
+.strn "Round 2, Match 1$"
+.endarea
+
+.org 0x833e67b
+.area 17
+.strn "Round 2, Match 2$"
+.endarea
+
+.org 0x833e68c
+.area 17
+.strn "Round 2, Match 3$"
+.endarea
+
+.org 0x833e69d
+.area 17
+.strn "Round 2, Match 4$"
+.endarea
+
+.org 0x833e6ae
+.area 18
+.strn "Semifinal Match 1$"
+.endarea
+
+.org 0x833e6c0
+.area 18
+.strn "Semifinal Match 2$"
+.endarea
+
+.org 0x833e6d2
+.area 12
+.strn "Final Match$"
+.endarea
+
+.org 0x833eb3d
+.area 122
+.strn "{MN}\nBlend Master: Indeed I am!\nThe Blend Master am I!\pBlend with me, and you shall witness\nthe mastery I bring to blending!$"
+.endarea
+
+.org 0x833f105
+.area 60
+.strn "Now, do you wish to take the challenge\nof a Set KO Tourney?$"
+.endarea
+
+.org 0x833f141
+.area 45
+.strn "We await your challenge on\nanother occasion!$"
+.endarea
+
+.org 0x833f7c0
+.area 35
+.strn "Please wait while I save the game.$"
+.endarea
+
+.org 0x833f82a
+.area 26
+.strn "{PLAYER} received the prize\n{STR_VAR_1}.$"
+.endarea
+
+.org 0x833f898
+.area 72
+.strn "Thank you so much for participating!\pPlease wait while I save the game.$"
+.endarea
+
+.org 0x833f90d
+.area 119
+.strn "We have been looking forward to\nyour arrival.\pBefore I show you to the Battle Tent,\nI must save the game. Please wait.$"
+.endarea
+
+.org 0x833f9ea
+.area 58
+.strn "Do you wish to take the Verdanturf\nBattle Tent challenge?$"
+.endarea
+
+.org 0x833fcfe
+.area 251
+.strn "Sigh⋯\pYou do not have the three Pokémon\nrequired for the challenge.\pTo enter, you must provide three\ndifferent kinds of Pokémon.\pThey also must not be holding\nthe same kinds of items.\pEggs{STR_VAR_1} ineligible.\pCome back when you have made\nyour preparations.$"
+.endarea
+
+.org 0x833ff79
+.area 121
+.strn "I feel privileged for having seen\nyour Pokémon's exploits.\pThe results will be recorded.\nI must ask you to briefly wait.$"
+.endarea
+
+.org 0x8340052
+.area 60
+.strn "Your feat will be recorded.\nI must ask you to briefly wait.$"
+.endarea
+
+.org 0x834012b
+.area 50
+.strn "Would you like to take the Battle\nSwap challenge?$"
+.endarea
+
+.org 0x8340463
+.area 142
+.strn "Thank you for participating!\pI will return your Pokémon in exchange\nfor our rental Pokémon.\pI must also save your event results.\nPlease wait.$"
+.endarea
+
+.org 0x8340530
+.area 165
+.strn "Congratulations!\nYou've won three straight matches!\pI will return your Pokémon in exchange\nfor our rental Pokémon.\pI must also save your event results.\nPlease wait.$"
+.endarea
+
+.org 0x8340668
+.area 83
+.strn "We've been waiting for you!\pBefore we resume your challenge,\nI must save the game.$"
+.endarea
+
+.org 0x8341495
+.area 274
+.strn "Is it you who brought those\nodd tickets?\p⋯ ⋯ ⋯Hm.\pThese tickets will get you to islands\nthat are far, far away.\pNo one knows what awaits there,\nor what may happen there.\pThe very thought excites my blood\nas a sailing man!\pGet on board, youngster!\nWhere shall we sail first?$"
+.endarea
+
+.org 0x8342df5
+.area 38
+.strn "Do you want to Fly\nwith your Pokémon?$"
+.endarea
+
+.org 0x8342e54
+.area 36
+.strn "{STR_VAR_1} is regarding you with\nadoration!$"
+.endarea
+
+.org 0x8342eaf
+.area 28
+.strn "{STR_VAR_1} looks unhappy to be wet.$"
+.endarea
+
+.org 0x8342ecb
+.area 28
+.strn "{STR_VAR_1} splashes around happily!$"
+.endarea
+
+.org 0x8342ee7
+.area 58
+.strn "{STR_VAR_1} looks up at the\nsky restlessly.\pWould you like to Fly?$"
+.endarea
+
+.org 0x8342f21
+.area 32
+.strn "{STR_VAR_1} is making an unhappy face...$"
+.endarea
+
+.org 0x8342f41
+.area 45
+.strn "It looks like {STR_VAR_1} \nreally dislikes this place$"
+.endarea
+
+.org 0x8342f6e
+.area 38
+.strn "It looks like {STR_VAR_1} \nis happy to be here$"
+.endarea
+
+.org 0x8342f94
+.area 37
+.strn "{STR_VAR_1} seems to be happy\nabout the rain!$"
+.endarea
+
+.org 0x8342fb9
+.area 37
+.strn "{STR_VAR_1} is happily playing\nwith the snow!$"
+.endarea
+
+.org 0x8342fde
+.area 40
+.strn "It looks like {STR_VAR_1} its holding\nsomething!$"
+.endarea
+
+.org 0x8343006
+.area 37
+.strn "It looks like {STR_VAR_1} has a gift\nfor you!$"
+.endarea
+
+.org 0x834302b
+.area 59
+.strn "{STR_VAR_1} looks around fondly.\nIt seems familiar with this place.$"
+.endarea
+
+.org 0x8343066
+.area 42
+.strn "{STR_VAR_1} looks skeptical...\pWhat could it mean?$"
+.endarea
+
+.org 0x8343090
+.area 29
+.strn "{STR_VAR_1} carefully follows behind.$"
+.endarea
+
+.org 0x83430ad
+.area 42
+.strn "{STR_VAR_1} is carefully looking\naround for items.$"
+.endarea
+
+.org 0x83430d7
+.area 29
+.strn "{STR_VAR_1} skips happily behind you!$"
+.endarea
+
+.org 0x83430f4
+.area 35
+.strn "{STR_VAR_1} seems to be about\nto fall over!$"
+.endarea
+
+.org 0x8343117
+.area 46
+.strn "{STR_VAR_1} is trying very hard\nto keep up with you...$"
+.endarea
+
+.org 0x8343145
+.area 17
+.strn "{STR_VAR_1} is shivering.$"
+.endarea
+
+.org 0x8343156
+.area 25
+.strn "{STR_VAR_1}'s burn looks painful!$"
+.endarea
+
+.org 0x83432f0
+.area 20
+.strn "Okay, I understand⋯$"
+.endarea
+
+.org 0x8343304
+.area 20
+.strn "I'm terribly sorry⋯$"
+.endarea
+
+.org 0x8343318
+.area 11
+.strn "Thank you⋯$"
+.endarea
+
+.org 0x8343323
+.area 54
+.strn "Ahahaha! Aren't you embarrassed?\nEveryone's watching!$"
+.endarea
+
+.org 0x8343359
+.area 15
+.strn "Grr⋯\nWhat the⋯$"
+.endarea
+
+.org 0x8343368
+.area 39
+.strn "My Dome Ace title isn't just for show!$"
+.endarea
+
+.org 0x834338f
+.area 27
+.strn "Ahahaha!\nYou're inspiring!$"
+.endarea
+
+.org 0x83433aa
+.area 41
+.strn "Way to work!\nThat was a good lesson, eh?$"
+.endarea
+
+.org 0x83433d3
+.area 38
+.strn "Good job!\nYou know what you're doing!$"
+.endarea
+
+.org 0x83433f9
+.area 40
+.strn "Hey, hey, hey!\nYou're finished already?$"
+.endarea
+
+.org 0x8343421
+.area 20
+.strn "What happened here?$"
+.endarea
+
+.org 0x834344c
+.area 47
+.strn "Oh, come on!\nYou have to try harder than that!$"
+.endarea
+
+.org 0x834347b
+.area 18
+.strn "No way!\nGood job!$"
+.endarea
+
+.org 0x834348d
+.area 28
+.strn "Heheh!\nWhat did you expect?$"
+.endarea
+
+.org 0x83434a9
+.area 23
+.strn "Huh?\nAre you serious?!$"
+.endarea
+
+.org 0x83434c0
+.area 58
+.strn "Your Pokémon are wimpy because\nyou're wimpy as a Trainer!$"
+.endarea
+
+.org 0x83434fa
+.area 32
+.strn "Ah⋯\nNow this is something else⋯$"
+.endarea
+
+.org 0x834351a
+.area 49
+.strn "Gwahahaha!\nMy brethren, we have nothing to fear!$"
+.endarea
+
+.org 0x834355b
+.area 59
+.strn "Hey! What's wrong with you!\nLet's see some effort! Get up!$"
+.endarea
+
+.org 0x8343596
+.area 59
+.strn "That's it! You've done great!\nYou've worked hard for this!$"
+.endarea
+
+.org 0x83435d1
+.area 66
+.strn "Hey! Don't you give up now!\nGet up! Don't lose faith in yourself!$"
+.endarea
+
+.org 0x8343613
+.area 54
+.strn "That's it! You've done it!\nYou kept working for this!$"
+.endarea
+
+.org 0x83436a8
+.area 34
+.strn "Saving⋯\nDon't turn off the power.$"
+.endarea
+
+.org 0x83436ca
+.area 19
+.strn "{PLAYER} saved the game.$"
+.endarea
+
+.org 0x83437c2
+.area 47
+.strn "Save error.\pPlease exchange the\nbackup memory.$"
+.endarea
+
+.org 0x83437f1
+.area 34
+.strn "Saving⋯\nDon't turn off the power.$"
+.endarea
+
+.org 0x8343813
+.area 110
+.strn "Hi! Sorry to keep you waiting!\pWelcome to Pokémon R.O.W.E!\pThis is an Open World version\nof Pokémon Emerald.\p$"
+.endarea
+
+.org 0x83438a5
+.area 433
+.strn "This world is widely inhabited by\ncreatures known as Pokémon.\pWe humans live alongside Pokémon,\nat times as friendly playmates, and\lat times as cooperative workmates.\pAnd sometimes, we band together\nand battle others like us.\pBut despite our closeness, we don't\nknow everything about Pokémon.\pIn fact, there are many, many\nsecrets surrounding Pokémon.\pTo unravel Pokémon mysteries,\nI've been undertaking research.\lThat's what I do.\p$"
+.endarea
+
+.org 0x8343a56
+.area 13
+.strn "And you are?$"
+.endarea
+
+.org 0x8343a63
+.area 34
+.strn "Are you a boy?\nOr are you a girl?$"
+.endarea
+
+.org 0x8343a85
+.area 29
+.strn "All right.\nWhat's your name?$"
+.endarea
+
+.org 0x8343ab0
+.area 37
+.strn "Ah, okay!\pYou're {PLAYER}{KUN}\nI get it now!\p$"
+.endarea
+
+.org 0x8343ad5
+.area 239
+.strn "All right, are you ready?\pYour very own adventure is about\nto begin!\pChoose your starting location and\nexplore this world as you want.\lA different aventure awaits!\pWell, if you have any questions,\nI'll be expecting them on\lPokéCommunity.\p$"
+.endarea
+
+.org 0x8343bdf
+.area 62
+.strn "It couldn't be found nearby.\nTry looking in a different area!$"
+.endarea
+
+.org 0x8343c26
+.area 70
+.strn "The Pokémon got away! Try moving\nmore slowly by holding the A button.$"
+.endarea
+
+.org 0x8343c75
+.area 22
+.strn "The Pokémon got away!$"
+.endarea
+
+.org 0x8343c94
+.area 43
+.strn "There is no reaction.\nThe signal was lost!$"
+.endarea
+
+.org 0x8343cc8
+.area 39
+.strn "It's too dark to search\nfor a Pokémon!$"
+.endarea
+
+.org 0x8343f49
+.area 65
+.strn "It's full of cardboard boxes with\nelectrical appliances in them.$"
+.endarea
+
+.org 0x8343f8a
+.area 154
+.strn "It's full of cardboard boxes with\nelectrical appliances in them.\pOh?\pRotom would like to investigate the\nmotors of the electrical appliances⋯\lIs that OK?$"
+.endarea
+
+.org 0x8344053
+.area 44
+.strn "{STR_VAR_1} reluctantly gave up on\nentering a motor⋯$"
+.endarea
+
+.org 0x834407f
+.area 45
+.strn "Which Rotom will you allow to enter\na motor?$"
+.endarea
+
+.org 0x83440ac
+.area 34
+.strn "That Pokémon can't enter a motor.$"
+.endarea
+
+.org 0x83440ce
+.area 28
+.strn "An Egg can't enter a motor.$"
+.endarea
+
+.org 0x83440ea
+.area 52
+.strn "Which appliance's motor will you\nallow {STR_VAR_1} to enter?$"
+.endarea
+
+.org 0x834411e
+.area 22
+.strn "{STR_VAR_1} entered the motor.$"
+.endarea
+
+.org 0x8344134
+.area 109
+.strn "{STR_VAR_1} is trying to learn\n{STR_VAR_2}.\pBut {STR_VAR_1} can't learn more\nthan four moves.\pDelete an older move to make\nroom for {STR_VAR_2}?$"
+.endarea
+
+.org 0x83441a1
+.area 45
+.strn "{STR_VAR_1} has already entered that\nappliance motor.$"
+.endarea
+
+.org 0x83441ce
+.area 27
+.strn "{STR_VAR_1} emerged from the motor.$"
+.endarea
+
+.org 0x83441e9
+.area 27
+.strn "{STR_VAR_1} hasn't entered a motor.$"
+.endarea
+
+.org 0x834424e
+.area 49
+.strn "{STR_VAR_1} learned {STR_VAR_2}!{WAIT_SE}$"
+.endarea
+
+.org 0x0834425F
+.area 49
+.strn "Which move should be forgotten?$"
+.endarea
+
+.org 0x83442d5
+.area 53
+.strn "With which Ultra Dimension do you\nwish to link with?$"
+.endarea
+
+.org 0x83462e6
+.area 45
+.strn "{PLAYER} received the\nRUNNING SHOES from the AIDE.$"
+.endarea
+
+.org 0x83466df
+.area 46
+.strn "The weather's gorgeous!\nPerfect for a battle!$"
+.endarea
+
+.org 0x834674c
+.area 32
+.strn "I'm beginning to get a sunburn⋯$"
+.endarea
+
+.org 0x834676c
+.area 21
+.strn "Oh, you're so awful.$"
+.endarea
+
+.org 0x83467b9
+.area 47
+.strn "Seen from here, Mt. Ember towers\ninto the sky.$"
+.endarea
+
+.org 0x83467e8
+.area 24
+.strn "Well, aren't you tough?$"
+.endarea
+
+.org 0x8346827
+.area 61
+.strn "I took a break from swimming,\nonly to have you challenge me?$"
+.endarea
+
+.org 0x8346864
+.area 33
+.strn "Hey, what the⋯\nYou're good, you!$"
+.endarea
+
+.org 0x83468bf
+.area 52
+.strn "Wait! Wait a second!\nI think I've hooked a big one!$"
+.endarea
+
+.org 0x83468f3
+.area 24
+.strn "I've lost it all again⋯$"
+.endarea
+
+.org 0x8346943
+.area 40
+.strn "Could you help me out with my\ntraining?$"
+.endarea
+
+.org 0x834696b
+.area 25
+.strn "You were a cut above me.$"
+.endarea
+
+.org 0x83469b0
+.area 43
+.strn "There isn't a day in which we don't\ntrain!$"
+.endarea
+
+.org 0x83469db
+.area 17
+.strn "I'm such a fool!$"
+.endarea
+
+.org 0x8346a10
+.area 60
+.strn "Every morning, before breakfast,\nI swim around this island.$"
+.endarea
+
+.org 0x8346a8e
+.area 60
+.strn "Dress appropriately for battle!\nLose that frivolous outfit!$"
+.endarea
+
+.org 0x8346aca
+.area 9
+.strn "Why me?!$"
+.endarea
+
+.org 0x8346b13
+.area 63
+.strn "You know, everything tastes great\nwhen you're out in the wild.$"
+.endarea
+
+.org 0x8346b52
+.area 13
+.strn "Awww, blown!$"
+.endarea
+
+.org 0x8346b8b
+.area 64
+.strn "My lunch filled us up, so will you\nbattle us for some exercise?$"
+.endarea
+
+.org 0x8346bcb
+.area 25
+.strn "That made me all sweaty.$"
+.endarea
+
+.org 0x8346c0d
+.area 55
+.strn "Kia: My big brother and I make\nan awesome combination!$"
+.endarea
+
+.org 0x8346c44
+.area 31
+.strn "Kia: Huh?!\nI can't believe it!$"
+.endarea
+
+.org 0x8346c9e
+.area 85
+.strn "Kia: If you want to battle with\nus, you have to bring at least two\lPokémon with you.$"
+.endarea
+
+.org 0x8346cf3
+.area 47
+.strn "MIK: Together with KIA, I'm afraid\nof nothing!$"
+.endarea
+
+.org 0x8346d22
+.area 28
+.strn "Mik: Whoa!\nThat's too much!$"
+.endarea
+
+.org 0x8346d6b
+.area 87
+.strn "Mik: Hey, do you want to battle\nwith us two?\pBring two or more Pokémon with\nyou, then.$"
+.endarea
+
+.org 0x8348acc
+.area 55
+.strn "An active volcano is one that's\nerupting, or about to.$"
+.endarea
+
+.org 0x8348b03
+.area 46
+.strn "Whew⋯ That was hot!\nSweat's erupting from me!$"
+.endarea
+
+.org 0x8348bae
+.area 45
+.strn "Do you know how caves form inside\nvolcanoes?$"
+.endarea
+
+.org 0x8348bdb
+.area 32
+.strn "Atchah!\nYou're shockingly good!$"
+.endarea
+
+.org 0x8348c5f
+.area 101
+.strn "I've been in training so I can mend\nmy broken heart⋯\pIt toughened me up physically at\nleast! Hi—yah!$"
+.endarea
+
+.org 0x8348cc4
+.area 30
+.strn "I think I tried to overdo it⋯$"
+.endarea
+
+.org 0x83495aa
+.area 49
+.strn "Welcome to my Battle Mart!, How may I\nserve you?$"
+.endarea
+
+.org 0x83495db
+.area 65
+.strn "I'm currently selling some Pokémon for\nBP!, How may I serve you?$"
+.endarea
+
+.org 0x834a1cb
+.area 54
+.strn "This is an excellent environment for\nraising POKéMON!$"
+.endarea
+
+.org 0x834a201
+.area 44
+.strn "Your POKéMON are growing up admirably\nwell!$"
+.endarea
+
+.org 0x834a22d
+.area 68
+.strn "You know, I think you have the talent\nto be a good Pokémon Breeder.$"
+.endarea
+
+.org 0x834a271
+.area 44
+.strn "With these hands, I will create my\nvictory!$"
+.endarea
+
+.org 0x834a29d
+.area 34
+.strn "The shame of this⋯ I'm red—faced⋯$"
+.endarea
+
+.org 0x834a2f0
+.area 61
+.strn "Excuse me! I'm trying to paint. Please\nkeep out of my sight!$"
+.endarea
+
+.org 0x834a32d
+.area 40
+.strn "This loss⋯ I feel like I'm whiting out⋯$"
+.endarea
+
+.org 0x834a39d
+.area 39
+.strn "Hmm⋯ The angle, it is not quite there⋯$"
+.endarea
+
+.org 0x834a3c4
+.area 32
+.strn "Oh⋯ My feelings, they are blue⋯$"
+.endarea
+
+.org 0x834a448
+.area 53
+.strn "I am visiting my friend's retreat, if you\nmust know.$"
+.endarea
+
+.org 0x834a47d
+.area 18
+.strn "Oh, my, so strong$"
+.endarea
+
+.org 0x834a4d3
+.area 58
+.strn "I'm thinking of having a pool made\nspecially for Pokémon.$"
+.endarea
+
+.org 0x834a50d
+.area 26
+.strn "Oh, my goodness gracious!$"
+.endarea
+
+.org 0x834a568
+.area 36
+.strn "I'm a good runner. I'm really fast!$"
+.endarea
+
+.org 0x834a58c
+.area 23
+.strn "Oops! I rushed things!$"
+.endarea
+
+.org 0x834a5d8
+.area 60
+.strn "I say, this marine life here at this\nresort agrees with me.$"
+.endarea
+
+.org 0x834a614
+.area 38
+.strn "That's a shocker! You must be joking.$"
+.endarea
+
+.org 0x834a669
+.area 88
+.strn "I'm the eldest of the bird brothers. The\nbest thing about birds⋯ it has to be\lthe beak.$"
+.endarea
+
+.org 0x834a6c1
+.area 14
+.strn "Oh, so sharp!$"
+.endarea
+
+.org 0x834a6f5
+.area 93
+.strn "I'm the middle kid of the bird brothers.\nThe best thing about birds⋯ it has to\lbe the wings.$"
+.endarea
+
+.org 0x834a752
+.area 12
+.strn "Flap, flap!$"
+.endarea
+
+.org 0x834a78b
+.area 90
+.strn "I'm the youngest of the bird brothers.\nThe best thing about birds⋯ it has to\lbe the down.$"
+.endarea
+
+.org 0x834a7e5
+.area 38
+.strn "Down is so comfy⋯ it makes me drowsy⋯$"
+.endarea
+
+.org 0x834a937
+.area 110
+.strn "{PLAYER} entered two passwords.\p“Goldeen need log.”\n“Yes, nah, Chansey.”\p⋯ ⋯  ⋯ ⋯  ⋯ ⋯\pThe Warehouse's door opened!$"
+.endarea
+
+.org 0x834ad3a
+.area 33
+.strn "{PLAYER} received an Egg\nfrom the man!$"
+.endarea
+
+.org 0x838cbf4
+.area 38
+.strn "Please start over from the beginning.$"
+.endarea
+
+.org 0x838cc1c
+.area 60
+.strn "The Wireless Communication\nSystem search has been canceled.$"
+.endarea
+
+.org 0x838cc84
+.area 48
+.strn "{STR_VAR_1}! Awaiting\ncommunication from another player.$"
+.endarea
+
+.org 0x838ccb4
+.area 54
+.strn "{STR_VAR_1}! Awaiting link!\nPress Start when everyone's ready.$"
+.endarea
+
+.org 0x838cf0c
+.area 33
+.strn "{STR_VAR_2} contacted you for\n{STR_VAR_1}. Accept?$"
+.endarea
+
+.org 0x838cf30
+.area 37
+.strn "{STR_VAR_2} contacted you.\nWill you share {STR_VAR_1}?$"
+.endarea
+
+.org 0x838cf58
+.area 38
+.strn "{STR_VAR_2} contacted you.\nAdd to the members?$"
+.endarea
+
+.org 0x838cf80
+.area 26
+.strn "{STR_VAR_1}!\nAre these members Ok?$"
+.endarea
+
+.org 0x838cf9c
+.area 35
+.strn "Cancel {STR_VAR_1} Mode\nwith these members?$"
+.endarea
+
+.org 0x838cfc0
+.area 24
+.strn "An “Ok” was sent\nto {STR_VAR_1}.$"
+.endarea
+
+.org 0x838cfd8
+.area 55
+.strn "The other Trainer doesn't appear\nto be available now⋯\p$"
+.endarea
+
+.org 0x838d010
+.area 56
+.strn "You can't transmit with a Trainer\nwho is too far away.\p$"
+.endarea
+
+.org 0x838d048
+.area 44
+.strn "The other Trainer(s) is/are not\nready yet.\p$"
+.endarea
+
+.org 0x838d07c
+.area 52
+.strn "The {STR_VAR_1} Mode with\nthese members will be canceled.{PAUSE 60}$"
+.endarea
+
+.org 0x838d0b0
+.area 55
+.strn "There is a member who can no\nlonger remain available.\p$"
+.endarea
+
+.org 0x838d0f0
+.area 40
+.strn "The other Trainer appears\nunavailable⋯\p$"
+.endarea
+
+.org 0x838d118
+.area 22
+.strn "{STR_VAR_1} sent back an “Ok”!$"
+.endarea
+
+.org 0x838d130
+.area 39
+.strn "{STR_VAR_1} Ok'd your registration as\na member.$"
+.endarea
+
+.org 0x838d158
+.area 19
+.strn "{STR_VAR_1} replied, “No⋯”\p$"
+.endarea
+
+.org 0x838d16c
+.area 28
+.strn "{STR_VAR_1}!\nAwaiting other members!$"
+.endarea
+
+.org 0x838d188
+.area 21
+.strn "Quit being a member?$"
+.endarea
+
+.org 0x838d1a0
+.area 29
+.strn "You stopped being a member.\p$"
+.endarea
+
+.org 0x838d1e8
+.area 61
+.strn "The Wireless Communication\nSystem link has been established.$"
+.endarea
+
+.org 0x838d228
+.area 57
+.strn "The Wireless Communication\nSystem link has been dropped⋯$"
+.endarea
+
+.org 0x838d264
+.area 44
+.strn "The link with your friend has been\ndropped⋯$"
+.endarea
+
+.org 0x838d290
+.area 18
+.strn "{STR_VAR_1} replied, “No⋯”$"
+.endarea
+
+.org 0x838d2cc
+.area 25
+.strn "Do you want the {STR_VAR_2}\nMode?$"
+.endarea
+
+.org 0x838d2e8
+.area 25
+.strn "Do you want the {STR_VAR_2}\nMode?$"
+.endarea
+
+.org 0x838d328
+.area 40
+.strn "Awaiting {STR_VAR_1}'s response about\nthe trade⋯$"
+.endarea
+
+.org 0x838d4ac
+.area 48
+.strn "Hiya! Is there something that you\nwanted to do?$"
+.endarea
+
+.org 0x838d4dc
+.area 39
+.strn "Hello!\nWould you like to do something?$"
+.endarea
+
+.org 0x838d504
+.area 56
+.strn "{STR_VAR_1}: Hiya, we meet again!\nWhat are you up for this time?$"
+.endarea
+
+.org 0x838d53c
+.area 51
+.strn "{STR_VAR_1}: Oh! {PLAYER}, hello!\nWould you like to do something?$"
+.endarea
+
+.org 0x838d580
+.area 22
+.strn "Want to do something?$"
+.endarea
+
+.org 0x838d598
+.area 32
+.strn "Would you like to do something?$"
+.endarea
+
+.org 0x838d5b8
+.area 35
+.strn "{STR_VAR_1}: What would you like to\ndo now?$"
+.endarea
+
+.org 0x838d60c
+.area 31
+.strn "Somebody has contacted you.{PAUSE 60}$"
+.endarea
+
+.org 0x838d62c
+.area 25
+.strn "{STR_VAR_1} has contacted you.{PAUSE 60}$"
+.endarea
+
+.org 0x838d650
+.area 44
+.strn "Awaiting a response from\nthe other Trainer⋯$"
+.endarea
+
+.org 0x838d67c
+.area 29
+.strn "Awaiting a response from\n{STR_VAR_1}⋯$"
+.endarea
+
+.org 0x838d6a4
+.area 91
+.strn "The other Trainer showed\nyou their Trainer Card.\pWould you like to show your\nTrainer Card?$"
+.endarea
+
+.org 0x838d700
+.area 82
+.strn "The other Trainer challenges you\nto battle.\pWill you accept the battle\nchallenge?$"
+.endarea
+
+.org 0x838d754
+.area 76
+.strn "The other Trainer invites you\nto chat.\pWill you accept the chat\ninvitation?$"
+.endarea
+
+.org 0x838d7a0
+.area 48
+.strn "There is an offer to trade your\nregistered Lv.$"
+.endarea
+
+.org 0x838d814
+.area 82
+.strn "There is an offer to trade your\nregistered Egg.\lWill you accept this trade offer?$"
+.endarea
+
+.org 0x838d868
+.area 28
+.strn "The chat has been dropped.\p$"
+.endarea
+
+.org 0x838d884
+.area 25
+.strn "You declined the offer.\p$"
+.endarea
+
+.org 0x838d8a0
+.area 25
+.strn "You declined the offer.\p$"
+.endarea
+
+.org 0x838d8bc
+.area 21
+.strn "The chat was ended.\p$"
+.endarea
+
+.org 0x838d8e4
+.area 53
+.strn "Oh, hey! We're in a chat right now.\nWant to join us?$"
+.endarea
+
+.org 0x838d91c
+.area 61
+.strn "{STR_VAR_1}: Hey, {PLAYER}!\nWe're having a chat right now.\lWant to join us?$"
+.endarea
+
+.org 0x838d95c
+.area 60
+.strn "Oh, hi! We're having a chat now.\nWould you like to join us?$"
+.endarea
+
+.org 0x838d998
+.area 68
+.strn "{STR_VAR_1}: Oh, hi, {PLAYER}!\nWe're having a chat now.\lWould you like to join us?$"
+.endarea
+
+.org 0x838d9ec
+.area 36
+.strn "⋯⋯\nThe Trainer appears to be busy⋯\p$"
+.endarea
+
+.org 0x838da10
+.area 50
+.strn "A battle, huh?\nAll right, just give me some time.$"
+.endarea
+
+.org 0x838da44
+.area 49
+.strn "You want to chat, huh?\nSure, just wait a little.$"
+.endarea
+
+.org 0x838da78
+.area 55
+.strn "Sure thing! As my “Greetings,”\nhere's my Trainer Card.$"
+.endarea
+
+.org 0x838dab0
+.area 51
+.strn "A battle? Of course, but I need\ntime to get ready.$"
+.endarea
+
+.org 0x838dae4
+.area 54
+.strn "Did you want to chat?\nOkay, but please wait a moment.$"
+.endarea
+
+.org 0x838db1c
+.area 51
+.strn "As my introduction, I'll show you\nmy Trainer Card.$"
+.endarea
+
+.org 0x838dba4
+.area 53
+.strn "Thanks for waiting!\nLet's get our battle started!{PAUSE 60}$"
+.endarea
+
+.org 0x838dbdc
+.area 26
+.strn "All right!\nLet's chat!{PAUSE 60}$"
+.endarea
+
+.org 0x838dbf8
+.area 45
+.strn "Sorry I made you wait!\nLet's get started!{PAUSE 60}$"
+.endarea
+
+.org 0x838dc28
+.area 38
+.strn "Sorry I made you wait!\nLet's chat.{PAUSE 60}$"
+.endarea
+
+.org 0x838dc50
+.area 30
+.strn "The trade will be started.{PAUSE 60}$"
+.endarea
+
+.org 0x838dc70
+.area 31
+.strn "The battle will be started.{PAUSE 60}$"
+.endarea
+
+.org 0x838dc90
+.area 22
+.strn "Entering the chat⋯{PAUSE 60}$"
+.endarea
+
+.org 0x838dcd8
+.area 96
+.strn "Sorry! My Pokémon don't seem to\nbe feeling too well right now.\lLet me battle you another time.\p$"
+.endarea
+
+.org 0x838dd38
+.area 84
+.strn "I'm terribly sorry, but my Pokémon\naren't feeling well⋯\pLet's battle another time.\p$"
+.endarea
+
+.org 0x838dd94
+.area 77
+.strn "Huh? My Trainer Card⋯\nWhere'd it go now?\lSorry! I'll show you another time!\p$"
+.endarea
+
+.org 0x838dde4
+.area 71
+.strn "Oh? Now where did I put my\nTrainer Card?⋯\lSorry! I'll show you later!\p$"
+.endarea
+
+.org 0x838de34
+.area 60
+.strn "If you want to do something with\nme, just give me a shout!\p$"
+.endarea
+
+.org 0x838de70
+.area 52
+.strn "If you want to do something with\nme, don't be shy.\p$"
+.endarea
+
+.org 0x838deac
+.area 69
+.strn "Whoops! Sorry, but I have to do\nsomething else.\lAnother time, okay?\p$"
+.endarea
+
+.org 0x838def4
+.area 68
+.strn "If you want to battle, you need\ntwo Pokémon that are below\lLv. 30.\p$"
+.endarea
+
+.org 0x838df38
+.area 59
+.strn "For a battle, you need two\nPokémon that are below Lv. 30.\p$"
+.endarea
+
+.org 0x838df74
+.area 43
+.strn "Oh, all right.\nCome see me anytime, okay?\p$"
+.endarea
+
+.org 0x838dfa0
+.area 29
+.strn "Oh⋯\nPlease come by anytime.\p$"
+.endarea
+
+.org 0x838dfc8
+.area 70
+.strn "Oh, sorry!\nI just can't right this instant.\lLet's chat another time.\p$"
+.endarea
+
+.org 0x838e010
+.area 77
+.strn "Oh, I'm sorry.\nI have too much to do right now.\lLet's chat some other time.\p$"
+.endarea
+
+.org 0x838e068
+.area 39
+.strn "Whoa!\nI can tell you're pretty tough!\p$"
+.endarea
+
+.org 0x838e090
+.area 43
+.strn "You used that move?\nThat's good strategy!\p$"
+.endarea
+
+.org 0x838e0bc
+.area 36
+.strn "Way to go!\nThat was an eye—opener!\p$"
+.endarea
+
+.org 0x838e0e0
+.area 55
+.strn "Oh! How could you use that\nPokémon in that situation?\p$"
+.endarea
+
+.org 0x838e118
+.area 45
+.strn "That Pokémon⋯\nIt's been raised really well!\p$"
+.endarea
+
+.org 0x838e148
+.area 40
+.strn "That's it!\nThis is the right move now!\p$"
+.endarea
+
+.org 0x838e170
+.area 42
+.strn "That's awesome!\nYou can battle that way?\p$"
+.endarea
+
+.org 0x838e19c
+.area 50
+.strn "You have exquisite timing for\nswitching Pokémon!\p$"
+.endarea
+
+.org 0x838e1f0
+.area 33
+.strn "Oh, I see!\nThis is educational!\p$"
+.endarea
+
+.org 0x838e214
+.area 59
+.strn "Don't say anything funny anymore!\nI'm sore from laughing!\p$"
+.endarea
+
+.org 0x838e250
+.area 35
+.strn "Oh?\nSomething like that happened.\p$"
+.endarea
+
+.org 0x838e274
+.area 44
+.strn "Hmhm⋯ What?\nSo is this what you're saying?\p$"
+.endarea
+
+.org 0x838e2a0
+.area 36
+.strn "Is that right?\nI didn't know that.\p$"
+.endarea
+
+.org 0x838e2c4
+.area 28
+.strn "Ahaha!\nWhat is that about?\p$"
+.endarea
+
+.org 0x838e2e0
+.area 46
+.strn "Yes, that's exactly it!\nThat's what I meant.\p$"
+.endarea
+
+.org 0x838e310
+.area 36
+.strn "In other words⋯\nYes! That's right!\p$"
+.endarea
+
+.org 0x838e354
+.area 57
+.strn "I'm just showing my Trainer Card\nas my way of greeting.\p$"
+.endarea
+
+.org 0x838e390
+.area 34
+.strn "I hope I get to know you better!\p$"
+.endarea
+
+.org 0x838e3b4
+.area 63
+.strn "We're showing each other our\nTrainer Cards to get acquainted.\p$"
+.endarea
+
+.org 0x838e3f4
+.area 47
+.strn "Glad to meet you.\nPlease don't be a stranger!\p$"
+.endarea
+
+.org 0x838e434
+.area 39
+.strn "Yeahah!\nI really wanted this Pokémon!\p$"
+.endarea
+
+.org 0x838e45c
+.area 62
+.strn "Finally, a trade got me that\nPokémon I'd wanted a long time.\p$"
+.endarea
+
+.org 0x838e49c
+.area 32
+.strn "I'm trading Pokémon right now.\p$"
+.endarea
+
+.org 0x838e4bc
+.area 49
+.strn "I finally got that Pokémon I\nwanted in a trade!\p$"
+.endarea
+
+.org 0x838e510
+.area 31
+.strn "{STR_VAR_1} checked the\nTrading Board.\p$"
+.endarea
+
+.org 0x838e530
+.area 137
+.strn "Welcome to the Trading Board.\pYou may register your Pokémon\nand offer it up for a trade.\pWould you like to register one of\nyour Pokémon?$"
+.endarea
+
+.org 0x838e5bc
+.area 313
+.strn "This Trading Board is used for\noffering a Pokémon for a trade.\pAll you need to do is register a\nPokémon for a trade.\pAnother Trainer may offer a party\nPokémon in return for the trade.\pWe hope you will register Pokémon\nand trade them with many, many\lother Trainers.\pWould you like to register one of\nyour Pokémon?$"
+.endarea
+
+.org 0x838e7a0
+.area 69
+.strn "Please choose the type of Pokémon\nthat you would like in the trade.\n$"
+.endarea
+
+.org 0x838e7e8
+.area 54
+.strn "Which of your party Pokémon will\nyou offer in trade?\p$"
+.endarea
+
+.org 0x838e820
+.area 33
+.strn "Registration has been canceled.\p$"
+.endarea
+
+.org 0x838e844
+.area 34
+.strn "Registration has been completed.\p$"
+.endarea
+
+.org 0x838e868
+.area 30
+.strn "The trade has been canceled.\p$"
+.endarea
+
+.org 0x838e888
+.area 43
+.strn "Cancel the registration of your\nLv. {STR_VAR_2} {STR_VAR_1}?$"
+.endarea
+
+.org 0x838e8b4
+.area 37
+.strn "Cancel the registration of your\nEgg?$"
+.endarea
+
+.org 0x838e8dc
+.area 37
+.strn "The registration has been canceled.\p$"
+.endarea
+
+.org 0x838e980
+.area 42
+.strn "Would you like to ask {STR_VAR_1} to\nmake a trade?$"
+.endarea
+
+.org 0x838ea08
+.area 49
+.strn "You don't have a {STR_VAR_2}—type\nPokémon that {STR_VAR_1} wants.\p$"
+.endarea
+
+.org 0x838ea3c
+.area 38
+.strn "You don't have an Egg that\n{STR_VAR_1} wants.\p$"
+.endarea
+
+.org 0x838ea64
+.area 51
+.strn "{STR_VAR_1} can't make a trade for\nyour Pokémon right now.\p$"
+.endarea
+
+.org 0x838ea98
+.area 52
+.strn "You can't make a trade for\n{STR_VAR_1}'s Pokémon right now.\p$"
+.endarea
+
+.org 0x838ead4
+.area 32
+.strn "Your trade offer was rejected.\p$"
+.endarea
+
+.org 0x838eaf4
+.area 10
+.strn "Egg Trade$"
+.endarea
+
+.org 0x838eb1c
+.area 25
+.strn "Please choose a Trainer.$"
+.endarea
+
+.org 0x838eb38
+.area 45
+.strn "Please choose a Trainer for\na Single Battle.$"
+.endarea
+
+.org 0x838eb68
+.area 45
+.strn "Please choose a Trainer for\na Double Battle.$"
+.endarea
+
+.org 0x838eb98
+.area 45
+.strn "Please choose the Leader\nfor a Multi Battle.$"
+.endarea
+
+.org 0x838ebc8
+.area 41
+.strn "Please choose the Trainer to\ntrade with.$"
+.endarea
+
+.org 0x838ebf4
+.area 55
+.strn "Please choose the Trainer who is\nsharing Wonder Cards.$"
+.endarea
+
+.org 0x838ec2c
+.area 54
+.strn "Please choose the Trainer who is\nsharing Wonder News.$"
+.endarea
+
+.org 0x838ec64
+.area 50
+.strn "Jump with mini Pokémon!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ec98
+.area 39
+.strn "Berry Crush!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ecc0
+.area 48
+.strn "Dodrio Berry—Picking!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ecf0
+.area 41
+.strn "Berry Blender!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ed1c
+.area 41
+.strn "Record Corner!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ed48
+.area 44
+.strn "Coolness Contest!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ed74
+.area 42
+.strn "Beauty Contest!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838eda0
+.area 44
+.strn "Cuteness Contest!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838edcc
+.area 45
+.strn "Smartness Contest!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838edfc
+.area 45
+.strn "Toughness Contest!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ee2c
+.area 49
+.strn "Battle Tower Level 50!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838ee60
+.area 51
+.strn "Battle Tower Open Level!\nPlease choose the Leader.$"
+.endarea
+
+.org 0x838eeec
+.area 55
+.strn "Searching for a Wireless\nCommunication System. Wait...$"
+.endarea
+
+.org 0x838ef60
+.area 24
+.strn "Awaiting {STR_VAR_1}'s response⋯$"
+.endarea
+
+.org 0x838ef78
+.area 60
+.strn "{STR_VAR_1} has been asked to register\nyou as a member. Please wait.$"
+.endarea
+
+.org 0x838efb4
+.area 60
+.strn "Awaiting a response from the\nWireless Communication System.$"
+.endarea
+
+.org 0x838f028
+.area 41
+.strn "No Cards appear to be shared \nright now.$"
+.endarea
+
+.org 0x838f054
+.area 40
+.strn "No News appears to be shared\nright now.$"
+.endarea
+
+.org 0x838f0d4
+.area 14
+.strn "Single Battle$"
+.endarea
+
+.org 0x838f0e4
+.area 14
+.strn "Double Battle$"
+.endarea
+
+.org 0x838f0f4
+.area 13
+.strn "Multi Battle$"
+.endarea
+
+.org 0x838f104
+.area 15
+.strn "Pokémon Trades$"
+.endarea
+
+.org 0x838f124
+.area 13
+.strn "Wonder Cards$"
+.endarea
+
+.org 0x838f134
+.area 12
+.strn "Wonder News$"
+.endarea
+
+.org 0x838f140
+.area 13
+.strn "Pokémon Jump$"
+.endarea
+
+.org 0x838f150
+.area 12
+.strn "Berry Crush$"
+.endarea
+
+.org 0x838f174
+.area 14
+.strn "Berry Blender$"
+.endarea
+
+.org 0x838f184
+.area 14
+.strn "Record Corner$"
+.endarea
+
+.org 0x838f194
+.area 13
+.strn "Cool Contest$"
+.endarea
+
+.org 0x838f1a4
+.area 15
+.strn "Beauty Contest$"
+.endarea
+
+.org 0x838f1b4
+.area 13
+.strn "Cute Contest$"
+.endarea
+
+.org 0x838f1c4
+.area 14
+.strn "Smart Contest$"
+.endarea
+
+.org 0x838f1d4
+.area 14
+.strn "Tough Contest$"
+.endarea
+
+.org 0x838f1e4
+.area 20
+.strn "Battle Tower LV. 50$"
+.endarea
+
+.org 0x838f1f8
+.area 24
+.strn "Battle Tower Open Level$"
+.endarea
+
+.org 0x838f210
+.area 20
+.strn "It's a Normal Card.$"
+.endarea
+
+.org 0x838f224
+.area 20
+.strn "It's a Bronze Card!$"
+.endarea
+
+.org 0x838f238
+.area 20
+.strn "It's a Copper Card!$"
+.endarea
+
+.org 0x838f24c
+.area 20
+.strn "It's a Silver Card!$"
+.endarea
+
+.org 0x838f260
+.area 18
+.strn "It's a Gold Card!$"
+.endarea
+
+.org 0x838f288
+.area 9
+.strn "This is$"
+.endarea
+
+.org 0x838f2c8
+.area 16
+.strn "Battles: Wins:$"
+.endarea
+
+.org 0x838f344
+.area 19
+.strn "Finished checking$"
+.endarea
+
+.org 0x838f934
+.area 13
+.strn "Receive Gift$"
+.endarea
+
+.org 0x838f941
+.area 11
+.strn "Check Card$"
+.endarea
+
+.org 0x838f94c
+.area 36
+.strn "You already have this Mystery Gift.$"
+.endarea
+
+.org 0x838f970
+.area 52
+.strn "You haven't received this version\nMystery Gift yet.$"
+.endarea
+
+.org 0x838fac7
+.area 80
+.strn "Your Mystery Gift has been received, look\nin your party or boxes for your Gift!$"
+.endarea
+
+.org 0x838fb17
+.area 64
+.strn "Your Mystery Gift has been received, look\nin bag for your Gift!$"
+.endarea
+
+.org 0x838fb57
+.area 66
+.strn "Your Mystery Gift has been received,\ntry to catch it in the wild!$"
+.endarea
+
+.org 0x8390270
+.area 78
+.strn "You are too early in the game for\nthis gift, please advance a little further!$"
+.endarea
+
+.org 0x8393be0
+.area 27
+.strn "Canceled reading\nthe Card.$"
+.endarea
+
+.org 0x83a0b73
+.area 77
+.strn "The save file cannot be loaded since\nits from a future version of this game.$"
+.endarea
+
+.org 0x83a0bc0
+.area 65
+.strn "This save file can only be used in a\nDebug Version of the game!.$"
+.endarea
+
+.org 0x83a0c01
+.area 57
+.strn "Emulation accuracy test.\nNumber of Failed Tests: {STR_VAR_1}{PAUSE_UNTIL_PRESS} —$"
+.endarea
